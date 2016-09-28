@@ -1,8 +1,6 @@
 // On your marks, get set...
 $(document).ready(function(){
 
-
-	// $("img[rel]").overlay();
 	$('body').velocity("fadeIn");
 
 
@@ -116,16 +114,6 @@ $(document).ready(function(){
 			  	.style("opacity", function(d){
 			   			return d.alpha + .12;
 			   		})
-			  	// .style('opacity', 0)
-			  	// .transition()
-				  //   .delay(function(d, i) { return i * 40 })
-				  //   .duration(1000)
-				  //   .style("opacity", function(d){
-			   // 			return d.alpha + .12;
-			  	// 	})
-			  	// 	.each("end", countDots)
-
-
 
 		// Counting function to complete initital dot loading animation
 
@@ -176,7 +164,6 @@ $(document).ready(function(){
 			d3.select(this)
 			.transition()
 	  		.duration(100)
-	  		// .style("fill", "#2646C3")
 	  		.style("fill", "#60698A")
 			
 			if($('#preview').length){
@@ -562,7 +549,7 @@ function overviewDes(){
 	$('.overview-project').css('background-color', "white");
 	var hci_div = $('<div class="centered"></div>');
 	var hci_title = $('<h5>HCI & Design</h5>');
-	var hci_des = $('<p>My artwork (shown chronologically in opacity) demonstrates my skill, versatility, and growth in exploring color theory, composition, technique, and overall passion for representation of the complex⎯ in taking apart seemingly simple \'moments\' and then piecing them back together.</p>');
+	var hci_des = $('<p>As a designer I strive to create solutions that delight but are also intuitive in that they pay close attention to detail, connotative relationships, narrative, visual procession, chain of causation, and drill-down of information.</p>');
 	hci_div.append(hci_title, hci_des);
 	$('.overview-project').empty().append(hci_div);
 	$('#second .centered').velocity("fadeIn", { duration: 1000, delay: 1000, opacity: .7});
