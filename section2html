@@ -1,0 +1,81 @@
+ <div id="uxui">
+            <div class="special-projects">
+              <div class="p_image">
+                <div class="hover">
+                    <a href="subCharlotte.html" target="_blank">
+                    <h3>CHARLOTTE</h3>
+                    <h5 class="tags"><span>DataViz</span><span>Web</span></h5></a>
+                  </div> 
+                 <img src="projects/charlotte_box.png" alt="charlotte-snapshot" />
+              </div>
+              <div class="proj_des">
+                <h4><span class="p_title">C H A R L O T T E</span>: Visualizing Web Design</h4>
+                  <p class="light">Data Visualization | Jeffrey Heer | Final Project</p>
+                  <p class="medium">Victoria Flores, Maxine Lim, Cesar Torres</p>
+                  <div class="quick"><h4>--><a href="projects/charlotte.pdf">PDF</a></h4></div>
+              </div>
+            </div>
+            <div class="special-projects">
+              <div class="p_image">
+                  <div class="hover">
+                    <a href="subStart.html" target="_blank">
+                    <h3>START.HOME</h3>
+                    <h5 class="tags"><span>UX / UI</span><span>DataViz</span><span>Cross Discipline</span></h5></a>
+                  </div> 
+                 <img src="projects/start_box.png"  alt="start.home-snapshot" />
+              </div>
+              <div class="proj_des">
+                 <h4><span class="p_title">S T A R T . H O M E</span>: Stanford Solar Decathlon</h4>
+                  <p class="light">Solar Decathlon | Energy Monitoring/Control/Behavivor Change System</p>
+                  <p class="medium">Jason Bade, Victoria Flores, Niels Joubert, Derek Ouyang, Ningxia Zhang</p>
+                  <div class="quick"><h4>--><a target="_blank" href="http://news.stanford.edu/features/2014/starthome/">SITE</a></h4></div>
+              </div>
+            </div>
+            <div class="special-projects">
+              <div class="p_image">
+                 <div class="hover">
+                    <a href="subDerive.html" target="_blank">
+                    <h3>DÉRIVE</h3>
+                    <h5 class="tags"><span>Interaction</span><span>Web</span><span>Gesture UI</span></h5></a>
+                  </div> 
+                 <img src="projects/derive_box.png"  alt="derive-snapshot" />
+              </div>
+              <div class="proj_des">
+                 <h4><span class="p_title">D E R I V E</span>: A Realtime Virtual Guestbook</h4>
+                  <p class="light">Interaction Design | Jeffrey Heer &amp; Michael Bernstein | Leap Motion</p>
+                  <p class="medium">Victoria Flores, Bell Wang, Lilith Wu, Ningxia Zhang</p>
+                  <div class="quick"><h4>--><a  target="_blank" href="http://derive.herokuapp.com/">Live Demo Requires LEAP</a>&nbsp;|&nbsp;<a target="_blank" href="http://cs247stanford.github.com/lighthouse/">SITE</a>&nbsp;|&nbsp;<a href="projects/derive.pdf">PDF</a></h4></div>
+              </div>
+            </div>
+            <div class="special-projects">
+              <div class="p_image">
+                  <div class="hover">
+                    <a href="subInspixel.html" target="_blank">
+                    <h3>INSPIXEL</h3>
+                    <h5 class="tags"><span>UX / UI</span><span>Web</span></h5></a>
+                  </div> 
+                 <img src="projects/inspixel_box.png" alt="inspixel-snapshot" />
+              </div>
+              <div class="proj_des">
+                 <h4><span class="p_title">I N S P I X E L</span>: Organizing Inspiration by Color</h4>
+                  <p class="light">Intro HCI | Scott Klemmer | Arts Interest App. Project</p>
+                  <p class="medium">Jingshu Chen, Victoria Flores, Ningxia Zhang</p>
+                  <div class="quick"><h4>--> <a href="projects/ins_poster.pdf">PDF</a></h4></div>
+              </div>
+            </div>
+            <div class="special-projects">
+              <div class="p_image">
+                <div class="hover">
+                    <a href="subCitadels.html" target="_blank">
+                    <h3>BRICOLAGE</h3>
+                    <h5 class="tags"><span>Research</span></h5></a>
+                  </div> 
+                 <img src="projects/citadel_boxx.png" alt="citadel-snapshot" />
+              </div>
+              <div class="proj_des">
+                <h4><span class="p_title">C I G A R E T T E &nbsp; C I T A D E L S</span>: Visualizing Tobacco Factories</h4>
+                  <p class="light">Spatial History Lab | Matthew Kohrman &amp; Claudia A. Engel</p>
+                  <p class="medium">Victoria Flores</p>
+              </div>
+            </div>
+          </div>

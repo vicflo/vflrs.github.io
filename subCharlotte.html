@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="title" content="vflrs">
+    <meta name="description" content="victoria | flores - selected works portoflio site">
+    <meta property="og:description" content="victoria | flores - selected works portoflio site">
+
+    <title>victoria | flores</title>
+    <link rel="stylesheet" href="css/style1.css" type="text/css" />
+    <link rel="stylesheet" href="css/scroll_h.css" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+    <script type="text/javascript" src="js/script_special.js"></script>
+    <script type="text/javascript" src="js/dw_scroll_c.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Buda:300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+
+function init_dw_Scroll() {
+    // arguments: id of scroll area div, id of content div
+    var wndo = new dw_scrollObj('wn', 'lyr1');
+    // args: id, axis ('v' or 'h'), eType (event type for arrows), 
+    // bScrollbar (include track and dragBar? true or false)
+    wndo.buildScrollControls('scrollbar', 'h', 'mouseover', true);
+}
+
+</script>
+
+</head>
+<body>
+<div id="container">
+  <div id="main" role="main">
+       <div id="othernav">
+        <p class="subpage">CHARLOTTE <span class="quick">:</span><span class="soft"> Untangling High-Dimensional Data in Web Design</span></p>
+      </div>
+      <div class="slide">
+          <img src="projects/char_slide1.png"  align="center" />
+      </div>
+      <div class="full-des">
+        <div><span class="line"></span></div>
+        <div class="desLeft">
+          <h3>D E S C R I P T I O N</h3>
+          <p>
+            Exploring a design space must generally be done by manual inspection of many design examples. Visualizing design data in an aggregate way can make this process more efficient, but as design data lies in a high-dimensional feature space, selecting the important elements to view is challenging.
+          </p>
+          <p>
+            Charlotte, is a system that enables exploration of Web designs represented in 1,713 dimensions by applying the concept of data portraits and generating visualizations that capture groups of pages with respect to a selected set of design principles. Charlotte demonstrates that meaningful patterns and trends among the design data can explored by using these principles to inform data-driven portraits.
+          </p>
+          <p>
+            To visualize the distinguishing features of each cluster, we created data portraits for them using a spider “web” abstraction. Based on the notion that a data portrait can efficiently encode large amounts of disparate data, we used Adobe Illustrator to hand-craft web representations of the clusters using seven principle encodings: balance, color harmony, contrast, emphasis, movement, pattern, and rhythm. A subset of these encodings were further used to develop visualizations for the clusters’ data profiles. The web concept is fitting because it invokes the complexity and richness reflected in our data.
+          </p>
+          <p>
+            To encode these principles into the webs, we computed aggregate statistics for the target cluster using features such as spatial distribution of page elements, dominant color, largest leaf element or average number of  siblings in the DOM tree, etc. We then translated these statistics to correspond to visual features on the webs. 
+          </p>
+          <p>
+            <span class="bold">Balance</span> was represented by the proximity of radial rings on the web. More rings closer to the center indicates a page that is skewed to the right. <span class="bold">Color</span> is encoded simply by applying the three dominant colors to a ring on the web. <span class="bold">Contrast</span> is separately encoded using opacity of a checkerboard pattern in one ring of the web. For example, higher contrast will produce a black and white pattern, while lower contrast tends toward grays. <span class="bold">Emphasis</span> is represented by a bolder ring, whose radius represents the amount of emphasis on a page. <span class="bold">Movement</span> is encoded using a zig-zagging path across the web. <span class="bold">Pattern</span> is represented by the number of elements on a page; more complex pages will have more cells in the web. <span class="bold">Rhythm</span> represented using a series of extended web strings. Besides drawing attention, these webs enable high-level comparisons of clusters from a “zoomed-out” view.
+          </p>
+        </div>
+        <div class="desRight">
+          <h3>D E T A I L S</h3>
+          <p>
+            CS448b <span class="quick">:</span> Data Visualization<br />Instr. <span class="quick">:</span> Jeff Heer
+          </p>
+          <p>
+            Team <span class="quick">:</span> Victoria Flores, Maxine Lim, Cesar Torres
+          </p>
+          <p>
+            Concept Dev. <span class="quick">-></span> Research <span class="quick">-></span> Data Analysis <span class="quick">-></span> Project Proposal <span class="quick">-></span> Design Research <span class="quick">-></span> Implementation <span class="quick">-></span> Web Visualization <span class="quick">-></span> Presentation <span class="quick">-></span> Paper
+          </p>
+          <p>
+            Contribution <span class="quick">:</span>&nbsp;Participated in all phases of development, created all presentation assets, and designed/visualized all svg webs for system.
+          </p>
+          <p>
+            Utilized <span class="quick">:</span>&nbsp;<a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>, <a href="http://d3js.org/" target="_blank">d3.js</a>, JSON, MySQL, and <a href="http://graphics.stanford.edu/~maxinel/style-if/showfreq/clean/" target="_blank">Webzeitgeist Database</a>.
+          </p>
+             <div class="quick">-->&nbsp;<a href="https://graphics.stanford.edu/wikis/cs448b-12-fall/FP-FloresVictoria-LimMaxine-TorresCesar?action=AttachFile&amp;do=get&amp;target=seekSource.zip">SOURCE ZIP (live demo offline)</a>&nbsp;|&nbsp;<a target="_blank" href="https://graphics.stanford.edu/wikis/cs448b-12-fall/FP-FloresVictoria-LimMaxine-TorresCesar?action=AttachFile&amp;do=get&amp;target=CHARLOTTE.pdf">POSTER</a><br />-->&nbsp;<a  target="_blank" href="https://graphics.stanford.edu/wikis/cs448b-12-fall/FP-PP-FloresVictoria-LimMaxine-TorresCesar">Mid Presentation</a>&nbsp;|&nbsp;<a href="https://graphics.stanford.edu/wikis/cs448b-12-fall/FP-FloresVictoria-LimMaxine-TorresCesar?action=AttachFile&amp;do=get&amp;target=template.pdf">FINAL PAPER PDF</a></div>
+        </div>
+        <p class="quick" style="text-align: center;"> &#8595; </p>
+        <p class="quick" style="text-align: center;"> &#8592; <span class="blue">web clusters 1 - 15 </span>&#8594; </p>
+        <div id="all-webs">
+          <div id="wn"> <!-- scroll area div -->
+              <div id="lyr1"> <!-- layer in scroll area (content div) -->
+                  <ul id="horiz">
+                    <li><img src="webs/web1.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web2.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web3.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web4.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web5.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web6.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web7.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web8.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web9.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web10.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web11.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web12.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web13.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web14.svg" width="250" height="250" alt="web1" /></li>
+                    <li><img src="webs/web15.svg" width="250" height="250" alt="web1" /></li>
+                  </ul>
+              </div> <!-- end content div (lyr1) -->
+          </div>  <!-- end wn div -->
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
