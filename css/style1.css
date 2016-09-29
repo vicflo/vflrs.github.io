@@ -439,7 +439,7 @@ circle:hover{
 /**--------------------------------------------*/
 
 #artwork-container{
-    /*min-height: */
+    position: relative;
     width: 1000px;
     padding: 0px 0px;
     margin: 0px auto 0px auto;
@@ -447,8 +447,8 @@ circle:hover{
 }
 
 #wrapper{
-    margin: 84px 48px 12px 48px;
-    width: 100%;
+    padding: 0px 48px 0px 48px;
+    /*width: 100%;*/
 }
 
 #left{

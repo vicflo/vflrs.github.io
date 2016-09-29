@@ -45,6 +45,8 @@ $(document).ready(function(){
   	// ------------- Presets/globals ---------------------- 
 
   	var winHeight = $(window).innerHeight();
+  	var winWidth = $(window).innerWidth();
+  	var inner = winWidth - (48*2); //margin difference
   	$('#artwork-container').css("height", winHeight - 60);
   	$("#l-upper").css("width", 1000); //gets reset after initial opening dots
   	$("#left").css("width", 1000); //gets reset
@@ -59,14 +61,23 @@ $(document).ready(function(){
 			var w = 480;
 			var h = 480;
 			var radius = 24;
+			var offset = 28;
 			var len = dataset.length;
 			var numSections = 4;
 			var artistX = 0;
+			var space = 25;
+
+			var startWidth = Math.min(inner, 1000);
+			$('#artwork-container').css("width", startWidth);
+			if(startWidth != 1000){
+				radius = 20;
+				space = 23;
+			} 
 			
 			//Create SVG element
 			var svg = d3.select("#l-upper")
 						.append("svg")
-						.attr("width", 1000)
+						.attr("width", startWidth)
 						.attr("height", h);
 
 			var circles = svg.selectAll("circle")
@@ -77,7 +88,7 @@ $(document).ready(function(){
 				circles.attr("cx", function(d, i) {
 					var columnSize = w / numSections;
 					// var shift = startWidth / (9);
-					return Math.floor(i % numSections) * (columnSize) + (columnSize /2) + (i * 25) - 28;
+					return Math.floor(i % numSections) * (columnSize) + (columnSize /2) + (i * space) - offset;
 				})
 			   	.attr("cy", function(d, i){
 			   		var rowSize = (h / (len/numSections));
@@ -235,8 +246,8 @@ $(document).ready(function(){
 				.each("end", count)
 		    
 		    // console.log("circles should be done moving now");
-    		// $("#l-lower").velocity("fadeIn", { duration: 1000, delay: 1500 });
-    		// $('.centered').velocity("fadeIn", { duration: 1000, delay: 2200, opacity: .7});
+    		$("#l-lower").velocity("fadeIn", { duration: 1000, delay: 1500 });
+    		$('.centered').velocity("fadeIn", { duration: 1000, delay: 2200, opacity: .7});
 
 
 		}
@@ -260,16 +271,16 @@ $(document).ready(function(){
 
 		function count(){
 			if(dotCount == 24){
-				$.Velocity.animate($('#l-lower'), { opacity: 1 }, { display: "block" }, {duration: 1500})
-				    /* Callback to fire once the animation is complete. */
-				    .then(function() {
-				    	$('.centered').velocity("fadeIn", { duration: 1000, opacity: .7});
-				     	console.log("Resolved."); 
-				 	})
-				    /* Callback to fire if an error occurs. */
-				    .catch(function(error) { 
-				    	console.log("Rejected.");
-				});
+				// $.Velocity.animate($('#l-lower'), { opacity: 1 }, { display: "block" }, {duration: 1500})
+				//     /* Callback to fire once the animation is complete. */
+				//     .then(function() {
+				//     	$('.centered').velocity("fadeIn", { duration: 1000, opacity: .7});
+				//      	console.log("Resolved."); 
+				//  	})
+				//     /* Callback to fire if an error occurs. */
+				//     .catch(function(error) { 
+				//     	console.log("Rejected.");
+				// });
 				extra();
 				bindBack();
 			} else {
