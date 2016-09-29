@@ -213,6 +213,7 @@ $(document).ready(function(){
 			initial = 1; //global state based variable 
 			$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
 			$('p span#dynamic').text('FINE ART').velocity("fadeIn", {duration: 800});
+			console.log("putting fine art 2");
 			$('#l-upper').unbind('click');
 			$('circle').unbind('mouseout', darkAgain);
 			$('circle').unbind('mouseover', highlightAll);
@@ -436,6 +437,7 @@ $(document).ready(function(){
 				case "first":
 					console.log("trying to fade");
 					if(initial != 0){
+						console.log("putting fine art 1");
 						$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
 						$('p span#dynamic').text('FINE ART').velocity("fadeIn", {duration: 800});
 					} else {
