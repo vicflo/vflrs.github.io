@@ -233,9 +233,10 @@ $(document).ready(function(){
 				})
 				.each("end", count)
 		    
-		    console.log("circles should be done moving now");
-    		$("#l-lower").velocity("fadeIn", { duration: 1000, delay: 1500 });
-    		$('.centered').velocity("fadeIn", { duration: 1000, delay: 2200, opacity: .7});
+		    // console.log("circles should be done moving now");
+    		// $("#l-lower").velocity("fadeIn", { duration: 1000, delay: 1500 });
+    		// $('.centered').velocity("fadeIn", { duration: 1000, delay: 2200, opacity: .7});
+
 
 		}
 
@@ -258,6 +259,16 @@ $(document).ready(function(){
 
 		function count(){
 			if(dotCount == 24){
+				$.Velocity.animate($('#l-lower'), { opacity: 1 }, { display: "block" }, {duration: 1500})
+				    /* Callback to fire once the animation is complete. */
+				    .then(function() {
+				    	$('.centered').velocity("fadeIn", { duration: 1000, opacity: .7});
+				     	console.log("Resolved."); 
+				 	})
+				    /* Callback to fire if an error occurs. */
+				    .catch(function(error) { 
+				    	console.log("Rejected.");
+				});
 				extra();
 				bindBack();
 			} else {

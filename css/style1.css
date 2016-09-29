@@ -442,8 +442,13 @@ circle:hover{
     /*min-height: */
     width: 1000px;
     padding: 0px 0px;
-    margin: 84px auto 12px auto;
+    margin: 0px auto 0px auto;
 /*    z-index: 1;*/
+}
+
+#wrapper{
+    margin: 84px 48px 12px 48px;
+    width: 100%;
 }
 
 #left{
@@ -560,27 +565,20 @@ circle:hover{
 }
 
 .centered {
-    position: absolute;
+    /*position: fixed;*/
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;            
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%); 
+   -ms-transform: translate(-50%, -50%); 
+   -o-transform: translate(-50%, -50%); 
+   transform: translate(-50%, -50%); 
+    position: absolute;
     font-family: 'Lora', serif;
-    /*font-style: italic;*/
-    /*color: #60698A;*/
     color: rgba(96,105,138, 0.8);
     line-height: 1.4;
     width: 80%;
     display: none;
-
-   /* border-width: 0px 0px 0px 2px;
-    border-style: solid;
-    -webkit-border-image:-webkit-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    -o-border-image:-o-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    -moz-border-image:-moz-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    border-image: linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    border-image-slice: 50;
-
-    padding-left: 8px;*/
 }
 
 .centered h5{
