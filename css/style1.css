@@ -440,7 +440,7 @@ circle:hover{
 
 #artwork-container{
     position: relative;
-    width: 1000px;
+    /*width: 1000px;*/
     padding: 0px 0px;
     margin: 0px auto 0px auto;
 /*    z-index: 1;*/
@@ -448,12 +448,12 @@ circle:hover{
 
 #wrapper{
     padding: 0px 48px 0px 48px;
-    /*width: 100%;*/
+     margin: 0px 0px 0px 0px;
+    /*width: 80%;*/
 }
 
 #left{
-    min-width: 450px;
-    width: 480px;
+    width: 40%;
     height: 560px;
     display: block;
     float: left;
@@ -478,36 +478,40 @@ circle:hover{
 }
 
 #l-upper{
-    min-width: 450px;
+    /*min-width: 400px;*/
     height: 480px;
 }
 
 #l-lower{
-    width: 480px;
+    float: left;
     height: 80px;
-    display: block;
+    width: 85%;
+    padding: 0px auto 0px auto;
+    line-height: 4;
+    font-family: 'voyager-regular';
+    /*font-family: 'Lora', serif;*/
     overflow: hidden;
-    float: bottom;
     display: none;
+    text-align: center;
 }
 
 #l-lower p {
-    float: right;
     text-decoration: none;
-    font-size: 11.6pt;
-    font-family: "voyager-regular";
+    font-size: 12pt;
+    /*float: left;*/
+    display: inline-block;
 }
 
 #l-lower #mixed {
-    margin: 36px 4px 36px 0px;
+   /* margin: 0px auto;*/
+   float: right;
 }
 
 #l-lower #graphite{
-    margin: 36px 83px;
 }
 
 #l-lower #painting {
-     margin: 36px 64px 36px 0px;
+    float: left;
 }
 
 #l-lower p:hover{
@@ -555,8 +559,7 @@ circle:hover{
 /* right side of art container */
 
 #right{
-    min-width: 450px;
-    width: 480px;
+    width: 40%;
     height: 542px;
     display: block;
     float: right;
@@ -647,7 +650,7 @@ circle:hover{
 }
 
 #preview img{
-    width: 450px;
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -687,7 +690,7 @@ section{
     height: 100vh;
     overflow: hidden;
     min-height: 650px;
-    min-width: 1000px;
+    /*min-width: 1000px;*/
 }
 
 #uxui{

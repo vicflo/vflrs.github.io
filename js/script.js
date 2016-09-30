@@ -48,8 +48,7 @@ $(document).ready(function(){
   	var winWidth = $(window).innerWidth();
   	var inner = winWidth - (48*2); //margin difference
   	$('#artwork-container').css("height", winHeight - 60);
-  	$("#l-upper").css("width", 1000); //gets reset after initial opening dots
-  	$("#left").css("width", 1000); //gets reset
+  	// $("#l-upper").css("width", 1000); //gets reset after initial opening dots
   	var horizontalCenter = (winHeight - 560) /2;
 	var top = Math.max(horizontalCenter, 84);
 	$("#artwork-container").css("margin-top", top);
@@ -69,11 +68,9 @@ $(document).ready(function(){
 
 			var startWidth = Math.min(inner, 1000);
 			$('#artwork-container').css("width", startWidth);
-			if(startWidth != 1000){
-				radius = 20;
-				space = 23;
-			} 
-			
+			$('#wrapper').css("width", winWidth - (48*2));
+			$("#l-upper").css("width", startWidth);
+			$("#left").css("width", startWidth); //gets reset
 			//Create SVG element
 			var svg = d3.select("#l-upper")
 						.append("svg")
@@ -86,9 +83,14 @@ $(document).ready(function(){
 			    .append("circle");
 
 				circles.attr("cx", function(d, i) {
-					var columnSize = w / numSections;
-					// var shift = startWidth / (9);
-					return Math.floor(i % numSections) * (columnSize) + (columnSize /2) + (i * space) - offset;
+					var columnSize = (startWidth/2) / numSections;
+					console.log("startWidth/numSections " + startWidth/ numSections);
+					console.log("startWidth/numSections/2 "+ startWidth/numSections/2);
+					var oneColumn = startWidth/numSections/2;
+					var circleInColumn = oneColumn / 3; //that's the diameter of circles we want/ also the offset to space them
+					radius = (circleInColumn *.58);
+					console.log("radius " + radius);
+					return  Math.ceil((i % numSections) * (columnSize) + (columnSize /2) + (i * (radius*1.0)) -  radius);
 				})
 			   	.attr("cy", function(d, i){
 			   		var rowSize = (h / (len/numSections));
@@ -186,8 +188,10 @@ $(document).ready(function(){
 // ----------------- Dots After Initial --------------------
 
 	function extra(){
-		$('#left').css("width", w);
-		$('#l-upper').css("width", w);
+		$('#left').css("width", startWidth/2 - 10);
+		$('#right').css("width", startWidth/2 - 10);
+		$('#l-upper').css("width", startWidth/2 -10);
+		// $('#l-lower').css("width", startWidth/2 -10);
 
 		// Adding fancybox beta
 		$("circle").fancybox({
@@ -239,15 +243,27 @@ $(document).ready(function(){
 		  		.duration(2000)
 		  		.attr("fill", "#60698A")
 		  		.attr("cx", function(d, i) {
-					var columnSize = w / numSections;
-					return Math.floor(i % numSections) * (columnSize) + (columnSize /2) - 28;
+		  			var columnSize = ((startWidth-20)/2/4);
+					console.log("startWidth/numSections " + startWidth/ numSections);
+					console.log("startWidth/numSections/2 "+ startWidth/numSections/2);
+					var oneColumn = startWidth/numSections/2;
+					var circleInColumn = oneColumn / 3; //that's the diameter of circles we want/ also the offset to space them
+					radius =  (circleInColumn /2);
+					console.log("radius " + radius);
+					// return  Math.ceil((i % numSections) * (columnSize) + (columnSize /2) + (i * (radius*1.2)) -  circleInColumn);
+					return  Math.ceil((i % numSections) * (columnSize) + radius + 3);
+
+
+
+					// var columnSize = w / numSections;
+					// return Math.floor(i % numSections) * (columnSize) + (columnSize /2) - 28;
 	
 				})
 				.each("end", count)
 		    
 		    // console.log("circles should be done moving now");
-    		$("#l-lower").velocity("fadeIn", { duration: 1000, delay: 1500 });
-    		$('.centered').velocity("fadeIn", { duration: 1000, delay: 2200, opacity: .7});
+    		// $("#l-lower").velocity("fadeIn", { duration: 1000, delay: 1500 });
+    		// $('.centered').velocity("fadeIn", { duration: 1000, delay: 2200, opacity: .7});
 
 
 		}
@@ -271,18 +287,20 @@ $(document).ready(function(){
 
 		function count(){
 			if(dotCount == 24){
-				// $.Velocity.animate($('#l-lower'), { opacity: 1 }, { display: "block" }, {duration: 1500})
-				//     /* Callback to fire once the animation is complete. */
-				//     .then(function() {
-				//     	$('.centered').velocity("fadeIn", { duration: 1000, opacity: .7});
-				//      	console.log("Resolved."); 
-				//  	})
-				//     /* Callback to fire if an error occurs. */
-				//     .catch(function(error) { 
-				//     	console.log("Rejected.");
-				// });
 				extra();
-				bindBack();
+				
+				// $('#l-lower').css("width", "31%");
+				$.Velocity.animate($('#l-lower'), { opacity: 1 }, { display: "block" }, {duration: 1500})
+				    /* Callback to fire once the animation is complete. */
+				    .then(function() {
+				    	$('.centered').velocity("fadeIn", { duration: 1000, opacity: .7});
+				     	console.log("Resolved."); 
+				     	bindBack();
+				 	})
+				    /* Callback to fire if an error occurs. */
+				    .catch(function(error) { 
+				    	console.log("Rejected.");
+				});
 			} else {
 				dotCount++;
 			}
