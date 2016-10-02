@@ -84,12 +84,9 @@ $(document).ready(function(){
 
 				circles.attr("cx", function(d, i) {
 					var columnSize = (startWidth/2) / numSections;
-					console.log("startWidth/numSections " + startWidth/ numSections);
-					console.log("startWidth/numSections/2 "+ startWidth/numSections/2);
 					var oneColumn = startWidth/numSections/2;
 					var circleInColumn = oneColumn / 3; //that's the diameter of circles we want/ also the offset to space them
 					radius = (circleInColumn *.58);
-					console.log("radius " + radius);
 					return  Math.ceil((i % numSections) * (columnSize) + (columnSize /2) + (i * (radius*1.0)) -  radius);
 				})
 			   	.attr("cy", function(d, i){
@@ -188,10 +185,7 @@ $(document).ready(function(){
 // ----------------- Dots After Initial --------------------
 
 	function extra(){
-		$('#left').css("width", startWidth/2 - 10);
-		$('#right').css("width", startWidth/2 - 10);
-		$('#l-upper').css("width", startWidth/2 -10);
-		// $('#l-lower').css("width", startWidth/2 -10);
+		$('.resize').css("width", startWidth/2 - 10);
 
 		// Adding fancybox beta
 		$("circle").fancybox({
@@ -244,16 +238,11 @@ $(document).ready(function(){
 		  		.attr("fill", "#60698A")
 		  		.attr("cx", function(d, i) {
 		  			var columnSize = ((startWidth-20)/2/4);
-					console.log("startWidth/numSections " + startWidth/ numSections);
-					console.log("startWidth/numSections/2 "+ startWidth/numSections/2);
 					var oneColumn = startWidth/numSections/2;
 					var circleInColumn = oneColumn / 3; //that's the diameter of circles we want/ also the offset to space them
 					radius =  (circleInColumn /2);
-					console.log("radius " + radius);
 					// return  Math.ceil((i % numSections) * (columnSize) + (columnSize /2) + (i * (radius*1.2)) -  circleInColumn);
-					return  Math.ceil((i % numSections) * (columnSize) + radius + 3);
-
-
+					return  Math.ceil((i % numSections) * (columnSize) + radius + 6);
 
 					// var columnSize = w / numSections;
 					// return Math.floor(i % numSections) * (columnSize) + (columnSize /2) - 28;
@@ -288,7 +277,6 @@ $(document).ready(function(){
 		function count(){
 			if(dotCount == 24){
 				extra();
-				
 				// $('#l-lower').css("width", "31%");
 				$.Velocity.animate($('#l-lower'), { opacity: 1 }, { display: "block" }, {duration: 1500})
 				    /* Callback to fire once the animation is complete. */
@@ -459,14 +447,11 @@ $(document).ready(function(){
 		var id = $('#'+ scrollTargetID).attr('id');
 		var previous = $('.visible');
 		if(scrollTargetID == "first" && initial == 0 && previous.attr('id') == "first"){ // very big if case to call startArt
-			console.log("called startArt")
 			startArt();
 		} else {
 			switch(id){
 				case "first":
-					console.log("trying to fade");
 					if(initial != 0){
-						console.log("putting fine art 1");
 						$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
 						$('p span#dynamic').text('FINE ART').velocity("fadeIn", {duration: 800});
 					} else {
@@ -537,7 +522,6 @@ function takeCloserLook(box){
 	//select left box for info display
 	var tileWidth = $('.overview-project').width();
 	var tileHeight = $('.overview-project').height();
-	console.log(info.p_title);
 	var cap = $('<div id="pretty" class="caption"></div>');
 	
 	var newLink = $("<a />", {href : info.subpage, target : "_blank"});
@@ -628,13 +612,18 @@ function populateGolden(){
 	// Keep Left, Upper, Down, Right Pattern
 
 	var space = 72; //margin space
+	var sideMargin = 56;
 	
-	var numSquares =7; // i.e. number of projects
-	var currWidth = window.innerWidth - (56 * 2);
-	var currHeight = Math.max(window.innerHeight, 650) - (space * 2);
+	var numSquares = 7; // i.e. number of projects
+	var currWidth = $(window).innerWidth() - (sideMargin * 2);
+	// var currHeight = Math.max($(window).innerHeight(), 650) - (space * 2);
+	var currHeight = (currWidth / 1.618);
+	var paddingGolden = (currHeight * .0290322581) /3;
+	// paddingGolden = 0;
+	currHeight = (currWidth / 1.618) - paddingGolden*18;
 	var flip = true; //bool to flip
 	var keep = true; //bool to flip
-	var paddingGolden = 6;
+	
 	var $targetElement = $('#golden-container'); // this get's updated to each next wrapper
 	
 	$('#golden-container').css("width", currWidth);
