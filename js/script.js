@@ -125,19 +125,6 @@ $(document).ready(function(){
 			   			return d.alpha + .12;
 			   		})
 
-		// Counting function to complete initital dot loading animation
-
-	 	var counter = 1;
-
-		function countDots(){
-			if(counter == 24){
-				$('circle').bind("mouseover", highlightAll);
-		    	$('circle').bind("mouseout", darkAgain);
-		    	$("#l-upper").bind("click", startArt);
-			} else {
-				counter++;
-			}
-		}
 				 
 
 // ---------------- Circle Interactivty ---------------
@@ -222,7 +209,6 @@ $(document).ready(function(){
 			initial = 1; //global state based variable 
 			$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
 			$('p span#dynamic').text('FINE ART').velocity("fadeIn", {duration: 800});
-			console.log("putting fine art 2");
 			$('#l-upper').unbind('click');
 			$('circle').unbind('mouseout', darkAgain);
 			$('circle').unbind('mouseover', highlightAll);
@@ -277,11 +263,10 @@ $(document).ready(function(){
 		function count(){
 			if(dotCount == 24){
 				extra();
-				// $('#l-lower').css("width", "31%");
 				$.Velocity.animate($('#l-lower'), { opacity: 1 }, { display: "block" }, {duration: 1500})
 				    /* Callback to fire once the animation is complete. */
 				    .then(function() {
-				    	$('.centered').velocity("fadeIn", { duration: 1000, opacity: .7});
+				    	$('.centered').velocity("fadeIn", {opacity: .7});
 				     	console.log("Resolved."); 
 				     	bindBack();
 				 	})
@@ -452,6 +437,7 @@ $(document).ready(function(){
 			switch(id){
 				case "first":
 					if(initial != 0){
+						$('.centered').velocity("fadeIn", {opacity: .7});
 						$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
 						$('p span#dynamic').text('FINE ART').velocity("fadeIn", {duration: 800});
 					} else {
@@ -541,6 +527,7 @@ function takeCloserLook(box){
 
 	$('.overview-project').empty().append(cap, hoverHci, img).velocity("fadeIn");
 	$('.overview-project').css("background-color", info.opacity);
+	$('.overview-project').addClass('addBorder');
 	$('.tags span').css("border-color", info.color);
 }
 
@@ -567,11 +554,12 @@ $('#second').on("click", '.hci-project', function(){
 // takes in id of the form $targetBox.attr('id') as parameter return index in array
 
 function getIndex(index){
-	finalIndex = index[0] - 1 //getting index from id with string manipulation, good times!
+	finalIndex = index[0] - 1; //getting index from id with string manipulation, good times!
 	return finalIndex;
 }
 
 function overviewDes(){
+	$('.overview-project').removeClass('addBorder');
 	$('.overview-project').css('background-color', "white");
 	var hci_div = $('<div class="centered"></div>');
 	var hci_title = $('<h5>HCI & Design</h5>');
@@ -603,8 +591,6 @@ function populateGolden(){
 	}
 	var tileWidth = $('.overview-project').width();
 	console.log("hello  " + tileWidth);
-	// $('.overview-project').css("width", tileWidth - 6 + "px");
-	// overviewDes();
 }
 
 /** -------------- Create Golden Ratio Structure from Scratch -----*/
@@ -616,10 +602,8 @@ function populateGolden(){
 	
 	var numSquares = 7; // i.e. number of projects
 	var currWidth = $(window).innerWidth() - (sideMargin * 2);
-	// var currHeight = Math.max($(window).innerHeight(), 650) - (space * 2);
 	var currHeight = (currWidth / 1.618);
 	var paddingGolden = (currHeight * .0290322581) /3;
-	// paddingGolden = 0;
 	currHeight = (currWidth / 1.618) - paddingGolden*18;
 	var flip = true; //bool to flip
 	var keep = true; //bool to flip
