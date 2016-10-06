@@ -12,7 +12,6 @@
 #second{
     margin: 0px auto;
     display: block;
-    /*padding: 88px 0px;*/
     background-color: white;
     display: none;
 }
@@ -23,39 +22,38 @@
 }
 
 .golden-wrapper{
-     /*border: 1px solid blue;*/
 }
 
 .placeholder{
     display: none;
 }
 
-.hci1:hover:before{
-    background: rgba(0, 188, 212, .3);
+.hci1:before{
+    background: rgba(0, 188, 212, .2);
 } 
 
-.hci2:hover:before{
-    background: rgba(255, 235, 59, .3);
+.hci2:before{
+    background: rgba(255, 235, 59, .2);
 } 
 
-.hci3:hover:before{
-    background: rgba(255, 23, 68, .3);
+.hci3:before{
+    background: rgba(255, 23, 68, .2);
 } 
 
-.hci4:hover:before{
-    background: rgba(255, 23, 68, .3);
+.hci4:before{
+    background: rgba(255, 23, 68, .2);
 } 
 
-.hci5:hover:before{
-    background: rgba(255, 23, 68, .3);
+.hci5:before{
+    background: rgba(0, 188, 212, .2);
 } 
 
-.hci6:hover:before{
-    background: rgba(255, 23, 68, .3);
+.hci6:before{
+    background: rgba(255, 235, 59, .2);
 } 
 
-.hci7:hover:before{
-    background: rgba(255, 235, 59, .3);
+.hci7:before{
+    background: rgba(255, 23, 68, .2);
 } 
 
 .hci-project:before {
@@ -66,7 +64,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(96,105,138, 0.15);
+    /*background: rgba(96,105,138, 0.15);*/
     /*background: rgba(38,70,195,.5);*/
         /*background: rgba(96,105,138, 0.15);*/
     -moz-transition: all .2s linear;
@@ -78,27 +76,13 @@
   }
   
 .hci-project:hover:before {
-    /*background: none;*/
+    background: rgba(255, 255, 255, 0);
     box-shadow: 0 1px 3px rgba(96,105,138, 0.12), 0 1px 2px rgba(96,105,138, 0.24);
   
 }
 
 .hci-project{
-/*    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16), 2px 2px 2px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16), 2px 2px 2px rgba(0, 0, 0, 0.23);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16), 2px 2px 2px rgba(0, 0, 0, 0.23);*/
-
-    /*border: 1px solid rgba(38,70,195,0.3);*/
-/*
-    -webkit-box-shadow: rgba(38,70,195,0.2) 3px 5px 5px;
-    -moz-box-shadow: rgba(38,70,195,0.2) 3px 5px 5px;
-    box-shadow: rgba(38,70,195,0.2) 3px 5px 5px;*/
-
     border-radius: 2px;
-    /*box-shadow: 0 1px 3px rgba(38,70,195,0.12), 0 1px 2px rgba(38,70,195,0.24);*/
-    /*transition: all 0.2s cubic-bezier(.25,.8,.25,1);*/
-
-
 }
 
 .addBorder{
@@ -130,7 +114,6 @@
     opacity: 0;
     position: absolute;
     width: 100%;
-    /*min-height: 23.5%;*/
     height: 100%;
     color: #fff;
     left: 0;
@@ -153,11 +136,6 @@
 }
 
 .overview-project{
-    /*-webkit-box-shadow: inset 0px 0px 1px 1px #60698A;
-    -moz-box-shadow: inset 0px 0px 1px 1px #60698A;
-    box-shadow: inset 0px 0px 1px 1px #60698A;*/
-   /* border: 1px solid rgba(38,70,195,0.3);*/
-  
 }
 
 .special-border{

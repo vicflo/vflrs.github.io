@@ -150,7 +150,6 @@ $(document).ready(function(){
 		  		var materials = $(this).attr("materials");
 		  		var dimensions = $(this).attr("dimensions");
 		  		var des = $(this).attr("des");
-		  		console.log("url   " + url);
 		  		$("#right").append("<div id='preview'><img src='" + url + "' alt='Image preview' /><h1>" + title + "</h1>" + "<h2>" + materials + " " + dimensions + "</h2> " + "<p>" + des + "</p>" + "</div>");								 
 				$("#preview").velocity("fadeIn");
 			}
@@ -236,7 +235,6 @@ $(document).ready(function(){
 				})
 				.each("end", count)
 		    
-		    // console.log("circles should be done moving now");
     		// $("#l-lower").velocity("fadeIn", { duration: 1000, delay: 1500 });
     		// $('.centered').velocity("fadeIn", { duration: 1000, delay: 2200, opacity: .7});
 
@@ -428,7 +426,6 @@ $(document).ready(function(){
 	$(".nav-link").on("click", function() {
 		// Grab the target page section's ID from the link's (contained within "this") href attribute
 		var scrollTargetID = $(this).attr("href");
-		console.log("scrollTargetID " + scrollTargetID);
 		var id = $('#'+ scrollTargetID).attr('id');
 		var previous = $('.visible');
 		if(scrollTargetID == "first" && initial == 0 && previous.attr('id') == "first"){ // very big if case to call startArt
@@ -485,13 +482,13 @@ $(document).ready(function(){
 //  HAVING SOME FUN WITH THE GOLDEN RATIO
 
 specialProjects = [
-	{ subpage: "FINAL-POLARR-DOC.pdf", p_title: "Polarr" , des: "Exploring Visual Identity" , color: "rgba(0, 188, 212, 1)", opacity: "rgba(255, 255, 255, .1)",  tags: ["Branding", "Identity"], image: "projects/polarr_tile_small.png", tile: "projects/polarr_tile_large.png"},
+	{ subpage: "FINAL-POLARR-DOC.pdf", p_title: "Polarr" , des: "Exploring Visual Identity" , color: "rgba(0, 188, 212, 1)", opacity: "rgba(255, 255, 255, .1)",  tags: ["Branding", "Identity"], image: "projects/polarr_tile_small.png", tile: "projects/polarr_large.png"},
 	{ subpage: "https://cloud-arch.com/projects/common-ground/", p_title: "Common Ground", des: "Connecting SF Market Street", color:"rgba(255, 235, 59, 1)", opacity: "rgba(255, 255, 255, .1)", tags: ["Experience", "Architecture", "Cross-Discipline"], image: "projects/common_small_tile.png", tile: "projects/common_tile_large.png"},
 	{ subpage: "http://vicflo.github.io/Project-Pages/Cloud-Architecture/cloud-archived.html", p_title: "Cloud Architecture" , des: "Collective Launch Site" , color:"rgba(255, 23, 68, 1)",opacity: "#f7f5f7", tags: ["UX/UI", "Web"], image: "projects/cloud.jpg", tile: "projects/cloud_tile_large.png"},
 	{ subpage: "subCharlotte.html", p_title: "Charlotte", des: "Visualizing Web Design", color:"rgba(255, 23, 68, 1)", opacity: "rgba(255, 23, 68, .05)", tags: ["DataViz", "Web"], image: "projects/char_tile_small.png", tile: "projects/char_tile_large.png"},
 	{ subpage: "subCitadels.html", p_title: "Bricolage", des: "Visualizing Tobacco Factories", color:"rgba(255, 235, 59, 1)", opacity: "rgba(255, 255, 255, .1)", tags: ["Research", "Architecture"], image:"projects/bricolage_tile_small.jpg", tile: "projects/bricolage_tile_large.jpg"},
-	{ subpage: "subStart.html", p_title: "Start.Home", des: "Encouraging a Sustainable Lifestyle", color:"rgba(255, 23, 68, 1)", opacity: "rgba(255, 255, 255, .1)", tags: ["UX/UI", "DataViz", "Cross-Discipline", "iPad"], image: "projects/start_tile_small.png", tile: "projects/solar_tile_large.jpg"},
-	{ subpage: "subInspixel.html", p_title: "Inspixel", des: "Organizing Inspiration by Color",color:"rgba(255, 23, 68, 1)", opacity: "rgba(255, 255, 255, .1)",  tags: ["UX/UI", "Mobile"], image: "projects/inspixel_tile_small.jpg", tile: "projects/inspixel_tile_large.jpg"}
+	{ subpage: "subStart.html", p_title: "Start.Home", des: "Encouraging a Sustainable Lifestyle", color:"rgba(255, 235, 59, 1)", opacity: "rgba(255, 255, 255, .1)", tags: ["UX/UI", "DataViz", "Cross-Discipline", "iPad"], image: "projects/start_tile_small.png", tile: "projects/solar_tile_large.jpg"},
+	{ subpage: "subDerive.html", p_title: "Derive", des: "A Realtime virtual guestbook", color:"rgba(255, 23, 68, 1)", opacity: "rgba(255, 23, 68, .05)",  tags: ["UX/UI", "Web", "Leap Motion"], image: "projects/derive_tile_small.png", tile: "projects/derive_tile_large.png"}
 ];
 
 // Image Preloading for hci hover
@@ -540,7 +537,6 @@ $('#second').on("click", '.hci-project', function(){
 		state = 1;
 	}
 
-	// console.log($(this));
 	$('#right .centered').velocity("fadeOut");
 	$('.hci-project').each(function(){
     	$(this).removeClass('project-selected');
@@ -590,7 +586,6 @@ function populateGolden(){
 		);	
 	}
 	var tileWidth = $('.overview-project').width();
-	console.log("hello  " + tileWidth);
 }
 
 /** -------------- Create Golden Ratio Structure from Scratch -----*/
