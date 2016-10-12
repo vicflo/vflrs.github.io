@@ -316,7 +316,7 @@ li {
 }
 
 #othernav {
-    height: 60px;
+    height: 40px;
     position: relative;
     font-family: 'voyager-regular', sans-serif;
   /*  font-family: 'Belleza', sans-serif;*/
@@ -324,7 +324,7 @@ li {
     text-decoration: none;
     z-index: 2;
     margin: 0 auto;
-    padding: 12px 48px;
+    padding: 24px 48px;
 }
 
 circle:hover{
@@ -633,7 +633,6 @@ circle:hover{
 }
 
 
-
 /* Special Projects Section Styling*/
 
 h4{
@@ -645,9 +644,16 @@ h4{
     padding-bottom: 40px;
 }
 
+.quick_title{
+    color: #FFEB3B;
+    font-weight: 800;
+    font-family: 'voyager-regular';
+}
+
 .quick{
-     color: #FFEB3B;
-     font-weight: 800;
+    color: #FF1744;
+    font-weight: 400;
+    font-family: 'voyager-regular';
 }
 
 .proj_des p{
@@ -719,11 +725,11 @@ section{
 .soft{
     font-width: 200%;
     color: #888B8C;
-       font-family: 'voyager-thin', sans-serif;
+    font-family: 'voyager-thin', sans-serif;
 }
 
 .slide{
-    padding-top: 12px;
+    /*padding-top: 12px;*/
     width: 920px;
     display: block;
     margin: auto;
@@ -743,6 +749,18 @@ section{
     float: left;
     display: inline-block;
     padding: 0px;
+}
+
+.compare{
+    width: 50%;
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.compare img{
+    position: relative;
+    text-align: center;
+    float: center;
 }
 
 #all-webs{
@@ -769,6 +787,23 @@ section{
     float right;
     margin-left: 60px;
     color: #555;
+}
+
+.switched{
+    font-family: 'voyager-light', sans-serif;
+    width: 35%;
+    display: inline-block;
+    float right;
+    margin-left: 60px;
+    color: #555;
+    position: relative;
+}
+
+.bottom{
+    font-family: 'voyager-light', sans-serif;
+    color: #555;
+    display: block;
+    text-align: left;
 }
 
 .full-des a{
