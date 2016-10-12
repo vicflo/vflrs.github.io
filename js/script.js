@@ -228,9 +228,6 @@ $(document).ready(function(){
 					radius =  (circleInColumn /2);
 					// return  Math.ceil((i % numSections) * (columnSize) + (columnSize /2) + (i * (radius*1.2)) -  circleInColumn);
 					return  Math.ceil((i % numSections) * (columnSize) + radius + 6);
-
-					// var columnSize = w / numSections;
-					// return Math.floor(i % numSections) * (columnSize) + (columnSize /2) - 28;
 	
 				})
 				.each("end", count)
