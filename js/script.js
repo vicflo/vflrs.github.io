@@ -68,7 +68,7 @@ $(document).ready(function(){
 
 			var startWidth = Math.min(inner, 1000);
 			$('#artwork-container').css("width", startWidth);
-			$('#wrapper').css("width", winWidth - (48*2));
+			// $('#wrapper').css("width", winWidth - (48*2));
 			$("#l-upper").css("width", startWidth);
 			$("#left").css("width", startWidth); //gets reset
 			//Create SVG element
@@ -203,6 +203,7 @@ $(document).ready(function(){
     
 
     	var initial = 0;
+    	var onPage = 0;
 
 		function startArt(){
 			initial = 1; //global state based variable 
@@ -377,7 +378,7 @@ $(document).ready(function(){
 	   	{ name:"etc.", type: "cross", url: "fourth", color: "#60698A"}
 	];
 
-	var navWidth = 300,
+	var navWidth = 202,
 	    navHeight = 60;
 
 	var svgNav = d3.select("#navLinks").append("svg")
@@ -399,7 +400,7 @@ $(document).ready(function(){
 	    	return d.url;
 	    })
 	    .attr("transform", function(d, i) { 
-	    	return "translate(" + (i*90 + 10) + "," + (30) + ")"; 
+	    	return "translate(" + (i*60 + 10) + "," + (30) + ")"; 
 	    })
 		.call(d3.helper.tooltip(
 	        function(d, i){
@@ -424,44 +425,57 @@ $(document).ready(function(){
 		// Grab the target page section's ID from the link's (contained within "this") href attribute
 		var scrollTargetID = $(this).attr("href");
 		var id = $('#'+ scrollTargetID).attr('id');
-		var previous = $('.visible');
-		if(scrollTargetID == "first" && initial == 0 && previous.attr('id') == "first"){ // very big if case to call startArt
-			startArt();
-		} else {
-			switch(id){
-				case "first":
-					if(initial != 0){
-						$('.centered').velocity("fadeIn", {opacity: .7});
-						$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
-						$('p span#dynamic').text('FINE ART').velocity("fadeIn", {duration: 800});
-					} else {
-						$('p span#bracket').text('').velocity("fadeIn", {duration: 800});
-						$('p span#dynamic').text('').velocity("fadeIn", {duration: 800}); //empty
-					}
-					break;
-				case "second":
-					overviewDes();
-					$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
-					$('p span#dynamic').text('HCI').velocity("fadeIn", {duration: 800});
-					break;
-				case "third":
-					$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
-					$('p span#dynamic').text('SET DESIGN').velocity("fadeIn", {duration: 800});
-					break;
-				case "fourth":
-					$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
-					$('p span#dynamic').text('ETC.').velocity("fadeIn", {duration: 800});
-					break;
-			}
+		sectionClick(id);
+	});
 
-			previous.removeClass('visible');
-			$('#'+ scrollTargetID).attr("class", 'visible');
-			previous.velocity("fadeOut", {duration: 600});
-			$('#'+ scrollTargetID).velocity("fadeIn", { delay: 800, duration: 1000 });
+function sectionClick(scrollTargetID){
+	var previous = $('.visible');
+	var checkID = previous.attr('id'); //currently visible section
+	if(scrollTargetID == "first" && initial == 0 && scrollTargetID == "first" && checkID == "first"){ // very big if case to call startArt
+		console.log("caaaaaaaaaaaaaaaalllll");
+		startArt();
+	} else {
+		switch(scrollTargetID){
+			case "first":
+				if(initial != 0){
+					$('.centered').velocity("fadeIn", {opacity: .7});
+					$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
+					$('p span#dynamic').text('FINE ART').velocity("fadeIn", {duration: 800});
+				} else {
+					$('p span#bracket').text('').velocity("fadeIn", {duration: 800});
+					$('p span#dynamic').text('').velocity("fadeIn", {duration: 800}); //empty
+				}
+				break;
+			case "second":
+				overviewDes();
+				$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
+				$('p span#dynamic').text('HCI').velocity("fadeIn", {duration: 800});
+				$('#golden-container').velocity("fadeIn", { delay: 800, duration: 1000 });
+				break;
+			case "third":
+				$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
+				$('p span#dynamic').text('SET DESIGN').velocity("fadeIn", {duration: 800});
+				break;
+			case "fourth":
+				$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
+				$('p span#dynamic').text('ETC.').velocity("fadeIn", {duration: 800});
+				break;
+			case "fifth":
+				$('p span#bracket').text('').velocity("fadeIn", {duration: 800});
+				$('p span#dynamic').text('').velocity("fadeIn", {duration: 800});
+				break;
+		
+	}
 
-   		}
+	previous.removeClass('visible');
+	$('#'+ scrollTargetID).attr("class", 'visible');
+	previous.velocity("fadeOut", {duration: 600});
+	$('#'+ scrollTargetID).velocity("fadeIn", { delay: 800, duration: 1000 });
+}
+}
 
-		// $('#'+ scrollTargetID).velocity("scroll", { duration: 1000, easing: "easeInOutCubic" });
+	$('#me').on("click", function(){
+		sectionClick('fifth');
 	});
 
 	// HCI Hover carryover
@@ -679,6 +693,25 @@ function populateGolden(){
 			populateGolden(); // special case to launch image population after creation within loop
 		}
 	}
+
+	$('.landing-image--portrait').addClass('isShown');
+	// $('.label-portrait').addClass('isShown');
+
+	$('.landing--link--me').hover(function(){
+		console.log("heeeeeeeeeeeeeeeeeeeeeeee");
+		$('.landing-image--portrait').removeClass('isShown');
+	    $('.landing-image--me').addClass('isShown');
+
+	    $('.label-portrait').css("display", "none");
+	    $('.label-me').css("display", "block");
+	  }, function() {
+	  	$('.landing-image--portrait').addClass('isShown');
+	    $('.landing-image--me').removeClass('isShown');
+
+	    $('.label-me').css("display", "none");
+	    $('.label-portrait').css("display", "block");
+	  }
+	);
 
 }); // document ready
 
