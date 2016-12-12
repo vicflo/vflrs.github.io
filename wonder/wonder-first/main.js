@@ -137,21 +137,23 @@ function drawLoop( time ) {
     }else{
         // canvasContext.fillStyle = "green";
          // console.log("meter volume " + meter.volume);
-        if((meter.volume*1000) > 60){
+        if((meter.volume*1000) > 50){
             console.log("calling cube")
         $('.upper .cube')
             .velocity({
+             
                 rotateX: [
-                    25,
-                    3500
+                    35,
+                    3635
                 ],
                 rotateY: [
                     45,
                     45
                 ],
-                translateY: [0, 38]
+                translateY: [0,0]
 
-            }, {easing: "easeOutQuad",  duration: meter.volume * 45000});
+            }, { duration: meter.volume * 45000})
+            .velocity("reverse", { easing: "easeOutQuad"});
 
             // $('.lower .cube').each(function(){
             //     var offset = $(this).offset();
