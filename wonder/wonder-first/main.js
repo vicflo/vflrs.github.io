@@ -151,17 +151,17 @@ function drawLoop( time ) {
                 ],
                 translateY: [0, 38]
 
-            }, {easing: "easeOutQuad",  duration: meter.volume * 35000});
+            }, {easing: "easeOutQuad",  duration: meter.volume * 45000});
 
-            $('.lower .cube').each(function(){
-                var offset = $(this).offset();
+            // $('.lower .cube').each(function(){
+            //     var offset = $(this).offset();
 
-                 $(this).velocity({
+            //      $(this).velocity({
       
-                    opacity: [0 , 1]
+            //         opacity: [0 , 1]
      
-                }, {easing: "easeOutQuad",  duration: meter.volume * 45000});
-            });
+            //     }, {easing: "easeOutQuad",  duration: meter.volume * 45000});
+            // });
            
         } else{
              // $('.cube').velocity("reverse");
