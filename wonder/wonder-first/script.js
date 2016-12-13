@@ -2,13 +2,13 @@
 * Code segment shifts perspective by using user coordinates for region in space.
 */
 
-// Allows mouse position to trigger opacity shift in layered cubes
+// Allows mouse position to trigger perspective shift in layered cubes
 
 var width = window.innerWidth;
 var height = window.innerHeight;
-var threshold = width /5;
-var hThreshold = height /8;
-var lower = false; // when true lower has the opacity in it's layers and upper toggles to opaque.
+var threshold = width /4;
+var hThreshold = height /4;
+var lower = false; 
 var upperLeft = false;
 var upperRight = false;
 
@@ -59,6 +59,53 @@ $(window).mousemove(function( event ) {
 
   return false;
 });
+
+
+/* Averages given colors
+ *
+ * Arguments:
+ * rgb value array
+ * 
+ * Return:
+ * rgba object of average color between background and cube face color
+ */
+
+function computeHue(color1, color2){
+    nextR = (color1[0] + color2[0]) /2;
+    nextG = (color1[1] + color2[1]) /2;
+    nextB = (color1[1] + color2[1]) /2;
+    return [nextR, nextG, nextB];
+}
+
+var $body = $('body');
+
+$('figure').on("mouseenter", function(){
+    var background = $body.css('background-color').match(/\d+/g).map(Number);;
+    var rgb = $(this).css('background-color').match(/\d+/g).map(Number);;
+    var newHue = computeHue(rgb, background);
+
+    $body.velocity({
+        backgroundColorRed: newHue[0],
+        backgroundColorGreen: newHue[1],
+        backgroundColorBlue: newHue[2]
+    }, { easing: "easeOutQuad", duration: 100});     
+
+});
+
+
+
+var screenWidth = window.screen.availWidth;
+var screenHeight = window.screen.availHeight;
+var chromeHeight = screenHeight - document.documentElement.clientHeight;
+
+$('.hex')
+    .css("perspective-origin", screenWidth/2 + "px" + ((screenHeight * 0.45) - chromeHeight) + "px")
+    .velocity({
+        rotateZ: [360],
+        opacity: [1, 0]
+    }, { duration: 3000, easing: "easeOutQuad"});
+
+
 
 
 

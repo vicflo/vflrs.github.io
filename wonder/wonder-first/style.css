@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+body{
+	background-color: rgba(255, 255, 255, 1);
+	background: rgba(255, 255, 255, 1);
+}
+
+#whatIf{
+	position: fixed;
+	top: 1em;
+	left: 1em;
+	float: left;
+	width: 200px;
+}
+
+h1{
+	font-family: 'Lora', serif;
+	font-weight: 700;
+}
+
+
+h2{
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
 
 #container{
 	display: block;
@@ -6,6 +33,7 @@
 	position: relative;
 	margin: 1em auto;
 	overflow: hidden;
+	display: hidden;
 }
 
 /* ------- Styling for whole hexagons of 6 cubes ----------*/
@@ -294,8 +322,3 @@ figure {
 	background: rgba(255,111,0 ,1);
 }
 
-/* ------ End Colors -------------*/
-/*
-.selected {
-	opacity: .5;
-}*/
