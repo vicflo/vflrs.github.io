@@ -1,0 +1,49 @@
+#left-lily{
+	transform-origin: 40% 50%;
+}
+
+#right-lily{
+	transform-origin: 40% 50%;
+}
+
+#left-outer{
+	transform-origin: 50% 50%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+#right-outer{
+	transform-origin: 50% 50%;
+}
+
+#main {
+  width: 100%;
+}
+
+#lily_container {
+  width: 40%;
+  margin: 10px auto;
+  overflow: visible;
+}
+
+
+#whatIf{
+	position: fixed;
+	top: 1em;
+	left: 1em;
+	float: left;
+	width: 200px;
+	color: gray;
+}
+
+h1{
+	font-family: 'Lora', serif;
+	font-weight: 700;
+}
+
+
+h2{
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	font-style: italic;
+}
