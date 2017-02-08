@@ -493,7 +493,7 @@ function sectionClick(scrollTargetID){
 //  HAVING SOME FUN WITH THE GOLDEN RATIO
 
 specialProjects = [
-	{ subpage: "FINAL-POLARR-DOC.pdf", p_title: "Polarr" , des: "Exploring Visual Identity" , color: "rgba(0, 188, 212, 1)", opacity: "rgba(255, 255, 255, .1)",  tags: ["Branding", "Identity"], image: "projects/polarr_tile_small.png", tile: "projects/polarr_large.png"},
+	{ subpage: "subIllusion.html", p_title: "Illusion Études" , des: "Exploring Obscure Interactions" , color: "rgba(0, 188, 212, 1)", opacity: "rgba(0, 188, 212, .1)",  tags: ["UX", "Web"], image: "projects/illusion_tile_small.png", tile: "projects/illusion_tile_large_2.png"},
 	{ subpage: "https://cloud-arch.com/projects/common-ground/", p_title: "Common Ground", des: "Connecting SF Market Street", color:"rgba(255, 235, 59, 1)", opacity: "rgba(255, 255, 255, .1)", tags: ["Experience", "Architecture", "Cross-Discipline"], image: "projects/common_small_tile.png", tile: "projects/common_tile_large.png"},
 	{ subpage: "http://vicflo.github.io/Project-Pages/Cloud-Architecture/cloud-archived.html", p_title: "Cloud Architecture" , des: "Collective Launch Site" , color:"rgba(255, 23, 68, 1)",opacity: "#f7f5f7", tags: ["UX/UI", "Web"], image: "projects/cloud.jpg", tile: "projects/cloud_tile_large.png"},
 	{ subpage: "subCharlotte.html", p_title: "Charlotte", des: "Visualizing Web Design", color:"rgba(255, 23, 68, 1)", opacity: "rgba(255, 23, 68, .05)", tags: ["DataViz", "Web"], image: "projects/char_tile_small.png", tile: "projects/char_tile_large.png"},
@@ -609,7 +609,7 @@ function populateGolden(){
 	var numSquares = 7; // i.e. number of projects
 	var currWidth = $(window).innerWidth() - (sideMargin * 2);
 	var currHeight = (currWidth / 1.618);
-	var paddingGolden = (currHeight * .0290322581) /3;
+	var paddingGolden = (currHeight * (.0290322581) /3) + 2;
 	currHeight = (currWidth / 1.618) - paddingGolden*18;
 	var flip = true; //bool to flip
 	var keep = true; //bool to flip
