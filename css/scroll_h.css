@@ -14,6 +14,15 @@ ul#horiz li {
     display:inline;
     white-space:nowrap;
     }
+
+ul.horiz {
+    list-style:none; margin:0; padding:0;
+    white-space:nowrap;
+    }
+ul.horiz li {
+    display:inline;
+    white-space:nowrap;
+    }
     
 
 /* safari, chrome, opera have very prominent outline by default 
@@ -23,3 +32,7 @@ ul#horiz li {
 div#wn:focus {
     outline:1px dotted #eee;
     }    
+
+div#heart:focus {
+outline:1px dotted #eee;
+}    

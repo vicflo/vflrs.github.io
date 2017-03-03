@@ -90,28 +90,23 @@ li {
 
 #nav {
     position: fixed;
-    /*background-color: rgba(255, 255, 255, .5);*/
     top:0;
     left:0;
     width: 100%;
     font-family: "voyager-light";
     text-decoration: none;
     z-index: 5;
-    /*padding: 12px 0px;*/
     height: 60px;
     margin: 0px auto;
-    /*padding: 0px 8px;*/
     text-rendering: optimizeLegibility;
     font-feature-settings: "kern";
     -webkit-font-feature-settings: "kern";
     -moz-font-feature-settings: "kern";
     -moz-font-feature-settings: "kern=1";
-
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    /*margin-bottom: .75rem;*/
 }
 
 #othernav {
@@ -1068,8 +1063,131 @@ a.social{
 }
 
 
+/* ETC. Section */
+
+.cardDes{
+    width: 98%;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+}
+
+.specialStyle{
+    color: rgba(96,105,138, 0.6);
+    font-size: 2em;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.normal{
+    font-family: "voyager-thin";
+    color: #60698A;
+}
+
+#fourth{
+    padding-top: 85px;
+    overflow: visible;
+}
+
+.square {
+    /*border: 1px solid #60698A;*/
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 18%;
+    padding-bottom : 18%; /* = width for a 1:1 aspect ratio */
+    margin: 1%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.tealy{
+  background-color: rgba(0, 188, 212, .18);
+}
+
+.magenty{
+    background-color: rgba(255, 23, 68, .12);
+}
+
+.yelly{
+    background-color: rgba(255, 235, 59, .18);
+}
+
+.by{
+    border: 1px solid rgba(255, 235, 59, 1);
+}
+
+.bm{
+    border: 1px solid rgba(255, 23, 68, 1);
+}
+
+.bt{
+    border: 1px solid rgba(0, 188, 212, 1);
+}
+
+.rect {
+    float: left;
+    position: relative;
+    display:inline-block;
+    width: 38%;
+    margin: 1%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.extra{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.rect:before{
+    content: "";
+    display: block;
+    padding-top: 47.3%;
+
+}
+
+/*.card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}*/
+
+.clearbg{
+    background-color: rgba(255,255,255, 0);
+}
+
+.detailer {
+    position: absolute;
+    top: 0;
+    /*left: 100%;*/
+    left: 0;
+    height:100%;
+}
+
+.detailer img{
+    max-height: 100%;
+}
 
 
+.img_1-1{background-image:url(../cards/heartLayout.svg);}
+.img_1-3{background-image:url(../cards/heartFinal.gif);}
+
+.img_2-1{background-image:url(../cards/rosetteLayout.svg);}
+.img_2-3{background-image:url(../cards/rosetteFinal.svg);}
+
+.img_3-1{background-image:url(../cards/terrainLayout.svg);}
+.img_3-3{background-image:url(../cards/terrainFinal.svg);}
+
+.img_4-1{background-image:url(../cards/walletLayout.svg);}
+.img_4-3{background-image:url(../cards/walletFinal.svg);}
 
 
 

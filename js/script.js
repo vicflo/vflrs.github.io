@@ -465,13 +465,13 @@ function sectionClick(scrollTargetID){
 				$('p span#dynamic').text('').velocity("fadeIn", {duration: 800});
 				break;
 		
-	}
+		}
 
-	previous.removeClass('visible');
-	$('#'+ scrollTargetID).attr("class", 'visible');
-	previous.velocity("fadeOut", {duration: 600});
-	$('#'+ scrollTargetID).velocity("fadeIn", { delay: 800, duration: 1000 });
-}
+		previous.removeClass('visible');
+		$('#'+ scrollTargetID).attr("class", 'visible');
+		previous.velocity("fadeOut", {duration: 600});
+		$('#'+ scrollTargetID).velocity("fadeIn", { delay: 800, duration: 1000 });
+	}
 }
 
 	$('#me').on("click", function(){
@@ -713,8 +713,13 @@ function populateGolden(){
 	  }
 	);
 
+
+	$(".extra").mousewheel(function(event, delta) {
+		this.scrollLeft -= (delta * 30);
+		event.preventDefault();
+	});
+
+
 }); // document ready
 
 
-
-// FAQ
