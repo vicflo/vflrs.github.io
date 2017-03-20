@@ -1066,10 +1066,11 @@ a.social{
 /* ETC. Section */
 
 .cardDes{
-    width: 98%;
-    height: 160px;
+    width: 50%;
+    height: 260px;
     display: block;
     margin: 0 auto;
+    /*border-bottom: 1px solid #2646C3;*/
 }
 
 .specialStyle{
@@ -1077,9 +1078,8 @@ a.social{
     font-size: 2.5em;
     font-family: "voyager-light";
     text-align: center;
-    /*line-height: .2em;*/
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .special{
@@ -1109,7 +1109,6 @@ a.social{
 
 .square {
     display: inline-block;
-    /*float: left;*/
     position: relative;
     width: 19%;
     padding-bottom : 19%; /* = width for a 1:1 aspect ratio */
@@ -1143,6 +1142,70 @@ a.social{
 
 .bt{
     border: 1px solid rgba(0, 188, 212, 1);
+}
+
+.wabi{
+    float: right;
+    position: relative;
+    display: inline-block;
+    width: 59%;
+    margin: .5% auto;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+    min-width: 279px;
+    min-height: 279px;
+    background-image: url(../cards/leafbottleSketch.png);
+    transition: background-image .6s ease-in-out;
+    
+}
+
+.wabi:before{
+    content: "";
+    padding-top: 80%;
+    display: block;
+}
+
+.wabi:hover{
+    background-image: url(../cards/wabiSabiBarTable.png);
+}
+
+.sabi{
+    width: 39%;
+    margin: .5% auto;
+    min-width: 279px;
+    min-height: 279px;
+    text-align: center;
+    padding: 0px .1%;
+}
+
+.sabiTitle{
+    /*color: #2646C3;*/
+    font-size: 3em;
+    font-family: 'Lora', serif;
+    color: rgba(96,105,138, 1);
+    font-style: italic;
+    font-weight: 400;
+    padding: 10px;
+    /*font-variant: lowercase;*/
+}
+
+.sabiSpecial{
+    font-family: 'Lora', serif;
+    /*font-style: italic;*/
+    color: rgba(96,105,138, .8);
+    /*font-weight: 400;*/
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.sabiSpecial:first-line{
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.classy{
+    font-family: 'voyager-thin-italic';
 }
 
 .rect {
@@ -1251,6 +1314,11 @@ a.social{
     margin: 0 0;
 }
 
+.greeting{
+    padding-top: 16%;
+}
+
+
 .specs{
     font-size: 11pt;
     font-family: 'Lora', serif;
@@ -1262,7 +1330,7 @@ a.social{
 }
 
 
-
+/*.bottle{background-image:url(../cards/leafbottleSketch.png);}*/
 .img_1-1{background-image:url(../cards/heartLayout.svg);}
 .img_1-3{background-image:url(../cards/heartFinal.gif);}
 
