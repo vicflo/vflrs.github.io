@@ -385,6 +385,7 @@ circle:hover{
     float: right;
     display: block;
     position: relative;
+    width: 207px;
 }
 
 /**/
@@ -1073,10 +1074,13 @@ a.social{
 }
 
 .specialStyle{
+    /*color: rgba(255, 235, 59, 1);*/
+    /*color: rgba(0, 188, 212, .7);*/
+    /*color: rgba(255, 23, 68, .5);*/
     color: rgba(96,105,138, 1);
      /*color: #2646C3;*/
     font-size: 3.5em;
-    font-family: "voyager-light";
+    font-family: "voyager-regular";
     text-align: center;
     margin: 0 auto;
     padding-top: 70px;
@@ -1180,7 +1184,7 @@ a.social{
 }
 
 .sabiTitle{
-    /*color: #2646C3;*/
+/*    color: #2646C3;*/
     font-size: 2.5em;
     font-family: 'voyager-light', 'Lora', serif;
     color: rgba(96,105,138, 1);
