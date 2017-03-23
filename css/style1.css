@@ -1066,16 +1066,16 @@ a.social{
 /* ETC. Section */
 
 .cardDes{
-    width: 50%;
+    width: 96.4%;
     height: 260px;
     display: block;
     margin: 0 auto;
-    /*border-bottom: 1px solid #2646C3;*/
 }
 
 .specialStyle{
     color: rgba(96,105,138, 1);
-    font-size: 2.5em;
+     /*color: #2646C3;*/
+    font-size: 3.5em;
     font-family: "voyager-light";
     text-align: center;
     margin: 0 auto;
@@ -1121,7 +1121,7 @@ a.social{
 }
 
 .tealy{
-  background-color: rgba(0, 188, 212, .18);
+  background-color: rgba(0, 188, 212, .2);
 }
 
 .magenty{
@@ -1175,18 +1175,18 @@ a.social{
     margin: .5% auto;
     min-width: 279px;
     min-height: 279px;
-    text-align: center;
+    /*text-align: center;*/
     padding: 0px .1%;
 }
 
 .sabiTitle{
     /*color: #2646C3;*/
-    font-size: 3em;
-    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    font-family: 'voyager-light', 'Lora', serif;
     color: rgba(96,105,138, 1);
-    font-style: italic;
+    /*font-style: italic;*/
     font-weight: 400;
-    padding: 10px;
+    /*padding: 10px;*/
     /*font-variant: lowercase;*/
 }
 
@@ -1219,6 +1219,7 @@ a.social{
     background-size: cover;
     min-width: 279px;
     min-height: 279px;
+    /*border: 1px solid rgba(96,105,138, .5);*/
 }
 
 .extra{
@@ -1249,7 +1250,7 @@ a.social{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, 1);
     padding: 4% 4%;
 }
 
@@ -1303,7 +1304,7 @@ a.social{
     width: inherit;
     max-width: 100%;
     display: block;
-    white-space:normal;
+    white-space: normal;
     word-wrap: break-word;
 }
 
@@ -1315,7 +1316,7 @@ a.social{
 }
 
 .greeting{
-    padding-top: 16%;
+    padding-top: 7%;
 }
 
 
