@@ -47,7 +47,7 @@ $(document).ready(function(){
   	var winHeight = $(window).innerHeight();
   	var winWidth = $(window).innerWidth();
   	var inner = winWidth - (48*2); //margin difference
-  	$('#artwork-container').css("height", winHeight - 60);
+  	// $('#artwork-container').css("height", winHeight - 60);
   	// $("#l-upper").css("width", 1000); //gets reset after initial opening dots
   	var horizontalCenter = (winHeight - 560) /2;
 	var top = Math.max(horizontalCenter, 84);
@@ -172,6 +172,8 @@ $(document).ready(function(){
 
 	function extra(){
 		$('.resize').css("width", startWidth/2 - 10);
+		$('#right').css('display', 'block');
+		$('#right .centered').velocity("fadeIn");
 
 		// Adding fancybox beta
 		$("circle").fancybox({

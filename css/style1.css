@@ -1073,6 +1073,13 @@ a.social{
     margin: 0 auto;
 }
 
+.ornament{
+    width: 10%;
+    height: 1px;
+    margin: 0 auto;
+    border: 1px solid rgba(96,105,138, .1);;
+}
+
 .specialStyle{
     /*color: rgba(255, 235, 59, 1);*/
     /*color: rgba(0, 188, 212, .7);*/
@@ -1082,8 +1089,8 @@ a.social{
     font-size: 3.5em;
     font-family: "voyager-regular";
     text-align: center;
-    margin: 0 auto;
-    padding-top: 70px;
+    margin: 20px auto;
+    /*padding-top: 70px;*/
 }
 
 .special{
@@ -1093,7 +1100,7 @@ a.social{
     font-family: 'Lora', serif;
     font-style: italic;
     text-align: center;
-    margin: 8px auto;
+    margin: 20px auto;
     white-space:normal;
     word-wrap: break-word;
 
@@ -1195,7 +1202,7 @@ a.social{
 }
 
 .sabiSpecial{
-    font-family: 'Lora', serif;
+    font-family: 'voyager-light','Lora', serif;
     /*font-style: italic;*/
     color: rgba(96,105,138, .8);
     /*font-weight: 400;*/
@@ -1203,7 +1210,7 @@ a.social{
     line-height: 1.5em;
 }
 
-.sabiSpecial:first-line{
+.topper:first-line{
     font-variant: small-caps;
     letter-spacing: 2px;
 }
