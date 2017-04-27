@@ -74,7 +74,7 @@ li {
     line-height: 1.2;
     /*font-family: "voyager-thin";*/
     /*color: #60698A;*/
-    margin: 0px 48px;
+    margin: 0px 38px;
     color: #2646C3;
 }
 
@@ -635,23 +635,21 @@ section{
 }
 
 .upcoming{
+    /*height: 120px;*/
+    margin: 110px auto 80px auto;
     width: 100%;
-    position: fixed;
-    top: 50%;
-    left: 50%;            
-   -webkit-transform: translate(-50%, -50%);
-   -moz-transform: translate(-50%, -50%); 
-   -ms-transform: translate(-50%, -50%); 
-   -o-transform: translate(-50%, -50%); 
-   transform: translate(-50%, -50%); 
+    /*position: fixed;*/
+   /* top: 50%;
+    left: 50%; */           
+ 
     text-align: center;
     display: block;
     /*margin: 0px auto;*/
 }
 
 .upcoming p{
-    color: rgba(96,105,138, 0.6);
-    font-size: 3em;
+    color: rgba(96,105,138, 0.4);
+    font-size: 2em;
     font-family: 'Lora', serif;
     font-style: italic;
 }
@@ -1067,7 +1065,7 @@ a.social{
 /* ETC. Section */
 
 .cardDes{
-    width: 96.4%;
+    width: 95%;
     height: 260px;
     display: block;
     margin: 0 auto;
@@ -1095,12 +1093,12 @@ a.social{
 
 .special{
     color: rgba(96,105,138, 0.6);
-    line-height: 1em;
+    /*line-height: 1em;*/
     font-size: 2em;
     font-family: 'Lora', serif;
     font-style: italic;
     text-align: center;
-    margin: 20px auto;
+    margin: 10px auto;
     white-space:normal;
     word-wrap: break-word;
 
@@ -1187,8 +1185,10 @@ a.social{
     min-width: 279px;
     min-height: 279px;
     /*text-align: center;*/
-    padding: 0px .1%;
+    padding: 0px 0px;
+    /*border: 3px solid rgba(255, 235, 59, 1);*/
 }
+
 
 .sabiTitle{
 /*    color: #2646C3;*/
@@ -1248,7 +1248,7 @@ a.social{
 .cardContainer{
     display: flex;
     flex-wrap: wrap;
-    width: 96.4%;
+    width: 95%;
     margin: 0 auto;
     position: relative;
     min-width: 300px;
@@ -1356,5 +1356,145 @@ a.social{
 .img_4-3{background-image:url(../cards/walletFinal.svg);}
 
 
+/* SET DESIGN PAGE */
+
+.slider {
+    /* set initial width */
+    z-index: 2;
+    width: 55%;
+           
+    /* hide the content that overflows (to allow second box to show through) */
+    overflow: hidden;
+    display: inline-block;
+           
+    /* skew container so that it has angled edge, and set up transition */
+    transform: skewX(-22deg);
+    transition: width 1.2s ease-in-out;
+          
+    /* give negative margin to remove gap caused by left hand skew */
+    margin-left: -76px;
+    /*border-right: 10px solid rgba(255, 23, 68, 1);*/
+           
+    /* hide pointer events for unseen content */
+    pointer-events: none;
+}
+        
+/* set the size of the boxes and any decoration */
+.box { 
+    width: 90%;
+    height: 500px;
+}
+
+.sunset{
+    width: 140%;
+}
+
+.sunrise{
+    width: 95%;
+}
+        
+/* make the links the size of the full boxes (not needed for technique) */
+/*.box a { 
+    display: block; 
+    width: 100%; 
+    height: 100%;
+}*/
+        
+.sunset {
+    /*border: 1px solid red;*/
+    /* skew back by negative of parent’s skew so contents is upright */
+    transform: skewX(22deg);
+    background-color: white;
+    /*z-index: 2;*/
+       /*       background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;*/
+    /*background: url(https://images.pexels.com/photos/198310/pexels-photo-198310.jpeg?h=350&auto=compress&cs=tinysrgb) no-repeat;*/
+    margin-left: 76px; /* give margin to push content away from left slanted edge */
+    pointer-events: auto;   /* allow pointer events for the box */
+    padding: 20px;
+}
+        
+.sunrise {
+ /*   background-position:center right;
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-image:  url(../fave2.jpg););*/
+    position: absolute;     /* remove from flow so sunset is placed on top */
+    /*border: 1px solid rgba(0, 0, 0, .7);*/
+    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
+
+    overflow: hidden;
+}
+
+.wrapper{
+    padding-left:22px;
+    width: 100%;
+    height: 100%;
+        /*overflow: hidden;*/
+}
+
+.sunrise img{
+    display: inline-block;
+    position: relative;
+    /*object-fit: contain;*/
+    max-height: 100%;
+    float: right;
+    margin: auto;
+    padding-left: 2px;
+}
+        
+/* make first box bigger on hover, and smaller when hover second box */
+.slider:hover {
+    width: 91%;
+}
+ 
+ /** controls how much of right is seen */       
+.sunrise:hover + .slider { 
+     width: 22%;
+}
+    
 
 
+.showContain{
+
+    margin: 0 auto;
+    width: 95%;
+    height: 50vh;
+}
+
+.showName{
+    margin: 0px 0px;
+    color: rgba(96,105,138, 1);
+    /*color: #2646C3;*/
+    font-size: 2.2em;
+    font-family: "voyager-regular";
+    width: 500px;
+}
+
+.det{
+    color: rgba(96,105,138, 1);
+    font-size: .8em;
+    width: 600px;
+    float: left;
+    font-family: 'voyager-light','Lora', serif;
+    /*line-height: 1em;*/
+    padding: 0px;
+    margin: 0px 0px;
+}
+
+.pad{
+    padding-bottom: 5px;
+    opacity: .8;
+}
+
+.showDes{
+    font-family: 'voyager-light','Lora', serif;
+    /*font-style: italic;*/
+    color: rgba(96,105,138, 1);
+    /*font-weight: 400;*/
+    font-size: 1.2em;
+    line-height: 1.2em;
+    width: 600px;
+    float: left;
+}
