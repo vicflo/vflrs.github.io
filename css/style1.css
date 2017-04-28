@@ -1386,7 +1386,7 @@ a.social{
 }
 
 .sunset{
-    width: 140%;
+    width: 180%;
 }
 
 .sunrise{
@@ -1443,6 +1443,14 @@ a.social{
     margin: auto;
     padding-left: 2px;
 }
+
+.sunset img{
+    display: inline-block;
+    /*float: left;*/
+    position: relative;
+    max-height: 95%;
+    margin: 0 auto;
+}
         
 /* make first box bigger on hover, and smaller when hover second box */
 .slider:hover {
@@ -1457,7 +1465,6 @@ a.social{
 
 
 .showContain{
-
     margin: 0 auto;
     width: 95%;
     height: 50vh;
@@ -1497,4 +1504,32 @@ a.social{
     line-height: 1.2em;
     width: 600px;
     float: left;
+}
+
+.showDesLeft{
+    width: 600px;
+    height: 100%;
+    float: left;
+    display: block;
+    margin: 0px 0px;
+}
+
+.sideSketch{
+    width: 400px;
+    height: 460px;
+    display: inline-block;
+    margin: 0px 0px 0px 122px;
+    /*float: left;*/
+}
+
+.sketchDes{
+
+    font-family: 'voyager-light','Lora', serif;
+    /*font-style: italic;*/
+    color: rgba(96,105,138, 1);
+    font-size: 1.2em;
+    padding: 0px 0px;
+    /*margin-top: 10px;*/
+    margin-bottom: auto;
+    display: block;
 }
