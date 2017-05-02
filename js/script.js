@@ -700,7 +700,6 @@ function populateGolden(){
 	// $('.label-portrait').addClass('isShown');
 
 	$('.landing--link--me').hover(function(){
-		console.log("heeeeeeeeeeeeeeeeeeeeeeee");
 		$('.landing-image--portrait').removeClass('isShown');
 	    $('.landing-image--me').addClass('isShown');
 
@@ -721,6 +720,20 @@ function populateGolden(){
 		event.preventDefault();
 	});
 
+	// $('[data-fancybox="gallery"]').fancybox({
+	// 	loop : true,
+	// 	keyboard : true,
+	// 	touch : true,
+	// 	closeClickOutside : true,
+	// 		height: "75%",
+	// 	openEffect: "fade",
+	// 	closeEffect: "none",
+	// 	slideShow  : true,
+	// 	thumbs : {
+	// 		showOnStart : true
+	// 	},
+	
+	// });
 
 }); // document ready
 

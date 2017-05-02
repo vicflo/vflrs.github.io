@@ -9,6 +9,10 @@
     display: none;
 }
 
+#first, #fifth{
+    overflow: hidden;
+}
+
 #second{
     margin: 0px auto;
     background-color: white;
@@ -90,9 +94,10 @@ li {
 
 #nav {
     position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*width: 100%;*/
     font-family: "voyager-light";
     text-decoration: none;
     z-index: 5;
@@ -465,7 +470,7 @@ h4{
 section{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /*overflow: hidden;*/
     min-height: 650px;
     /*min-width: 1000px;*/
 }
@@ -1356,12 +1361,13 @@ a.social{
 .img_4-3{background-image:url(../cards/walletFinal.svg);}
 
 
-/* SET DESIGN PAGE */
+/************* SET DESIGN PAGE ******************/
 
 .slider {
     /* set initial width */
     z-index: 2;
     width: 55%;
+    /*height: 500px;*/
            
     /* hide the content that overflows (to allow second box to show through) */
     overflow: hidden;
@@ -1456,18 +1462,21 @@ a.social{
 .slider:hover {
     width: 91%;
 }
+
+.woods .slider:hover{
+    width: 95%;
+}
  
  /** controls how much of right is seen */       
 .sunrise:hover + .slider { 
-     width: 22%;
+     width: 16%;
 }
     
 
-
 .showContain{
-    margin: 0 auto;
+    margin: 0px auto 30px auto;
     width: 95%;
-    height: 50vh;
+    height: 500px;
 }
 
 .showName{
@@ -1518,12 +1527,11 @@ a.social{
     width: 400px;
     height: 460px;
     display: inline-block;
-    margin: 0px 0px 0px 122px;
+    margin: 0px 0px 0px 124px;
     /*float: left;*/
 }
 
 .sketchDes{
-
     font-family: 'voyager-light','Lora', serif;
     /*font-style: italic;*/
     color: rgba(96,105,138, 1);
