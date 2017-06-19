@@ -1,6 +1,18 @@
 // On your marks, get set...
 $(document).ready(function(){
 
+	$('#etcetera').fullpage({
+		sectionsColor: ['rgba(96,105,138, .05)', '#fffff', 'rgba(96,105,138, .1)', '#fffff'],
+		anchors: ['pennyStudio', 'wS', 'artistChair', 'greetingCards'],
+		menu: '#etcMenu',
+		// scrollOverflow: true,
+		scrollingSpeed: 1000
+	});
+
+	$('#etcetera a').click(function(e){
+		e.preventDefault();
+	});
+
 	$('body').velocity("fadeIn");
 
 

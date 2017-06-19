@@ -100,7 +100,7 @@ li {
     /*width: 100%;*/
     font-family: "voyager-light";
     text-decoration: none;
-    z-index: 5;
+    z-index: 80;
     height: 60px;
     margin: 0px auto;
     text-rendering: optimizeLegibility;
@@ -1069,45 +1069,6 @@ a.social{
 
 /* ETC. Section */
 
-.cardDes{
-    width: 95%;
-    height: 260px;
-    display: block;
-    margin: 0 auto;
-}
-
-.ornament{
-    width: 10%;
-    height: 1px;
-    margin: 0 auto;
-    border: 1px solid rgba(96,105,138, .1);;
-}
-
-.specialStyle{
-    /*color: rgba(255, 235, 59, 1);*/
-    /*color: rgba(0, 188, 212, .7);*/
-    /*color: rgba(255, 23, 68, .5);*/
-    color: rgba(96,105,138, 1);
-     /*color: #2646C3;*/
-    font-size: 3.5em;
-    font-family: "voyager-regular";
-    text-align: center;
-    margin: 20px auto;
-    /*padding-top: 70px;*/
-}
-
-.special{
-    color: rgba(96,105,138, 0.6);
-    /*line-height: 1em;*/
-    font-size: 2em;
-    font-family: 'Lora', serif;
-    font-style: italic;
-    text-align: center;
-    margin: 10px auto;
-    white-space:normal;
-    word-wrap: break-word;
-
-}
 
 .normal{
     font-family: "voyager-thin";
@@ -1115,7 +1076,7 @@ a.social{
 }
 
 #fourth{
-    padding-top: 85px;
+    /*padding-top: 60px;*/
     overflow: visible;
     font-size: 10px;
 
@@ -1158,12 +1119,124 @@ a.social{
     border: 1px solid rgba(0, 188, 212, 1);
 }
 
+/* STUDIO DES*/
+
+.specialStyle{
+    /*color: rgba(255, 235, 59, 1);*/
+    /*color: rgba(0, 188, 212, .7);*/
+    /*color: rgba(255, 23, 68, .5);*/
+    color: rgba(96,105,138, 1);
+     /*color: #2646C3;*/
+    font-size: 44px;
+    font-family: "voyager-regular";
+    /*text-align: center;*/
+    margin: 0px auto 0px auto;
+}
+
+.special{
+    color: rgba(96,105,138, 0.6);
+    line-height: 1em;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    margin: 8px auto;
+    white-space:normal;
+    word-wrap: break-word;
+
+}
+
+.studioContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /*height: 80%;*/
+    margin: 0 auto;
+    position: relative;
+    min-width: 300px;
+    padding-bottom: 120px;
+}
+
+.studioDes{
+    position: fixed;
+    z-index: 20;
+    top: 25px;
+    left: 48%;
+    width: 50%;
+    height: 80px;
+    display: block;
+    /*margin: 0px auto 0px auto;*/
+}
+
+.studio{
+    display: inline-block;
+    width: 41%;
+    float: left;
+    /*background-image:url(../cards/MET.png);*/
+    min-width: 300px;
+    min-height: 349px;
+    margin: 0px auto 0px 0px;
+    text-align: left;
+}
+
+.studioDetail{
+    width: 55%;
+    float: right;
+    margin: 0px 0px 0px auto;
+    background-color: white;
+    padding: 100px 42px 8px 42px;
+}
+
+.studioTitle{
+    margin-top: 8px;
+    font-size: 24px;
+    font-family: 'voyager-light', 'Lora', serif;
+    color: rgba(96,105,138, 1);
+    /*font-style: italic;*/
+    font-weight: 400;
+    padding-top: 24px;
+    /*font-variant: lowercase;*/
+}
+
+
+#table img{
+  width: 100%;
+}
+
+#benches img{
+    width: 100%;
+}
+
+#benches{
+    float: right;
+}
+
+
+/* WABI SABI*/
+
+.sabiContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    min-width: 300px;
+    padding: 0px 48px;
+    margin: .5% 0px;
+}
+
+.wabiDes{
+    width: 95%;
+    height: 155px;
+    display: block;
+    margin: 80px auto 0px auto;
+}
+
 .wabi{
     float: right;
     position: relative;
     display: inline-block;
-    width: 59%;
-    margin: .5% auto;
+    width: 49%;
+    margin: 0px 0px 0px auto;
     background-position:center center;
     background-repeat:no-repeat;
     background-size: contain;
@@ -1173,6 +1246,7 @@ a.social{
     transition: background-image .6s ease-in-out;
     
 }
+
 
 .wabi:before{
     content: "";
@@ -1185,13 +1259,29 @@ a.social{
 }
 
 .sabi{
+    display: inline-block;
+    float: left;
     width: 39%;
-    margin: .5% auto;
+    margin: .5% 0px .5% auto;
     min-width: 279px;
     min-height: 279px;
     /*text-align: center;*/
     padding: 0px 0px;
+    margin: 0px 0px;
     /*border: 3px solid rgba(255, 235, 59, 1);*/
+}
+
+.wabiSpecialStyle{
+    /*color: rgba(255, 235, 59, 1);*/
+    /*color: rgba(0, 188, 212, .7);*/
+    /*color: rgba(255, 23, 68, .5);*/
+    color: rgba(96,105,138, 1);
+     /*color: #2646C3;*/
+    font-size: 44px;
+    font-family: "voyager-regular";
+    margin: 0px 0px;
+
+    /*padding-top: 15px;*/
 }
 
 
@@ -1202,7 +1292,7 @@ a.social{
     color: rgba(96,105,138, 1);
     /*font-style: italic;*/
     font-weight: 400;
-    /*padding: 10px;*/
+    padding-top: 24px;
     /*font-variant: lowercase;*/
 }
 
@@ -1211,8 +1301,8 @@ a.social{
     /*font-style: italic;*/
     color: rgba(96,105,138, .8);
     /*font-weight: 400;*/
-    font-size: 2em;
-    line-height: 1.5em;
+    font-size: 18px;
+    line-height: 1.4em;
 }
 
 .topper:first-line{
@@ -1223,6 +1313,22 @@ a.social{
 .classy{
     font-family: 'voyager-thin-italic';
 }
+
+
+/* Artist Chair */
+
+.chairContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /*height: 80%;*/
+    margin:0px auto;
+    position: relative;
+    min-width: 300px;
+    padding-bottom: 80px;
+}
+
+/* Greeting Card */
 
 .rect {
     /*float: left;*/
@@ -1253,12 +1359,20 @@ a.social{
 .cardContainer{
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
-    margin: 0 auto;
+    width: 90%;
+    margin: -40px auto 0px auto;
     position: relative;
     min-width: 300px;
 }
 
+.cardDes{
+    width: 95%;
+    height: 80px;
+    display: block;
+    margin: 0px auto;
+    position: fixed;
+
+}
 
 .card{
     position: absolute;
@@ -1268,6 +1382,7 @@ a.social{
     height: 100%;
     background-color: rgba(255, 255, 255, 1);
     padding: 4% 4%;
+    text-align: left;
 }
 
 .yellowB{
@@ -1329,10 +1444,6 @@ a.social{
     font-family: "voyager-light", sans-serif;
     color: rgba(96,105,138, 1);
     margin: 0 0;
-}
-
-.greeting{
-    padding-top: 7%;
 }
 
 
@@ -1540,4 +1651,60 @@ a.social{
     /*margin-top: 10px;*/
     margin-bottom: auto;
     display: block;
+}
+
+
+#etcMenu li {
+    font-family: 'voyager-thin', 'Lora', sans-serif;
+    font-size: 14px;
+    display:inline-block;
+    margin: 8px;
+    /*color: rgba(96,105,138, 1);*/
+    color: #000;
+    /*background:#fff;*/
+    border: none;
+}
+#etcMenu li.active{
+     color: red;
+}
+#etcMenu li a{
+    color: rgba(96,105,138, 1);
+    outline: none;
+     /*font-color: #2646C3;*/
+}
+#etcMenu a:hover{
+    color: #2646C3;
+}
+#etcMenu li.active a:hover{
+    color: #2646C3;
+}
+#etcMenu li:hover{
+    /*font-color: rgba(96,105,138, 1);*/
+    color: yellow;
+}
+#etcMenu li a,
+#etcMenu li.active a{
+    text-decoration:none;
+    padding: 9px 12px;
+    display: block;
+}
+#etcMenu{
+    position: relative;
+    height: 40px;
+    z-index: 90;
+    width: 40%;
+    padding: 0;
+    margin:30px auto 10px auto;
+    text-align: center;
+}
+
+/* Slide Override */
+.fp-controlArrow.fp-prev {
+    margin-top: -85px;
+    border-color: transparent rgba(96,105,138, 1) transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+        margin-top: -85px;
+    border-color: transparent transparent transparent rgba(96,105,138, 1);
 }
