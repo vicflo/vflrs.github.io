@@ -1183,7 +1183,7 @@ a.social{
     float: right;
     margin: 0px 0px 0px auto;
     background-color: white;
-    padding: 100px 56px 8px 42px;
+    padding: 100px 64px 8px 42px;
 }
 
 .studioTitle{
@@ -1360,7 +1360,7 @@ a.social{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    margin: -40px auto 0px auto;
+    margin: 0px auto 0px auto;
     position: relative;
     min-width: 300px;
 }
@@ -1404,7 +1404,7 @@ a.social{
 .schematic {
     position: absolute;
     top: 0;
-    left: 100%;
+ /*   left: 100%;*/
     /*left: 0;*/
     height:100%;
 }
@@ -1428,6 +1428,14 @@ a.social{
     line-height: 1.5em;
     white-space:normal;
     word-wrap: break-word;
+}
+
+.cardTop{
+    position: relative;
+    text-align: left;
+    width: 90%;
+    margin: -80px auto 16px auto;
+    min-width: 300px;
 }
 
 .card p{
