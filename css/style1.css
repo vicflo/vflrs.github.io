@@ -343,6 +343,7 @@ circle:hover{
     position: relative;
 }
 
+
 .centered {
     /*position: fixed;*/
     top: 50%;
@@ -1206,8 +1207,8 @@ a.social{
     /*float: left;*/
     position: relative;
     display:inline-block;
-    width: 27.4%;
-    margin: .5% auto;
+    width: 100%;
+    margin: 0px auto;
     background-position:center center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -1224,7 +1225,7 @@ a.social{
 .rect:before{
     content: "";
     display: block;
-    padding-top: 65.9%;
+    padding-top: 50%;
 
 }
 
@@ -1531,29 +1532,6 @@ a.social{
 
 /* ETC SECTION */
 
-
-
-.zebraOne{
-    background-color: gray;
-}
-
-.zebraTwo{
-     background-color: white;
-}
-
-.etLeft{
-    position: relative;
-    margin: 0px 0px 0px auto;
-    width: 48%;
-    float: left;
-}
-
-.etRight{
-    position: relative;
-    width: 48%;
-    float: right;
-    margin: 0px auto 0px 0px;
-}
 
 /* STUDIO DES*/
 
@@ -1934,3 +1912,89 @@ a.social{
 .wabi:hover{
     background-image: url(../cards/wabiSabiBarTable.png);
 }
+
+/* Greeting Card Section */
+
+.greet {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 618px; /*Might need to adjust if I add text here*/
+  /*background-color: #1560FB; */
+}
+
+@media (min-width: 768px) {
+    .greet {
+      float: left;
+      margin: 0px auto;
+     /* position: absolute;
+      margin-left: 0;
+      margin-top: 0;*/
+      height: 100%;
+      width: 33%; 
+      overflow: hidden;
+    } 
+}
+
+.greetDes{
+    position: relative;
+    min-height: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .greetDes{
+        overflow: hidden;
+        display: inline-block;
+        padding: 80px 20px;
+        width: 100%;
+        height: 63%;
+    }
+}
+
+
+.wGreet {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 490px;
+  /*background-color: #1560FB; */
+}
+
+@media (min-width: 768px) {
+    .wGreet {
+      float: left;
+      margin: 0px auto;
+     /* position: absolute;
+      margin-left: 0;
+      margin-top: 0;*/
+      height: 100%;
+      width: 34%; 
+      overflow: hidden;
+    } 
+}
+
+.newSquare {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom : 100%; /* = width for a 1:1 aspect ratio */
+    margin: .5% auto;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain; /* you change this to "contain" if you don't want the images to be cropped */
+    min-width: 279px;
+    min-height: 279px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.lighter{
+    background-color: rgba(96,105,138, 0.1);
+}
+
