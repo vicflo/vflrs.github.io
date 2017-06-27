@@ -1,17 +1,41 @@
 // On your marks, get set...
 $(document).ready(function(){
 
-	$('#etcetera').fullpage({
-		sectionsColor: ['rgba(96,105,138, .05)', '#fffff', 'rgba(96,105,138, .1)', '#fffff'],
-		anchors: ['pennyStudio', 'wS', 'artistChair', 'greetingCards'],
-		menu: '#etcMenu',
-		// scrollOverflow: true,
-		scrollingSpeed: 1000
-	});
-
 	$('#etcetera a').click(function(e){
 		e.preventDefault();
 	});
+
+	$('a.pennyStudio').click(function(){
+    	$('body').animate({
+    		scrollTop:$('#pennyStudio').offset().top
+    	}, 800, function() {
+		});
+    	return false;
+    });
+
+    $('a.wS').click(function(){
+    	$('body').animate({
+    		scrollTop:$('#wS').offset().top
+    	}, 800, function() {
+		});
+    	return false;
+    });
+
+    $('a.artistChair').click(function(){
+    	$('body').animate({
+    		scrollTop:$('#artistChair').offset().top
+    	}, 800, function() {
+		});
+    	return false;
+    });
+
+    $('a.greetingCards').click(function(){
+    	$('body').animate({
+    		scrollTop:$('#greetingCards').offset().top
+    	}, 800, function() {
+		});
+    	return false;
+    });
 
 	$('body').velocity("fadeIn");
 
@@ -163,6 +187,7 @@ $(document).ready(function(){
 		  		var dimensions = $(this).attr("dimensions");
 		  		var des = $(this).attr("des");
 		  		$("#right").append("<div id='preview'><img src='" + url + "' alt='Image preview' /><h1>" + title + "</h1>" + "<h2>" + materials + " " + dimensions + "</h2> " + "<p>" + des + "</p>" + "</div>");								 
+				// $("#right").css("display", "block");
 				$("#preview").velocity("fadeIn");
 			}
 
@@ -387,7 +412,7 @@ $(document).ready(function(){
 
 	var navdata = [
 	    { name :"fine art",  type: "circle", url: "first", color: "#00BCD4"},
-	    { name:"hci", type: "square", url: "second", color: "#FF1744"},
+	    { name:"UX/UI", type: "square", url: "second", color: "#FF1744"},
 	   	{ name:"set design", type: "triangle-up", url: "third", color: "#FFEB3B"},
 	   	{ name:"etc.", type: "cross", url: "fourth", color: "#60698A"}
 	];

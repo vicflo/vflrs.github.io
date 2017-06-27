@@ -13,8 +13,9 @@
     overflow: hidden;
 }
 
+
 #second{
-    margin: 0px auto;
+    margin: 0px 0px;
     background-color: white;
 }
 
@@ -78,7 +79,7 @@ li {
     line-height: 1.2;
     /*font-family: "voyager-thin";*/
     /*color: #60698A;*/
-    margin: 0px 38px;
+    margin: -4px 38px 0px 38px;
     color: #2646C3;
 }
 
@@ -336,7 +337,7 @@ circle:hover{
 #right{
     width: 40%;
     height: 542px;
-    display: block;
+    display: none;
     float: right;
     padding: 18px 0px 0px 0px;
     position: relative;
@@ -470,7 +471,7 @@ h4{
 section{
     width: 100%;
     height: 100vh;
-    /*overflow: hidden;*/
+    /*overflow: visible;*/
     min-height: 650px;
     /*min-width: 1000px;*/
 }
@@ -1077,7 +1078,6 @@ a.social{
 
 #fourth{
     /*padding-top: 60px;*/
-    overflow: visible;
     font-size: 10px;
 
 }
@@ -1119,96 +1119,6 @@ a.social{
     border: 1px solid rgba(0, 188, 212, 1);
 }
 
-/* STUDIO DES*/
-
-.specialStyle{
-    /*color: rgba(255, 235, 59, 1);*/
-    /*color: rgba(0, 188, 212, .7);*/
-    /*color: rgba(255, 23, 68, .5);*/
-    color: rgba(96,105,138, 1);
-     /*color: #2646C3;*/
-    font-size: 44px;
-    font-family: "voyager-regular";
-    /*text-align: center;*/
-    margin: 0px auto 0px auto;
-}
-
-.special{
-    color: rgba(96,105,138, 0.6);
-    line-height: 1em;
-    font-size: 18px;
-    font-family: 'Lora', serif;
-    font-style: italic;
-    margin: 8px auto;
-    white-space:normal;
-    word-wrap: break-word;
-
-}
-
-.studioContainer{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    /*height: 80%;*/
-    margin: 0 auto;
-    position: relative;
-    min-width: 300px;
-    padding-bottom: 120px;
-}
-
-.studioDes{
-    position: fixed;
-    z-index: 20;
-    top: 25px;
-    left: 48%;
-    width: 50%;
-    height: 80px;
-    display: block;
-    /*margin: 0px auto 0px auto;*/
-}
-
-.studio{
-    display: inline-block;
-    width: 41%;
-    float: left;
-    /*background-image:url(../cards/MET.png);*/
-    min-width: 300px;
-    min-height: 349px;
-    margin: 0px auto 0px 0px;
-    text-align: left;
-}
-
-.studioDetail{
-    width: 55%;
-    float: right;
-    margin: 0px 0px 0px auto;
-    background-color: white;
-    padding: 100px 64px 8px 42px;
-}
-
-.studioTitle{
-    margin-top: 8px;
-    font-size: 24px;
-    font-family: 'voyager-light', 'Lora', serif;
-    color: rgba(96,105,138, 1);
-    /*font-style: italic;*/
-    font-weight: 400;
-    padding-top: 24px;
-    /*font-variant: lowercase;*/
-}
-
-
-#table img{
-  width: 100%;
-}
-
-#benches img{
-    width: 100%;
-}
-
-#benches{
-    float: right;
-}
 
 
 /* WABI SABI*/
@@ -1232,10 +1142,9 @@ a.social{
 }
 
 .wabi{
-    float: right;
     position: relative;
     display: inline-block;
-    width: 49%;
+    width: 96%;
     margin: 0px 0px 0px auto;
     background-position:center center;
     background-repeat:no-repeat;
@@ -1296,19 +1205,7 @@ a.social{
     /*font-variant: lowercase;*/
 }
 
-.sabiSpecial{
-    font-family: 'voyager-light','Lora', serif;
-    /*font-style: italic;*/
-    color: rgba(96,105,138, .8);
-    /*font-weight: 400;*/
-    font-size: 18px;
-    line-height: 1.4em;
-}
 
-.topper:first-line{
-    font-variant: small-caps;
-    letter-spacing: 2px;
-}
 
 .classy{
     font-family: 'voyager-thin-italic';
@@ -1385,6 +1282,11 @@ a.social{
     text-align: left;
 }
 
+.allCard{
+    width: 100%;
+    padding: 32px auto;
+}
+
 .yellowB{
     border-right: 12px solid rgba(255, 235, 59, 1);
 }
@@ -1434,7 +1336,8 @@ a.social{
     position: relative;
     text-align: left;
     width: 90%;
-    margin: -80px auto 16px auto;
+    margin: 0px auto 16px auto;
+    /*padding-bottom: 80px;*/
     min-width: 300px;
 }
 
@@ -1454,16 +1357,6 @@ a.social{
     margin: 0 0;
 }
 
-
-.specs{
-    font-size: 11pt;
-    font-family: 'Lora', serif;
-    color: rgba(96,105,138, .8);
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 2pt;
-    /*line-height: 7pt;*/
-}
 
 
 /*.bottle{background-image:url(../cards/leafbottleSketch.png);}*/
@@ -1661,10 +1554,100 @@ a.social{
     display: block;
 }
 
+/* ETC SECTION */
+
+
+
+.zebraOne{
+    background-color: gray;
+}
+
+.zebraTwo{
+     background-color: white;
+}
+
+.etLeft{
+    position: relative;
+    margin: 0px 0px 0px auto;
+    width: 48%;
+    float: left;
+}
+
+.etRight{
+    position: relative;
+    width: 48%;
+    float: right;
+    margin: 0px auto 0px 0px;
+}
+
+/* STUDIO DES*/
+
+.studioContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /*height: 80%;*/
+    margin: 0 auto;
+    position: relative;
+    min-width: 300px;
+    padding-bottom: 120px;
+}
+
+.studioDes{
+    position: fixed;
+    z-index: 20;
+    top: 25px;
+    left: 48%;
+    width: 50%;
+    height: 80px;
+    display: block;
+    /*margin: 0px auto 0px auto;*/
+}
+
+.studio{
+    position: relative;
+    display: inline-block;
+    /*flex: 0 0 50%;*/
+    width: 50%;
+    height: 100%;
+    float: left;
+    /*background-image:url(../cards/MET.png);*/
+    min-width: 320px;
+    min-height: 320px;
+    margin: 0px auto 0px 0px;
+    text-align: left;
+}
+
+.studioDetail{
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    /*flex: 1;*/
+    height: 100%;
+    min-width: 320px;
+    float: right;
+    margin: 0px 0px 0px auto;
+    background-color: white;
+    padding: 16px 16px 16px 16px;
+}
+
+
+
+#benches img{
+    width: 100%;
+}
+
+#benches{
+    float: right;
+}
+
+/************* NEW ETCETERA SECTION ***************/
+
+/* ETC MENU */
 
 #etcMenu li {
     font-family: 'voyager-thin', 'Lora', sans-serif;
-    font-size: 14px;
+    font-size: 1.2vw;
     display:inline-block;
     margin: 8px;
     /*color: rgba(96,105,138, 1);*/
@@ -1672,6 +1655,7 @@ a.social{
     /*background:#fff;*/
     border: none;
 }
+
 #etcMenu li.active{
      color: red;
 }
@@ -1693,26 +1677,245 @@ a.social{
 #etcMenu li a,
 #etcMenu li.active a{
     text-decoration:none;
-    padding: 9px 12px;
+    padding: 11px 12px;
     display: block;
 }
 #etcMenu{
     position: relative;
-    height: 40px;
-    z-index: 90;
-    width: 40%;
-    padding: 0;
-    margin:30px auto 10px auto;
+    height: 58px;
+    width: 100%;
+    padding: 10px;
+    margin: 0px auto 0px auto;
     text-align: center;
 }
 
-/* Slide Override */
-.fp-controlArrow.fp-prev {
-    margin-top: -85px;
-    border-color: transparent rgba(96,105,138, 1) transparent transparent;
+.menuWrap{
+    display: block;
+    width: 100%;
+    height: 120px;
+    z-index: 60;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding-top: 60px;
+
 }
 
-.fp-controlArrow.fp-next {
-        margin-top: -85px;
-    border-color: transparent transparent transparent rgba(96,105,138, 1);
+@media (min-width: 1200px) {
+    .menuWrap {
+        padding-top: 0px;
+        display: block;
+        width: 61%;
+        /*height: 80px;*/
+        z-index: 80;
+        position: fixed;
+        top: 14px;
+        left: 18.3%;
+    } 
+}
+
+/* Studio Section Specific */
+
+.specialStyle{
+    /*color: rgba(255, 235, 59, 1);*/
+    /*color: rgba(0, 188, 212, .7);*/
+    /*color: rgba(255, 23, 68, .5);*/
+    color: rgba(96,105,138, 1);
+     /*color: #2646C3;*/
+    font-size: 44px;
+    font-family: "voyager-regular";
+    /*text-align: center;*/
+    margin: 0px auto 0px auto;
+}
+
+.special{
+    text-align: center;
+    color: rgba(96,105,138, 0.6);
+    line-height: 1em;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    margin: 0px auto;
+    padding: 3.45%;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.stud-special{
+    color: rgba(96,105,138, 0.6);
+    line-height: 1em;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    margin: 8px auto;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.studioTitle{
+    margin-top: 8px;
+    font-size: 24px;
+    font-family: 'voyager-light', 'Lora', serif;
+    color: rgba(96,105,138, 1);
+    /*font-style: italic;*/
+    font-weight: 400;
+    padding-top: 24px;
+    /*font-variant: lowercase;*/
+}
+
+.table{
+    background-image: url(../cards/MET.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+/* Chair Section */
+
+.chair{
+    background-image: url(../cards/chair.jpg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+/********************* GENERAL ETC STYLE **************************/
+
+.sabiSpecial{
+    font-family: 'voyager-light','Lora', serif;
+    /*font-style: italic;*/
+    color: rgba(96,105,138, .8);
+    /*font-weight: 400;*/
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.topper:first-line{
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.specs{
+    font-size: 11pt;
+    font-family: 'Lora', serif;
+    color: rgba(96,105,138, .8);
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 2pt;
+    /*line-height: 7pt;*/
+}
+
+.etcetera {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 490px;
+  background-color: #1560FB; 
+}
+
+@media (min-width: 768px) {
+    .etcetera {
+      float: left;
+      position: absolute;
+      margin-left: 0;
+      margin-top: 0;
+      height: 100%;
+      width: 50%; 
+    } 
+}
+
+.etcetera-text {
+    display: inline-block;
+    padding-top: 20px;
+    /*min-height: 490px;*/
+    margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .etcetera-text {
+      float: right;
+      position: absolute;
+      padding: 132px 20px 20px 20px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 47%;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden; 
+    } 
+}
+
+.etWrapper{
+    margin-top: 122px;
+}
+
+@media (min-width: 768px) {
+    .etWrapper{
+        z-index: 2;
+        /*width: 100%;*/
+        height: 100%;
+        position: relative;
+        display: block;
+        margin-top: 0px;
+    }
+}
+
+.abc{
+    /*clear:both;*/
+    display: block;
+    width: 100%;
+    height: 15%;
+    /*background-color: rgba(38, 70, 195, 1);*/
+    /*background-color: white;*/
+    /*background-color: rgba(96,105,138, .4);*/
+}
+
+#fourth{
+    overflow: visible;
+}
+
+/** Reversed Etcetera **/
+
+.etcAlt-text {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 490px;
+  /*background-color: #fff; */
+  background-color: rgba(38, 70, 195, .05);
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .etcAlt-text {
+      float: left;
+      position: absolute;
+      margin-left: 0;
+      margin-top: 0;
+      height: 100%;
+      width: 50%; 
+
+      padding: 132px 40px 40px 40px;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden; 
+    } 
+}
+
+
+.etcAlt {
+    display: inline-block;
+    min-height: 490px;
+}
+
+@media (min-width: 768px) {
+    .etcAlt {
+      float: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 47%;
+    } 
 }
