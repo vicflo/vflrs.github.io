@@ -1264,7 +1264,7 @@ a.social{
 }
 
 .yellowB{
-    border-right: 12px solid rgba(255, 235, 59, 1);
+    border-right: 12px solid rgba(255, 235, 59, .8);
 }
 
 .magentaB{
@@ -1279,13 +1279,6 @@ a.social{
     background-color: rgba(255,255,255, 0);
 }
 
-.schematic {
-    position: absolute;
-    top: 0;
- /*   left: 100%;*/
-    /*left: 0;*/
-    height:100%;
-}
 
 .detailer {
     position: absolute;
@@ -1294,9 +1287,9 @@ a.social{
     height:100%;
 }
 
-.detailer img, .schematic img{
+/*.detailer img, .schematic img{
     max-height: 100%;
-}
+}*/
 
 .card h3{
     font-family: "voyager-light", sans-serif;
@@ -1338,7 +1331,7 @@ a.social{
 /*.bottle{background-image:url(../cards/leafbottleSketch.png);}*/
 .img_1-1{background-image:url(../cards/heartLayout.svg);}
 .img_1-3{background-image:url(../cards/heartFinal.gif);}
-
+1-
 .img_2-1{background-image:url(../cards/rosetteLayout.svg);}
 .img_2-3{background-image:url(../cards/rosetteFinal.svg);}
 
@@ -1936,6 +1929,32 @@ a.social{
     } 
 }
 
+.allSchema{
+    width:100%;
+    display: inline-block;
+    height: 30%;
+    background-color: blue;
+    position: relative;
+}
+
+.card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: left;
+}
+
+.cPad{
+    padding: 80px 20px;
+}
+
+.nCPad{
+    padding: 20px 20px;
+}
+
 .greetDes{
     position: relative;
     min-height: 400px;
@@ -1995,6 +2014,60 @@ a.social{
 }
 
 .lighter{
-    background-color: rgba(96,105,138, 0.1);
+    background-color: rgba(96,105,138, 0.4);
 }
 
+.newRect {
+    /*float: left;*/
+    position: relative;
+    display:inline-block;
+    width: 100%;
+    height: 50%;
+    margin: 0px auto;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-width: 279px;
+    min-height: 279px;
+    /*border: 1px solid rgba(96,105,138, .5);*/
+}
+
+.extra{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.newRect:before{
+    content: "";
+    display: block;
+    padding-top: 50%;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+
+}
+
+.newRect::-webkit-scrollbar,
+{
+    display: none;
+}
+
+
+.schematic {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    /*left: 0;*/
+    height:100%;
+}
+
+.detailer img, .schematic img{
+    max-height: 100%;
+}
+
+.lColor p{
+    color: white;
+}
+
+.lColor{
+    background-color: rgba(96,105,138, 1);
+}
