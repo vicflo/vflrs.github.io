@@ -1263,8 +1263,16 @@ a.social{
     padding: 32px auto;
 }
 
+.grayB{
+    border-right: 12px solid rgba(96,105,138, .8);
+}
+
+.whiteB{
+    border-right: 12px solid white;
+}
+
 .yellowB{
-    border-right: 12px solid rgba(255, 235, 59, .8);
+    border-right: 12px solid rgba(255, 235, 59, 1);
 }
 
 .magentaB{
@@ -1739,6 +1747,7 @@ a.social{
     /*font-weight: 400;*/
     font-size: 16px;
     line-height: 1.4em;
+    margin-top: 8px;
 }
 
 .topper:first-line{
@@ -1752,7 +1761,7 @@ a.social{
     color: rgba(96,105,138, .8);
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 2pt;
+    margin-bottom: 1pt;
     /*line-height: 7pt;*/
 }
 
@@ -1912,7 +1921,7 @@ a.social{
   display: inline-block;
   position: relative;
   width: 100%;
-  min-height: 618px; /*Might need to adjust if I add text here*/
+  min-height: 400px; /*Might need to adjust if I add text here*/
   /*background-color: #1560FB; */
 }
 
@@ -1970,7 +1979,7 @@ a.social{
   display: inline-block;
   position: relative;
   width: 100%;
-  min-height: 490px;
+  min-height: 600px;
   /*background-color: #1560FB; */
 }
 
@@ -1998,12 +2007,25 @@ a.social{
     background-size: contain; /* you change this to "contain" if you don't want the images to be cropped */
     min-width: 279px;
     min-height: 279px;
+}
 
+.cent{
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+}
+
+.dotCent{
+    position: absolute;
+    top: 58%;
+    left: 97.5%;
+    margin-right: -97.5%;
+    transform: translate(-58%, -97.5%);
+    z-index: 50;
+
+
 }
 
 .lighter{
@@ -2016,13 +2038,12 @@ a.social{
     display:inline-block;
     width: 100%;
     height: 50%;
-    min-height: 324px;
     margin: 0px auto;
     background-position:center center;
     background-repeat:no-repeat;
     background-size: cover;
     min-width: 279px;
-    min-height: 279px;
+    min-height: 400px;
     /*border: 1px solid rgba(96,105,138, .5);*/
 }
 
@@ -2063,5 +2084,6 @@ a.social{
 }
 
 .lColor{
-    background-color: rgba(96,105,138, 1);
+    background-color: rgba(96,105,138, .8);
 }
+

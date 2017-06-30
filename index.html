@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-        <link rel="stylesheet" href="css/style1.css" type="text/css" />
+    <link rel="stylesheet" href="css/style1.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
@@ -236,7 +237,7 @@
           <div class="etWrapper" id="greetingCards">
             <div class="greet yelly">
               <!-- <div class="greetDes"></div> -->
-              <div class="newSquare img_1-1"></div>
+              <div class="newSquare cent img_1-1"></div>
             </div>
 
             <div class="wGreet">
@@ -246,7 +247,7 @@
                 <p class="cardDetail">Card consists of three layers that form four hearts with an inside reverse fold. Designed as a valentine, it affords a surprise as each layer (tailored to recipient) is revealed, and holds a note (folded similarly) at its center.</p>
               </div> -->
               <div class="newRect extra">
-               <div class="card yellowB">
+               <div class="card grayB">
                  <p class="specialStyle">Hearts (Layered Valentine)</p>
                 <p class="specs">Details</p>
                 <p class="sabiSpecial">Card consists of three layers that form four hearts with an inside reverse fold. Designed as a valentine, it affords a surprise as each layer (tailored to recipient) is revealed, and holds a note (folded similarly) at its center.</p>
@@ -259,7 +260,7 @@
                   </div>
               </div>
               <div class="newRect extra">
-                <div class="card tealB lColor">
+                <div class="card whiteB lColor">
                   <p class="specialStyle">Prototype</p>
                   <p class="specs">Occasion</p>
                   <p class="sabiSpecial">Valentine's Day</p>
@@ -276,9 +277,17 @@
               </div>
             </div>
             <div class="greet yelly">
-              <div class="newSquare img_1-3"></div>
+              <div class="newSquare cent img_1-3"></div>
               <!-- <div class="greetDes"></div> -->
             </div>
+             <div class="dotstyle dotstyle-fillin dotCent">
+                <ul>
+                  <li class="current"><a href="#">Hearts</a></li>
+                  <li><a href="#">Rosette</a></li>
+                  <li><a href="#">Terrain</a></li>
+                  <li><a href="#">Wallet</a></li>
+                </ul>
+              </div>
           </div>
         </section>
 
@@ -339,6 +348,17 @@
 
    <!-- Custum JS -->
   <script type="text/javascript" src="js/script.js"></script>
+
+  <script src="js/dots.js"></script>
+  <script>
+    [].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
+      new DotNav( nav, {
+        callback : function( idx ) {
+          //console.log( idx )
+        }
+      } );
+    } );
+  </script>
 
 
 
