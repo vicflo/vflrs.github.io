@@ -1339,7 +1339,7 @@ a.social{
 /*.bottle{background-image:url(../cards/leafbottleSketch.png);}*/
 .img_1-1{background-image:url(../cards/heartLayout.svg);}
 .img_1-3{background-image:url(../cards/heartFinal.gif);}
-1-
+
 .img_2-1{background-image:url(../cards/rosetteLayout.svg);}
 .img_2-3{background-image:url(../cards/rosetteFinal.svg);}
 
@@ -1735,19 +1735,37 @@ a.social{
 
 /********************* GENERAL ETC STYLE **************************/
 
+#rosetteCard, #terrainCard, #walletCard{
+    display: none;
+}
+
 .qtd{
     font-size: 25px;
 
 }
 
 .sabiSpecial{
-    font-family: 'voyager-light','Lora', serif;
+     font-family: 'voyager-light','Lora', serif;
     /*font-style: italic;*/
     color: rgba(96,105,138, .8);
     /*font-weight: 400;*/
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 2.2vh;
     line-height: 1.4em;
     margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+    .sabiSpecial{
+        font-family: 'voyager-light','Lora', serif;
+        /*font-style: italic;*/
+        color: rgba(96,105,138, .8);
+        /*font-weight: 400;*/
+        /*font-size: 16px;*/
+        font-size: 1.2vw;
+        line-height: 1.4em;
+        margin-top: 8px;
+    }
 }
 
 .topper:first-line{
@@ -1824,6 +1842,14 @@ a.social{
         display: block;
         margin-top: 0px;
     }
+}
+
+.greetWrap{
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    display: block;
+    margin-top: 0px;
 }
 
 .abc{
@@ -1921,7 +1947,7 @@ a.social{
   display: inline-block;
   position: relative;
   width: 100%;
-  min-height: 400px; /*Might need to adjust if I add text here*/
+  min-height: 620px; /*Might need to adjust if I add text here*/
   /*background-color: #1560FB; */
 }
 
@@ -2015,6 +2041,10 @@ a.social{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%); 
+    -o-transform: translate(-50%, -50%); 
 }
 
 .dotCent{
@@ -2023,9 +2053,11 @@ a.social{
     left: 97.5%;
     margin-right: -97.5%;
     transform: translate(-58%, -97.5%);
+    -webkit-transform: translate(-58%, -97.5%);
+    -moz-transform: translate(-58%, -97.5%);
+    -ms-transform: translate(-58%, -97.5%); 
+    -o-transform: translate(-58%, -97.5%); 
     z-index: 50;
-
-
 }
 
 .lighter{
@@ -2037,14 +2069,22 @@ a.social{
     position: relative;
     display:inline-block;
     width: 100%;
-    height: 50%;
     margin: 0px auto;
     background-position:center center;
     background-repeat:no-repeat;
     background-size: cover;
     min-width: 279px;
-    min-height: 400px;
     /*border: 1px solid rgba(96,105,138, .5);*/
+}
+
+.rTop{
+    height: 49%;
+    min-height: 380px;
+}
+
+.rBottom{
+    height: 51%;
+    min-height: 400px;
 }
 
 .extra{

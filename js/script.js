@@ -37,6 +37,31 @@ $(document).ready(function(){
     	return false;
     });
 
+    // Card Sifters
+
+    $(".card-sift").on("click", function() {
+		// Grab the target page section's ID from the link's (contained within "this") href attribute
+		var scrollTargetID = $(this).attr("href");
+		console.log("card sift " + scrollTargetID);
+		var whichCard = $(scrollTargetID).attr('id');
+		console.log("cardsift id " + whichCard);
+		cardShift(whichCard);
+	});
+
+function cardShift(fadeToID){
+	var previous = $('.cardVis');
+	var checkID = previous.attr('id'); //currently visible section
+	var newString = fadeToID + "Card";
+	if(newString != checkID){
+		previous.removeClass('cardVis');
+		$('#'+ newString).addClass('cardVis');
+		previous.velocity("fadeOut", {duration: 600});
+		$('#'+ newString).velocity("fadeIn", { delay: 800, duration: 1000 });
+	}
+}
+
+    // End Card Sifters
+
 	$('body').velocity("fadeIn");
 
 
@@ -460,12 +485,12 @@ $(document).ready(function(){
 
 /** ------------------------------ Navigation Event ---------------------------------------*/
 
-	$(".nav-link").on("click", function() {
-		// Grab the target page section's ID from the link's (contained within "this") href attribute
-		var scrollTargetID = $(this).attr("href");
-		var id = $('#'+ scrollTargetID).attr('id');
-		sectionClick(id);
-	});
+$(".nav-link").on("click", function() {
+	// Grab the target page section's ID from the link's (contained within "this") href attribute
+	var scrollTargetID = $(this).attr("href");
+	var id = $('#'+ scrollTargetID).attr('id');
+	sectionClick(id);
+});
 
 function sectionClick(scrollTargetID){
 	var previous = $('.visible');
