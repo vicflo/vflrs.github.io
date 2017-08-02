@@ -21,9 +21,9 @@ $(document).ready(function(){
     	return false;
     });
 
-    $('a.artistChair').click(function(){
+    $('a.bier').click(function(){
     	$('body').animate({
-    		scrollTop:$('#artistChair').offset().top
+    		scrollTop:$('#bier').offset().top
     	}, 800, function() {
 		});
     	return false;
@@ -76,6 +76,27 @@ $(document).ready(function(){
 		if(newString != checkID){
 			previous.removeClass('metVis');
 			$('#'+ newString).addClass('metVis');
+			previous.velocity("fadeOut", {duration: 600});
+			$('#'+ newString).velocity("fadeIn", { delay: 800, duration: 1000 });
+		}
+	}
+
+	$(".wabi-sift").on("click", function() {
+		// Grab the target page section's ID from the link's (contained within "this") href attribute
+		var scrollTargetID = $(this).attr("href");
+		console.log("card sift " + scrollTargetID);
+		var whichCard = $(scrollTargetID).attr('id');
+		console.log("cardsift id " + whichCard);
+		wabiShift(whichCard);
+	});
+
+	function wabiShift(fadeToID){
+		var previous = $('.wabiVis');
+		var checkID = previous.attr('id'); //currently visible section
+		var newString = fadeToID + "Card";
+		if(newString != checkID){
+			previous.removeClass('wabiVis');
+			$('#'+ newString).addClass('wabiVis');
 			previous.velocity("fadeOut", {duration: 600});
 			$('#'+ newString).velocity("fadeIn", { delay: 800, duration: 1000 });
 		}

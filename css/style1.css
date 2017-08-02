@@ -1733,7 +1733,7 @@ a.social{
 
 /********************* GENERAL ETC STYLE **************************/
 
-#rosetteCard, #terrainCard, #walletCard, #metBenchCard{
+#rosetteCard, #terrainCard, #walletCard, #metBenchCard, #chairCard{
     display: none;
 }
 
@@ -2166,3 +2166,10 @@ a.social{
     background-color: rgba(96,105,138, .8);
 }
 
+
+.oxy{
+    background-image: url(../cards/oxyMoron3.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
