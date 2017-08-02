@@ -1586,15 +1586,6 @@ a.social{
 }
 
 
-
-#benches img{
-    width: 100%;
-}
-
-#benches{
-    float: right;
-}
-
 /************* NEW ETCETERA SECTION ***************/
 
 /* ETC MENU */
@@ -1724,6 +1715,13 @@ a.social{
     background-size: cover;
 }
 
+.bench{
+    background-image: url(../cards/allBenches.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
 /* Chair Section */
 
 .chair{
@@ -1812,23 +1810,24 @@ a.social{
     .etcetera-text {
       float: right;
       position: absolute;
-      padding: 132px 20px 20px 20px;
+      padding: 132px 56px 20px 20px;
       top: 0;
       right: 0;
       height: 100%;
-      width: 47%;
+      width: 48%;
       overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
       overflow-x: hidden; 
     } 
 }
 
-.topEt{
+
+#pennyStudio{
     margin-top: 122px;
 }
 
 @media (min-width: 768px) {
-    .topEt{
+    #pennyStudio{
         margin-top: 0px;
     }
 }
@@ -1845,11 +1844,20 @@ a.social{
 }
 
 .greetWrap{
-    height: 100%;
-    z-index: 2;
+    height: auto;
     position: relative;
-    display: block;
-    margin-top: 0px;
+    min-height: 1240px;
+}
+
+@media (min-width: 768px) {
+    .greetWrap{
+        height: 100%;
+        z-index: 2;
+        position: relative;
+        display: block;
+        margin-top: 0px;
+        min-height: 720px;
+    }
 }
 
 .abc{
@@ -1896,7 +1904,7 @@ a.social{
 
 .etcAlt {
     display: inline-block;
-    /*min-height: 490px;*/
+    min-height: 420px;
     width: 100%;
 }
 
@@ -1904,6 +1912,7 @@ a.social{
     .etcAlt {
       float: right;
       position: absolute;
+      min-height: 720px;
       top: 0;
       right: 0;
       height: 100%;
@@ -2017,6 +2026,7 @@ a.social{
       margin-left: 0;
       margin-top: 0;*/
       height: 100%;
+      min-height: 720px;
       width: 34%; 
       overflow: hidden;
     } 
@@ -2064,7 +2074,8 @@ a.social{
 
 .dotCent{
     position: absolute;
-    top: 38%;
+    float: right;
+    top: 264px;
     left: 94%;
     transform: translate(-38%, -94%);
     -webkit-transform: translate(-38%, -94%);
@@ -2078,7 +2089,7 @@ a.social{
     .dotCent{
         position: absolute;
         top: 58%;
-        left: 97%;
+        left: 98%;
         transform: translate(-58%, -97%);
         -webkit-transform: translate(-58%, -97%);
         -moz-transform: translate(-58%, -97%);
