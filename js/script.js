@@ -48,17 +48,38 @@ $(document).ready(function(){
 		cardShift(whichCard);
 	});
 
-function cardShift(fadeToID){
-	var previous = $('.cardVis');
-	var checkID = previous.attr('id'); //currently visible section
-	var newString = fadeToID + "Card";
-	if(newString != checkID){
-		previous.removeClass('cardVis');
-		$('#'+ newString).addClass('cardVis');
-		previous.velocity("fadeOut", {duration: 600});
-		$('#'+ newString).velocity("fadeIn", { delay: 800, duration: 1000 });
+	function cardShift(fadeToID){
+		var previous = $('.cardVis');
+		var checkID = previous.attr('id'); //currently visible section
+		var newString = fadeToID + "Card";
+		if(newString != checkID){
+			previous.removeClass('cardVis');
+			$('#'+ newString).addClass('cardVis');
+			previous.velocity("fadeOut", {duration: 600});
+			$('#'+ newString).velocity("fadeIn", { delay: 800, duration: 1000 });
+		}
 	}
-}
+
+    $(".met-sift").on("click", function() {
+		// Grab the target page section's ID from the link's (contained within "this") href attribute
+		var scrollTargetID = $(this).attr("href");
+		console.log("card sift " + scrollTargetID);
+		var whichCard = $(scrollTargetID).attr('id');
+		console.log("cardsift id " + whichCard);
+		metShift(whichCard);
+	});
+
+	function metShift(fadeToID){
+		var previous = $('.metVis');
+		var checkID = previous.attr('id'); //currently visible section
+		var newString = fadeToID + "Card";
+		if(newString != checkID){
+			previous.removeClass('metVis');
+			$('#'+ newString).addClass('metVis');
+			previous.velocity("fadeOut", {duration: 600});
+			$('#'+ newString).velocity("fadeIn", { delay: 800, duration: 1000 });
+		}
+	}
 
     // End Card Sifters
 

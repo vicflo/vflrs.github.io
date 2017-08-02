@@ -1690,7 +1690,7 @@ a.social{
     font-family: 'Lora', serif;
     font-style: italic;
     margin: 0px auto;
-    padding: 3.45%;
+    padding: 40px;
     white-space:normal;
     word-wrap: break-word;
 }
@@ -1735,7 +1735,7 @@ a.social{
 
 /********************* GENERAL ETC STYLE **************************/
 
-#rosetteCard, #terrainCard, #walletCard{
+#rosetteCard, #terrainCard, #walletCard, #metBenchCard{
     display: none;
 }
 
@@ -1856,7 +1856,6 @@ a.social{
     /*clear:both;*/
     display: block;
     width: 100%;
-    height: 17%;
     /*background-color: rgba(38, 70, 195, 1);*/
     /*background-color: white;*/
     /*background-color: rgba(96,105,138, .4);*/
@@ -1947,7 +1946,7 @@ a.social{
   display: inline-block;
   position: relative;
   width: 100%;
-  min-height: 620px; /*Might need to adjust if I add text here*/
+  min-height: 420px; /*Might need to adjust if I add text here*/
   /*background-color: #1560FB; */
 }
 
@@ -1958,6 +1957,7 @@ a.social{
      /* position: absolute;
       margin-left: 0;
       margin-top: 0;*/
+      min-height: 720px; 
       height: 100%;
       width: 33%; 
       overflow: hidden;
@@ -2022,17 +2022,32 @@ a.social{
     } 
 }
 
-.newSquare {
+.newSquare{
     display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom : 100%; /* = width for a 1:1 aspect ratio */
-    margin: .5% auto;
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size: contain; /* you change this to "contain" if you don't want the images to be cropped */
-    min-width: 279px;
-    min-height: 279px;
+        position: relative;
+        width: 100%;
+        padding-bottom : 70%; /* = width for a 1:1 aspect ratio */
+        margin: .5% auto;
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size: contain; /* you change this to "contain" if you don't want the images to be cropped */
+        min-width: 279px;
+        min-height: 279px;
+}
+
+@media (min-width: 768px) {
+    .newSquare {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        padding-bottom : 100%; /* = width for a 1:1 aspect ratio */
+        margin: .5% auto;
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size: contain; /* you change this to "contain" if you don't want the images to be cropped */
+        min-width: 279px;
+        min-height: 279px;
+    }
 }
 
 .cent{
@@ -2049,15 +2064,28 @@ a.social{
 
 .dotCent{
     position: absolute;
-    top: 58%;
-    left: 97.5%;
-    margin-right: -97.5%;
-    transform: translate(-58%, -97.5%);
-    -webkit-transform: translate(-58%, -97.5%);
-    -moz-transform: translate(-58%, -97.5%);
-    -ms-transform: translate(-58%, -97.5%); 
-    -o-transform: translate(-58%, -97.5%); 
+    top: 38%;
+    left: 94%;
+    transform: translate(-38%, -94%);
+    -webkit-transform: translate(-38%, -94%);
+    -moz-transform: translate(-38%, -94%);
+    -ms-transform: translate(-38%, -94%); 
+    -o-transform: translate(-38%, -94%); 
     z-index: 50;
+}
+
+@media (min-width: 768px) {
+    .dotCent{
+        position: absolute;
+        top: 58%;
+        left: 97%;
+        transform: translate(-58%, -97%);
+        -webkit-transform: translate(-58%, -97%);
+        -moz-transform: translate(-58%, -97%);
+        -ms-transform: translate(-58%, -97%); 
+        -o-transform: translate(-58%, -97%); 
+        z-index: 50;
+    }
 }
 
 .lighter{
