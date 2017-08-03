@@ -102,6 +102,27 @@ $(document).ready(function(){
 		}
 	}
 
+	$(".sbg-sift").on("click", function() {
+		// Grab the target page section's ID from the link's (contained within "this") href attribute
+		var scrollTargetID = $(this).attr("href");
+		console.log("card sift " + scrollTargetID);
+		var whichCard = $(scrollTargetID).attr('id');
+		console.log("cardsift id " + whichCard);
+		oxyShift(whichCard);
+	});
+
+	function oxyShift(fadeToID){
+		var previous = $('.oxyVis');
+		var checkID = previous.attr('id'); //currently visible section
+		var newString = fadeToID + "Card";
+		if(newString != checkID){
+			previous.removeClass('oxyVis');
+			$('#'+ newString).addClass('oxyVis');
+			previous.velocity("fadeOut", {duration: 600});
+			$('#'+ newString).velocity("fadeIn", { delay: 800, duration: 1000 });
+		}
+	}
+
     // End Card Sifters
 
 	$('body').velocity("fadeIn");

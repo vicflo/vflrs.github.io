@@ -1733,7 +1733,7 @@ a.social{
 
 /********************* GENERAL ETC STYLE **************************/
 
-#rosetteCard, #terrainCard, #walletCard, #metBenchCard, #chairCard{
+#rosetteCard, #terrainCard, #walletCard, #metBenchCard, #chairCard, #oxymoronCard{
     display: none;
 }
 
@@ -2172,4 +2172,21 @@ a.social{
     background-position:center center;
     background-repeat:no-repeat;
     background-size: cover;
+}
+
+.logo{
+    background-image: url(../cards/logoSBG.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-color: white;
+}
+
+.addBG{
+    background-color: rgba(96,105,138, .6);
+}
+
+.white p, .white h3{
+    color: white;
+    font-weight: 400;
 }
