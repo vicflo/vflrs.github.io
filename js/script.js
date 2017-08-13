@@ -527,7 +527,7 @@ $(document).ready(function(){
 	    	return d.url;
 	    })
 	    .attr("transform", function(d, i) { 
-	    	return "translate(" + (i*60 + 10) + "," + (30) + ")"; 
+	    	return "translate(" + (i*50 + 10) + "," + (30) + ")"; 
 	    })
 		.call(d3.helper.tooltip(
 	        function(d, i){
@@ -574,14 +574,14 @@ function sectionClick(scrollTargetID){
 				}
 				break;
 			case "second":
-				overviewDes();
+				// overviewDes();
 				$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
 				$('p span#dynamic').text('HCI').velocity("fadeIn", {duration: 800});
-				$('#golden-container').velocity("fadeIn", { delay: 800, duration: 1000 });
+				// $('#golden-container').velocity("fadeIn", { delay: 800, duration: 1000 });
 				break;
 			case "third":
 				$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
-				$('p span#dynamic').text('SET DESIGN').velocity("fadeIn", {duration: 800});
+				$('p span#dynamic').text('SETS').velocity("fadeIn", {duration: 800});
 				break;
 			case "fourth":
 				$('p span#bracket').text('//').velocity("fadeIn", {duration: 800});
@@ -615,211 +615,16 @@ function sectionClick(scrollTargetID){
 		$(this).find('.hover').velocity("fadeOut", 500);
 	};
 
-/** HCI Section layout; Golden Ratio nested divs **/
+	// new code
+	// $('.overview-project').bind('mouseenter', showDetail);
+	// $('.overview-project').bind('mouseleave', noDetail);
 
-//  HAVING SOME FUN WITH THE GOLDEN RATIO
-
-specialProjects = [
-	{ subpage: "subIllusion.html", p_title: "Illusion Études" , des: "Exploring Obscure Interactions" , color: "rgba(0, 188, 212, 1)", opacity: "rgba(0, 188, 212, .1)",  tags: ["UX", "Web"], image: "projects/illusion_tile_small.png", tile: "projects/illusion_tile_large_2.png"},
-	{ subpage: "https://cloud-arch.com/projects/common-ground/", p_title: "Common Ground", des: "Connecting SF Market Street", color:"rgba(255, 235, 59, 1)", opacity: "rgba(255, 255, 255, .1)", tags: ["Experience", "Architecture", "Cross-Discipline"], image: "projects/common_small_tile.png", tile: "projects/common_tile_large.png"},
-	{ subpage: "http://vicflo.github.io/Project-Pages/Cloud-Architecture/cloud-archived.html", p_title: "Cloud Architecture" , des: "Collective Launch Site" , color:"rgba(255, 23, 68, 1)",opacity: "#f7f5f7", tags: ["UX/UI", "Web"], image: "projects/cloud.jpg", tile: "projects/cloud_tile_large.png"},
-	{ subpage: "subCharlotte.html", p_title: "Charlotte", des: "Visualizing Web Design", color:"rgba(255, 23, 68, 1)", opacity: "rgba(255, 23, 68, .05)", tags: ["DataViz", "Web"], image: "projects/char_tile_small.png", tile: "projects/char_tile_large.png"},
-	{ subpage: "subRedesign.html", p_title: "KLM & PayPal Redesigns", des: "Cross-platform and Frame-by-frame", color: "rgba(0, 188, 212, 1)", opacity: "rgba(0, 188, 212, .1)", tags: ["UI", "Redesign"], image:"projects/redesign_tile_small.png", tile: "projects/redesign_tile_large.png"},
-	{ subpage: "subStart.html", p_title: "Start.Home", des: "Encouraging a Sustainable Lifestyle", color:"rgba(255, 235, 59, 1)", opacity: "rgba(255, 235, 59, .1)", tags: ["UX/UI", "DataViz", "Cross-Discipline", "iPad"], image: "projects/start_tile_small.png", tile: "projects/solar_tile_large.png"},
-	{ subpage: "subDerive.html", p_title: "Derive", des: "A Realtime Virtual Guestbook", color:"rgba(255, 23, 68, 1)", opacity: "rgba(255, 23, 68, .05)",  tags: ["UX/UI", "Web", "Leap Motion"], image: "projects/derive_tile_small.png", tile: "projects/derive_tile_large.png"}
-];
-
-// Image Preloading for hci hover
-
-for (var i = 0; i < specialProjects.length; ++i) {
-    var img = new Image();
-    img.src = specialProjects[i].tile;
-}
+	$('.overview-project').mouseenter(showDetail);
+	$('.overview-project').mouseleave(noDetail);
+	$('.overview-project-rect').mouseenter(showDetail);
+	$('.overview-project-rect').mouseleave(noDetail);
 
 
-function takeCloserLook(box){
-
-	var info = specialProjects[box];
-	//select left box for info display
-	var tileWidth = $('.overview-project').width();
-	var tileHeight = $('.overview-project').height();
-	var cap = $('<div id="pretty" class="caption"></div>');
-	
-	var newLink = $("<a />", {href : info.subpage, target : "_blank"});
-	var h_title = $('<h3>' + info.p_title + '</h3>');
-	var h_des = $('<p>' + info.des + '</p>');
-	var tags = $('<h5 class="tags"></h5>');
-	for(var i=0; i < info.tags.length; i++){
-		var newTag = $('<span>' + info.tags[i] + '</span>');
-		newTag.appendTo(tags);
-	}
-	var hoverHci = $('<div class="hover"></div>');
-
-	var img = $('<img>',{'alt': info.p_title, 'src': info.tile , 'width': tileWidth, 'height': tileHeight});
-
-	newLink.empty().append(h_title,h_des, tags);
-	hoverHci.empty().append(newLink);
-
-	$('.overview-project').empty().append(cap, hoverHci, img).velocity("fadeIn");
-	$('.overview-project').css("background-color", info.opacity);
-	$('.overview-project').addClass('addBorder');
-	$('.tags span').css("border-color", info.color);
-}
-
-var state = 0;
-
-$('#second').on("click", '.hci-project', function(){
-	if(state ==0){
-		$('.overview-project').bind('mouseenter', showDetail);
-		$('.overview-project').bind('mouseleave', noDetail);
-		state = 1;
-	}
-
-	$('#right .centered').velocity("fadeOut");
-	$('.hci-project').each(function(){
-    	$(this).removeClass('project-selected');
-	});
-	$(this).addClass('project-selected');
-	var whichBox = getIndex($(this).attr('id'));
-	takeCloserLook(whichBox);
-});
-
-
-// takes in id of the form $targetBox.attr('id') as parameter return index in array
-
-function getIndex(index){
-	finalIndex = index[0] - 1; //getting index from id with string manipulation, good times!
-	return finalIndex;
-}
-
-function overviewDes(){
-	$('.overview-project').removeClass('addBorder');
-	$('.overview-project').css('background-color', "white");
-	var hci_div = $('<div class="centered"></div>');
-	var hci_title = $('<h5>HCI & Design</h5>');
-	var hci_des = $('<p>As a designer I strive to create solutions that delight by offering new perspectives, especially on projects that engage people across different aspects of daily life. I also constantly question what is necessary for intereactions to be intuitive, paying close attention to detail, connotative relationships, narrative, visual procession, chain of causation, and drill-down of information.</p>');
-	hci_div.append(hci_title, hci_des);
-	$('.overview-project').empty().append(hci_div);
-	$('#second .centered').velocity("fadeIn", { duration: 1000, delay: 1000, opacity: .7});
-}
-
-
-// After tiles created, is called to populate with project data
-function populateGolden(){
-	var allBoxes = $('.hci-project');
-	//  change id of one box for algorithm sequence anomaly
-	$('#6-right').attr('id','7-right');
-	$('#7-right').removeClass("hci6");
-	$('#7-right').addClass("hci7");
-
-	for(var i = 0; i < allBoxes.length; i++){
-		targetBox = allBoxes[i];
-		var $targetBox = $(targetBox);
-		var index = getIndex($targetBox.attr('id'));
-		var boxWidth = $targetBox.width();
-		var boxHeight = $targetBox.height();
-		var current = specialProjects[index];
-		$targetBox.append(
-			$('<img>',{'alt': current.p_title, 'src': current.image , 'width': boxWidth, 'height': boxHeight})
-		);	
-	}
-	var tileWidth = $('.overview-project').width();
-}
-
-/** -------------- Create Golden Ratio Structure from Scratch -----*/
-
-	// Keep Left, Upper, Down, Right Pattern
-
-	var space = 72; //margin space
-	var sideMargin = 56;
-	
-	var numSquares = 7; // i.e. number of projects
-	var currWidth = $(window).innerWidth() - (sideMargin * 2);
-	var currHeight = (currWidth / 1.618);
-	var paddingGolden = (currHeight * (.0290322581) /3) + 2;
-	currHeight = (currWidth / 1.618) - paddingGolden*18;
-	var flip = true; //bool to flip
-	var keep = true; //bool to flip
-	
-	var $targetElement = $('#golden-container'); // this get's updated to each next wrapper
-	
-	$('#golden-container').css("width", currWidth);
-	$('#golden-container').css("height", currHeight);
-
-	var squareNum = -1; //global counter
-
-
-	for(var i = 0 ; i < numSquares; i++){
-		if(flip == true) {
-			// cut vertical, maintain height, halve width
-			var width = currWidth /2 - paddingGolden; 
-			currWidth = width; //update width
-			// create two divs for split
-			$targetElement.append(
-	            $('<div/>', {'class': 'left-golden', 'id': i + '-left', 'width': currWidth, 'height': currHeight})
-	        ).append(
-	        	$('<div/>', {'class': 'right-golden', 'id': i + '-right', 'width': currWidth, 'height': currHeight}) 
-	        )
-	        if(keep == true){
-	        	//keep the left most as a project div and the other as a wrapper.
-	        	if(i != 0){
-	        		$('#' + i + '-left').addClass( "hci-project" );
-	        		$('#' + i + '-left').addClass( "hci" + i );
-	        	} else {
-	        		$('#' + i + '-left').addClass( "overview-project" ); //special case of the info side of divs
-	        	}
-	        	$('#' + i + '-right').addClass( "golden-wrapper" );
-	        	$targetElement = $('#' + i + '-right');
-	        	
-	        } else {
-	        	if(i != numSquares -1){
-	        		$('#' + i + '-left').addClass( "golden-wrapper" );
-	        	} else {
-	        		$('#' + i + '-left').addClass( "hci-project" );
-	        		$('#' + i + '-left').addClass( "hci" + i);
-	        		console.log("last one");
-	        	}
-	        	
-	        	$('#' + i + '-right').addClass( "hci-project" );
-	        	$('#' + i + '-right').addClass( "hci" + i ); 
-	        	$targetElement = $('#' + i + '-left');
-	        }
-
-			flip = false;
-
-		} else {
-			// cut horizontal, maintain width, halve height
-			var height = currHeight /2 - paddingGolden;
-			currHeight = height;
-
-			$targetElement.append(
-	            $('<div/>', {'class': 'upper-golden', 'id': i + '-upper', 'width': currWidth, 'height': currHeight})
-	        ).append(
-	            $('<div/>', {'class': 'lower-golden', 'id': i + '-lower', 'width': currWidth, 'height': currHeight})   
-	        )
-
-	        if(keep == true){
-	        	//keep the upper and wrapper for lower.
-	        	$('#' + i + '-upper').addClass( "hci-project" );
-	        	$('#' + i + '-upper').addClass( "hci" + i);
-	        	$('#' + i + '-lower').addClass( "golden-wrapper" );
-	        	$targetElement = $('#' + i + '-lower');
-	        	keep = false;
-	        } else {
-	        	//keep lower and wrapper upper
-	        	$('#' + i + '-upper').addClass( "golden-wrapper" );
-	        	$('#' + i + '-lower').addClass( "hci-project" );
-	        	$('#' + i + '-lower').addClass( "hci" + i);
-	        	$targetElement = $('#' + i + '-upper');
-	        	keep = true;
-	        }
-
-			flip = true;
-		}
-		if(i == (numSquares - 1)){
-			populateGolden(); // special case to launch image population after creation within loop
-		}
-	}
 
 	$('.landing-image--portrait').addClass('isShown');
 	// $('.label-portrait').addClass('isShown');
