@@ -412,6 +412,7 @@ h2 {
       clear: both;
       float: left;
       width: 80px;
+      padding-bottom: 12px;
       margin-right: 30px; } }
 .main__copy {
   line-height: 26px; }
@@ -509,6 +510,7 @@ h2 {
   opacity: .6;
   font-weight: 700;
   line-height: 26px; 
+  padding-right: 2px;
 }
  @media (min-width: 500px) {
   .main__experience-year {
