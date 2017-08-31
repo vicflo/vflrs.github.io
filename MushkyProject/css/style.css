@@ -1,4 +1,4 @@
-@charset "UTF-8";
+x@charset "UTF-8";
 /* Ultra Light */
 @font-face {
   font-family: "San Francisco";
@@ -239,9 +239,9 @@ h2 {
   padding: 0 20px;
   max-width: 460px;
   color: white;
-  font-size: 22px;
+  font-size: 28px;
   text-align: center; }
-  @media (min-width: 420px) {
+  @media (min-width: 768px) {
     .info__elevator-text {
       font-size: 28px; } }
   @media (min-width: 1024px) {
@@ -481,17 +481,17 @@ h2 {
       font-family: "FontAwesome";
       font-size: 8px; }
 .main__experience {
-  margin-bottom: 20px;
-  height: 88px; 
+  padding-bottom: 20px;
+  display: flex;
 }
 
-.three_line{
+/*.three_line{
   height: 65px;
 }
 
 .five_line{
   height: 115px;
-}
+}*/
 
   @media (min-width: 1024px) {
     .main__experience {
@@ -505,7 +505,7 @@ h2 {
 
 .main__experience-year{
   float: left;
-  margin: 4px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
   opacity: .6;
   font-weight: 700;
   line-height: 26px; 
@@ -522,7 +522,8 @@ h2 {
 
   .main__experience-info {
     float: left; 
-    max-width: 485px;
+    width: 98%;
+    padding-right: 20px;
   }
     .main__experience-info-company {
       display: block;
