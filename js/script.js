@@ -303,11 +303,14 @@ $(document).ready(function(){
 		// Adding fancybox beta
 		$("circle").fancybox({
 			theme : 'light',
-			width: '75%',
-			height: "75%",
+			// toolbar: false,
+			buttons : ['close'],
 			arrows: false,
 			openEffect: "fade",
 			closeEffect: "none",
+			protect : true,
+			caption : function() {
+			return $(this).attr("title")},
 
 			overlay: {
 				closeClick : true
@@ -315,6 +318,58 @@ $(document).ready(function(){
 			}
 		});
 	}
+
+	$('[data-fancybox="lastfive"]').fancybox({
+		theme : 'light',
+			// toolbar: false,
+			buttons : ['close'],
+			arrows: true,
+			openEffect: "fade",
+			closeEffect: "none",
+			protect : true,
+			clickOutside : 'close',
+			clickSlide : 'close'
+
+	});
+
+	$('[data-fancybox="oed"]').fancybox({
+			theme : 'light',
+			// toolbar: false,
+			buttons : ['close'],
+			arrows: true,
+			openEffect: "fade",
+			closeEffect: "none",
+			protect : true,
+			clickOutside : 'close',
+			clickSlide : 'close'
+
+	});
+
+	$('[data-fancybox="intowoods"]').fancybox({
+			theme : 'light',
+			// toolbar: false,
+			buttons : ['close'],
+			arrows: true,
+			openEffect: "fade",
+			closeEffect: "none",
+			protect : true,
+			clickOutside : 'close',
+			clickSlide : 'close'
+
+	});
+
+	$('[data-fancybox="aida"]').fancybox({
+			theme : 'light',
+			// toolbar: false,
+			buttons : ['close'],
+			arrows: true,
+			openEffect: "fade",
+			closeEffect: "none",
+			protect : true,
+			clickOutside : 'close',
+			clickSlide : 'close'
+
+	});
 
 	function bindBack(){
 		$("circle").bind( "mouseover", rolloverArt);
