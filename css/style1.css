@@ -425,7 +425,7 @@ circle:hover{
 @media(min-width: 768px){
     .selected{
     font-size: 30pt;
-    margin: 20px 0% 30px 4%;
+    margin: 20px 0% 30px 2.5%;
     width: 300px;
     }
 }
@@ -947,9 +947,9 @@ section{
     .overview-project {
         display: inline-block;
         position: relative;
-        width: 28%;
-        padding-bottom : 28%; /* = width for a 1:1 aspect ratio */
-        margin: 2% 4%;
+        width: 23%;
+        padding-bottom : 23%; /* = width for a 1:1 aspect ratio */
+        margin: 2% 2.75%;
         background-position:center center;
         background-repeat:no-repeat;
         background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
@@ -974,9 +974,9 @@ section{
     .overview-project-rect {
         display: inline-block;
         position: relative;
-        width: 56%;
-        padding-bottom : 28%; /* = width for a 1:1 aspect ratio */
-        margin: 2% 4%;
+        width: 43%;
+        padding-bottom : 23%; /* = width for a 1:1 aspect ratio */
+        margin: 2% 2.75%;
         background-position:center center;
         background-repeat:no-repeat;
         background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
@@ -1060,9 +1060,22 @@ section{
     float: left;
 }
 
+.middle-golden{
+    margin: 2% 20px;
+}
+
+@media (min-width: 768px) {
+    .middle-golden{
+        display: inline-block;
+        float: left;
+        position: relative;
+        margin: 2% 0px;
+    }
+}
+
 .right-golden{
     display: inline-block;
-    float: right;
+    float: left;
     position: relative;
 }
 
