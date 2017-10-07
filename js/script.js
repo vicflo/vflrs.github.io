@@ -1,5 +1,21 @@
 // On your marks, get set...
+
 $(document).ready(function(){
+
+
+
+	function isMobileDevice() {
+    	return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+	};
+
+	var checker = isMobileDevice();
+	console.log("checker " + checker);
+
+	if(checker == false){
+		$('section').css("display", "none");
+		$('#nav').css("display", "none");
+		$('#tiny').css("display", 'block');
+	}
 
 	$('#etcetera a').click(function(e){
 		e.preventDefault();

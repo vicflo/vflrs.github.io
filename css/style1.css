@@ -32,7 +32,7 @@ html, body {
     -webkit-text-size-adjust: none;
 }
 
-html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { font-size: 100%; /*overflow-y: scroll;*/ -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 body { 
     margin: 0; 
@@ -40,6 +40,53 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+#tiny{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    text-align: center;
+}
+
+#tiny p{
+    width: 95%;
+    margin: 0px auto;
+    line-height: 1.4em;
+}
+
+#chameleon{
+    display: block;
+    width: 90%;
+    height: 40%;
+    max-width: 100%;
+    background-image: url(../chameleonexp2.png);
+    background-position:left;
+    background-repeat:no-repeat;
+    background-size: contain;
+    position: fixed;
+    top: 40%;
+    left: 0;
+
+}
+
+#oops{
+    font-family: 'voyager-regular', 'Open Sans';
+    font-size: 3em;
+    padding: 48px;
+}
+
+.chame{
+    font-family: 'voyager-light', 'Open Sans';
+    font-size: 1.2em;
+    padding: 0px auto;
+}
+
+.visit{
+    position: fixed;
+    top: 80%;
+    left: 2.5%;
+}
 
 a,
 a:visited {
@@ -1250,14 +1297,15 @@ h6{
 .landing-text {
     margin-top: 6rem;
     text-align: center;
-    padding: 1.5rem 1.5rem;
+    padding: 1.5em 1.5em;
 }
 
 .landing-label{
+    max-height: 300px;
      height: 240px;
-        font-size: 2.4vh;
+        font-size: 2.2vh;
         line-height: 1.5rem;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
         font-family: 'voyager-thin', 'voyager-light';
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
