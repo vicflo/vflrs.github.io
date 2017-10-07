@@ -11,7 +11,7 @@ $(document).ready(function(){
 	var checker = isMobileDevice();
 	console.log("checker " + checker);
 
-	if(checker == false){
+	if(checker == true){
 		$('section').css("display", "none");
 		$('#nav').css("display", "none");
 		$('#tiny').css("display", 'block');
