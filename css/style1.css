@@ -1,9 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#me{
+#me:hover, #chameleon:hover{
     cursor: pointer;
+    opacity: .6;
 }
+
 
 #second, #third, #fourth, #fifth{
     display: none;
@@ -11,6 +13,7 @@
 
 #first{
     overflow: hidden;
+    display: none;
 }
 
 
@@ -175,6 +178,7 @@ li {
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+    display: none; 
 }
 
 #othernav {
@@ -414,7 +418,7 @@ circle:hover{
 }
 
 .hciDes{
-    display: block;
+    display: flex;
     width: 100%;
     line-height: 1.4;
     margin: 0px auto 20px auto;
@@ -474,6 +478,7 @@ circle:hover{
     font-size: 30pt;
     margin: 20px 0% 30px 2.5%;
     width: 300px;
+    padding-top: 20px;
     }
 }
 
@@ -981,22 +986,22 @@ section{
 
 .overview-project{
     display: inline-block;
-        position: relative;
-        width: 90%;
-        padding-bottom : 90%; /* = width for a 1:1 aspect ratio */
-        margin: 2% 20px;
-        background-position:center center;
-        background-repeat:no-repeat;
-        background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
+    position: relative;
+    width: 90%;
+    padding-bottom : 90%; /* = width for a 1:1 aspect ratio */
+    margin: 2% 20px;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
 }
 
 @media (min-width: 768px) {
     .overview-project {
         display: inline-block;
         position: relative;
-        width: 23%;
-        padding-bottom : 23%; /* = width for a 1:1 aspect ratio */
-        margin: 2% 2.75%;
+        width: 30%;
+        padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+        margin: 2% 0px;
         background-position:center center;
         background-repeat:no-repeat;
         background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
@@ -1007,13 +1012,13 @@ section{
 
 .overview-project-rect{
     display: inline-block;
-        position: relative;
-        width: 90%;
-        padding-bottom : 45%; /* = width for a 1:1 aspect ratio */
-        margin: 2% 20px;
-        background-position:center center;
-        background-repeat:no-repeat;
-        background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
+    position: relative;
+    width: 90%;
+    padding-bottom : 45%; /* = width for a 1:1 aspect ratio */
+    margin: 2% 20px;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
   
 }
 
@@ -1021,8 +1026,8 @@ section{
     .overview-project-rect {
         display: inline-block;
         position: relative;
-        width: 43%;
-        padding-bottom : 23%; /* = width for a 1:1 aspect ratio */
+        width: 60%;
+        padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
         margin: 2% 2.75%;
         background-position:center center;
         background-repeat:no-repeat;
@@ -1105,6 +1110,7 @@ section{
     display: inline-block;
     position: relative;
     float: left;
+    margin: 2% 0px 2% 2.75%;
 }
 
 .middle-golden{
@@ -1116,14 +1122,15 @@ section{
         display: inline-block;
         float: left;
         position: relative;
-        margin: 2% 0px;
+        margin: 2% 1%;
     }
 }
 
 .right-golden{
     display: inline-block;
-    float: left;
+    float: right;
     position: relative;
+    margin: 2% 2.75% 2% 0px;
 }
 
 .upper-golden{
@@ -1167,7 +1174,7 @@ section{
         /*color:rgba(96,105,138, 1);;*/
         font-family: "voyager-light", sans-serif;
         font-size: 3em;
-        line-height: 1.2em;
+        line-height: 1.1em;
         margin: 0px auto;
     }
 }
@@ -1178,7 +1185,7 @@ section{
     color: rgba(255,255,255, 1);
     font-weight: 400;
     font-style: italic;
-    line-height: 40px;
+    line-height: 25px;
 }
 
 .tags{
@@ -1639,25 +1646,43 @@ a.social{
     position: absolute;     /* remove from flow so sunset is placed on top */
     /*border: 1px solid rgba(0, 0, 0, .7);*/
     box-shadow: 0 0 2px rgba(0, 0, 0, .7);
-
+    width: 95%;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .wrapper{
     padding-left:22px;
-    width: 100%;
+    width: 120%;
     height: 100%;
-        /*overflow: hidden;*/
+    position: relative;
+/*    white-space: nowrap;
+    overflow-x: scroll;
+    padding-bottom: -17px;*/
+
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .sunrise img{
+      white-space: nowrap;
     display: inline-block;
-    position: relative;
-    /*object-fit: contain;*/
+   /* position: relative;
+    object-fit: cover;*/
     max-height: 100%;
-    float: right;
+    float: left;
     margin: auto;
     padding-left: 2px;
+
+}
+
+.sunrise img:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .sunset img{
@@ -1687,6 +1712,7 @@ a.social{
     margin: 0px auto 30px auto;
     width: 95%;
     height: 500px;
+    overflow: hidden;
 }
 
 .showName{

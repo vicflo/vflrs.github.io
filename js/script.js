@@ -12,9 +12,13 @@ $(document).ready(function(){
 	console.log("checker " + checker);
 
 	if(checker == true){
-		$('section').css("display", "none");
+		$('first').css("display", "none");
 		$('#nav').css("display", "none");
 		$('#tiny').css("display", 'block');
+	} else{
+		$('#first').css("display", "block");
+		
+		$('#nav').css("display", "block");
 	}
 
 	$('#etcetera a').click(function(e){
@@ -673,6 +677,11 @@ function sectionClick(scrollTargetID){
 }
 
 	$('#me').on("click", function(){
+		sectionClick('fifth');
+	});
+
+	$('#chameleon').on("click", function(){
+		$('#tiny').velocity("fadeOut", {duration: 200});
 		sectionClick('fifth');
 	});
 
