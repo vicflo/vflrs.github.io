@@ -392,14 +392,26 @@ circle:hover{
     /*rgba(0, 188, 212, 1)*/
 }
 
+.mainCyan{
+     color: #00BCD4;
+}
+
 #m{
     color: #FF1744;
     /*rgba(255, 23, 68, 1)*/
 }
 
+.mainMagenta{
+    color: #FF1744;
+}
+
 #y{
     color: #FFEB3B;
     /*rgba(255, 235, 59, 1)*/
+}
+
+.mainYellow{
+    color: #FFEB3B;
 }
 
 #k{
@@ -1615,37 +1627,22 @@ a.social{
 .sunrise{
     width: 95%;
 }
-        
-/* make the links the size of the full boxes (not needed for technique) */
-/*.box a { 
-    display: block; 
-    width: 100%; 
-    height: 100%;
-}*/
+
         
 .sunset {
     /*border: 1px solid red;*/
     /* skew back by negative of parent’s skew so contents is upright */
     transform: skewX(22deg);
     background-color: white;
-    /*z-index: 2;*/
-       /*       background-position:center center;
-    background-repeat:no-repeat;
-    background-size: contain;*/
-    /*background: url(https://images.pexels.com/photos/198310/pexels-photo-198310.jpeg?h=350&auto=compress&cs=tinysrgb) no-repeat;*/
     margin-left: 76px; /* give margin to push content away from left slanted edge */
     pointer-events: auto;   /* allow pointer events for the box */
     padding: 20px;
 }
         
 .sunrise {
- /*   background-position:center right;
-    background-repeat:no-repeat;
-    background-size: contain;
-    background-image:  url(../fave2.jpg););*/
     position: absolute;     /* remove from flow so sunset is placed on top */
     /*border: 1px solid rgba(0, 0, 0, .7);*/
-    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
+    box-shadow: 0 0 2px rgba(38, 70, 195, .6);
     width: 95%;
     overflow: hidden;
     white-space: nowrap;
@@ -1656,9 +1653,6 @@ a.social{
     width: 120%;
     height: 100%;
     position: relative;
-/*    white-space: nowrap;
-    overflow-x: scroll;
-    padding-bottom: -17px;*/
 
   -webkit-overflow-scrolling: touch;
   overflow-scrolling: touch;
@@ -1867,15 +1861,36 @@ a.social{
 
 .special{
     text-align: center;
-    color: rgba(96,105,138, 0.6);
-    line-height: 1.3em;
-    font-size: 18px;
-    font-family: 'Lora', serif;
-    font-style: italic;
+    color: rgba(96,105,138, 1);
+    line-height: 2em;
+    font-size: 20px;
+    font-family: 'voyager-thin-italic' ,'Lora', serif;
+    /*font-style: italic;*/
     margin: 0px auto;
     padding: 40px;
     white-space:normal;
     word-wrap: break-word;
+    width: 70%;
+}
+
+.special:after{
+    content: "";
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+   
+}
+
+.specialY:after{
+    border-top: 1px solid #FFEB3B;
+}
+
+.specialM:after{
+    border-top: 1px solid #FF1744;
+}
+
+.specialC:after{
+    border-top: 1px solid #00BCD4;
 }
 
 .stud-special{
@@ -1929,9 +1944,14 @@ a.social{
     display: none;
 }
 
-.qtd{
-    font-size: 25px;
 
+.qtd{
+    vertical-align: -50px;
+    font-size: 100px;  
+    height: 0px;
+    display: inline-block;
+    opacity: .5;
+    display: none;
 }
 
 .sabiSpecial{
