@@ -1232,13 +1232,13 @@ section{
 }
 
 h6{
-    font-weight: 500;
+    font-weight: normal;
     text-align: center;
     width: 100%;
     z-index: 50;
-    font-family: 'voyager-regular', sans-serif;
-    letter-spacing: .012em;
-    font-size: 1.2rem;
+    font-family: 'VOYAGER_REGULAR', sans-serif;
+    letter-spacing: .018em;
+    font-size: 1.4rem;
     line-height: 3.25rem;
     position: absolute;
     top: 40px;
@@ -1247,6 +1247,11 @@ h6{
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+     color: rgba(195,38,70, .5);
+}
+
+#contrast{
+   color: rgba(195,38,70, .9);
 }
 
 .landing-image--portrait{
@@ -1321,13 +1326,13 @@ h6{
 
 .landing-label{
     max-height: 300px;
-     height: 240px;
-        font-size: 2.2vh;
-        line-height: 1.5rem;
-        padding-bottom: 2rem;
-        font-family: 'voyager-thin', 'voyager-light';
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
+    height: 240px;
+    font-size: 2.2vh;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+    font-family: 'voyager-thin', 'voyager-light';
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 @media (min-width: 860px) {
