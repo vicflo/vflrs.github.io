@@ -1,0 +1,77 @@
+/* Apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font: 16px/1.6 "Source Sans Pro", "PT Sans", Helvetica, Arial, Sans-serif;
+    color: #333;
+    height: 100%;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+    /*min-width: 960px;*/
+}
+
+
+/* Micro clearfix, courtesy of http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* Images */
+
+#rudr_instafeed{
+  list-style:none  
+}
+#rudr_instafeed li{
+  position: relative;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+  width: 20%;
+  padding: 0px;
+  margin: 0px;
+  height: 0;
+  padding-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rudr_instafeed li img{
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
