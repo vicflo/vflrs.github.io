@@ -2153,6 +2153,10 @@ a.social{
     display: none;
 }
 
+.mikkQ{
+    font-size: 5em;
+    vertical-align: -40px;
+}
 
 .qtd{
     vertical-align: -50px;
@@ -2626,4 +2630,17 @@ a.social{
         text-align: center;
         padding: 120px 20px 20px 0px;
     }
+}
+
+.hop{
+    width: 36px;
+    float: left;
+    display: inline-block;
+}
+
+
+.hat{
+    width: 56px;
+    float: left;
+    display: inline-block;
 }
