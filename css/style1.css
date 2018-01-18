@@ -538,6 +538,7 @@ circle:hover{
         margin: 30px 0px 30px 0px;
         width: 224px;
         padding-top: 20px;
+        line-height: 24pt;
     }
 }
 
@@ -896,6 +897,7 @@ section{
     width: 100%;
     text-align: center;
     float: center;
+    margin-bottom: 24px;
 }
 
 .snap{
@@ -910,8 +912,20 @@ section{
     display: inline-block;
     float: right;
     margin-left: 0 auto;
-    padding: 0px 0px 24px 16px;
-   
+    padding: 12px 0px 24px 16px;
+}
+
+.solar img{
+    display: block;
+    padding: 24px 0px;
+}
+
+.solar{
+    text-align: right;
+}
+
+.headline{
+    font-size: 18pt;
 }
 
 .desRightLeft{
@@ -920,7 +934,7 @@ section{
     display: inline-block;
     float left;
     margin-left: 0 auto;
-    padding: 0px 16px 24px 0px;
+    padding: 12px 16px 24px 0px;
     
 }
 
