@@ -1,8 +1,9 @@
 /* NOTE; specs for #wn in head of demo too */
 div#wn	{ 
     position:relative; /* scroll area div must be positioned */
-    width:360px; height:300px; /* width and height required. adjust to suit  */
-    overflow:hidden; /* required! */
+    width:100%; 
+    height:256px; /* width and height required. adjust to suit  */
+    overflow: hidden; /* required! */
 	}
 
 /* styles to display list items horizontally */
