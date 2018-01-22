@@ -1422,6 +1422,7 @@ iframe{
 .landing-name{
     /*margin-left: 0px;*/
     margin: 3.5rem -13px .75rem 0px;
+    font-family: 'voyager-medium';
 }
 
 @media (min-width: 768px) {
