@@ -668,20 +668,26 @@ circle:hover{
    transform: translate(-50%, -50%); 
     position: absolute;
     font-family: 'Lora', serif;
+        font-family: "voyager-thin";
     color: rgba(96,105,138, 0.8);
-    line-height: 1.4;
+    line-height: 1.5em;
     width: 80%;
     display: none;
 }
 
+.hue{
+ color: #60698A;
+}
+
 .centered h5{
+   
     font-size: 24pt;
-    margin: 0px 0px;
-    padding: 0px 0px 4px 0px;
-    font-family: "voyager-thin";
+    margin: 24px 0px;
+    padding: 0px 0px 16px 0px;
+    font-family: "voyager-light";
     width: 160px;
     /* some experimenting with gradient image border */
-    border-width: 0px 2px 2px 2px;
+    border-width: 0px 4px 4px 4px;
     border-style: solid;
     -webkit-border-image:-webkit-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
     -o-border-image:-o-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
@@ -697,9 +703,9 @@ circle:hover{
 /**/
 
 .centered p{
-    /*margin: 0px 0px;*/
-    font-size: 12pt;
-    font-style: italic;
+    margin: 24px 0px;
+/*    font-size: 12pt;
+    font-style: italic;*/
 }
 
 #right h1{
