@@ -259,6 +259,13 @@ circle:hover{
 }
 
 @font-face {
+  font-family: 'voyager-light-italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('VOYAGER-FAMILY/VOYAGER_LIGHT_ITALIC.otf') format('opentype');
+}
+
+@font-face {
   font-family: 'voyager-regular';
   font-style: normal;
   font-weight: normal;
@@ -266,10 +273,24 @@ circle:hover{
 }
 
 @font-face {
+  font-family: 'voyager-regular-italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('VOYAGER-FAMILY/VOYAGER_REGULAR_ITALIC.otf') format('opentype');
+}
+
+@font-face {
   font-family: 'voyager-medium';
   font-style: normal;
   font-weight: normal;
   src: local('v-med'), url('VOYAGER-FAMILY/VOYAGER_MEDIUM.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'voyager-medium-italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('VOYAGER-FAMILY/VOYAGER_MEDIUM_ITALIC.otf') format('opentype');
 }
 
 @font-face {
@@ -438,8 +459,16 @@ circle:hover{
     width: 100%;
     line-height: 1.4;
     margin: 0px auto 20px auto;
-    padding: 130px 20px 20px 20px;
+    padding: 130px 20px 60px 20px;
     text-align: left;
+}
+
+#second .hciDes{
+    background-color: #fff;
+}
+
+#second{
+    background-color: rgba(96,105,138, 0.04);
 }
 
 .detailed{
@@ -483,9 +512,29 @@ circle:hover{
     margin: 10px 10px 30px 20px;
     font-family: "voyager-thin";
     border-style: solid;
-    border-color: rgba(38, 70, 195, 1);
+    /*border-color: rgba(38, 70, 195, 1);*/
     border-width: 0px 0px 4px 0px;
-    color: rgba(38, 70, 195, .6);
+    /*color: rgba(38, 70, 195, .6);*/
+}
+
+.fancyUnderline{
+    border-width: 0px 0px 4px 0px;
+    border-style: solid;
+    -webkit-border-image:-webkit-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
+    -o-border-image:-o-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
+    -moz-border-image:-moz-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
+    border-image: linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
+    border-image-slice: 50;
+}
+
+.hciSelected{
+            border-width: 0px 0px 0px 4px;
+        border-style: solid;
+        -webkit-border-image:-webkit-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
+        -o-border-image:-o-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
+        -moz-border-image:-moz-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
+        border-image: linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
+        border-image-slice: 20;
 }
 
 
@@ -628,6 +677,7 @@ circle:hover{
     float: left;
     width: 100%;
     font-size: 14px;
+
     border-style: solid;
     border-color: rgba(38, 70, 195, 1);
     border-width: 0px 0px 0px 0px;
@@ -641,6 +691,7 @@ circle:hover{
         display: block;
         width: 100%;
         font-size: 16px;
+
         border-style: solid;
         border-color: rgba(38, 70, 195, 1);
         border-width: 0px 0px 0px 4px;
@@ -667,8 +718,8 @@ circle:hover{
    -o-transform: translate(-50%, -50%); 
    transform: translate(-50%, -50%); 
     position: absolute;
-    font-family: 'Lora', serif;
-        font-family: "voyager-thin";
+   /* font-family: 'Lora', serif;*/
+    font-family: "voyager-thin";
     color: rgba(96,105,138, 0.8);
     line-height: 1.5em;
     width: 80%;
@@ -680,14 +731,13 @@ circle:hover{
 }
 
 .centered h5{
-   
-    font-size: 24pt;
+    font-size: 30pt;
     margin: 24px 0px;
-    padding: 0px 0px 16px 0px;
-    font-family: "voyager-light";
-    width: 160px;
+    padding: 0px 0px 24px 0px;
+    font-family: "voyager-thin";
+    width: 180px;
     /* some experimenting with gradient image border */
-    border-width: 0px 4px 4px 4px;
+    border-width: 0px 0px 4px 0px;
     border-style: solid;
     -webkit-border-image:-webkit-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
     -o-border-image:-o-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
@@ -1833,7 +1883,7 @@ a.social{
 /* set the size of the boxes and any decoration */
 .box { 
     width: 90%;
-    height: 500px;
+    height: 540px;
 }
 
 .sunset{
@@ -1841,7 +1891,8 @@ a.social{
 }
 
 .sunrise{
-    width: 95%;
+    /*width: 95%;*/
+    /*width: 100%;*/
 }
 
         
@@ -1858,14 +1909,14 @@ a.social{
 .sunrise {
     position: absolute;     /* remove from flow so sunset is placed on top */
     /*border: 1px solid rgba(0, 0, 0, .7);*/
-    box-shadow: 0 0 2px rgba(38, 70, 195, .6);
-    width: 95%;
+    /*box-shadow: 0 0 2px rgba(38, 70, 195, .6);*/
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
 }
 
 .wrapper{
-    padding-left:22px;
+    padding-left:32px;
     width: 120%;
     height: 100%;
     position: relative;
@@ -1882,7 +1933,9 @@ a.social{
     display: inline-block;
    /* position: relative;
     object-fit: cover;*/
+    height: 100%;
     max-height: 100%;
+    /*float: left;*/
     float: left;
     margin: auto;
     padding-left: 2px;
@@ -1919,9 +1972,9 @@ a.social{
     
 
 .showContain{
-    margin: 0px auto 30px auto;
+    margin: 0px 0px 0px 0px;
     width: 95%;
-    height: 500px;
+    height: 540px;
     overflow: hidden;
 }
 
@@ -1955,8 +2008,8 @@ a.social{
     /*font-style: italic;*/
     color: rgba(96,105,138, 1);
     /*font-weight: 400;*/
-    font-size: 1.2em;
-    line-height: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.5em;
     width: 600px;
     float: left;
 }
@@ -1966,7 +2019,7 @@ a.social{
     height: 100%;
     float: left;
     display: block;
-    margin: 0px auto;
+    margin: 24px auto 0px 24px;
 }
 
 .sideSketch{
@@ -1987,6 +2040,7 @@ a.social{
     margin-bottom: auto;
     display: block;
 }
+
 
 /************* NEW ETCETERA SECTION ***************/
 
@@ -2089,6 +2143,7 @@ a.social{
     width: 70%;
 }
 
+
 .special:after{
     content: "";
     display: block;
@@ -2165,14 +2220,110 @@ a.social{
     vertical-align: -40px;
 }
 
-.qtd{
-    vertical-align: -50px;
-    font-size: 100px;  
+.sqtd{
+    position: relative;
+    top: 0;
+    left: 7%;
+    font-family: "voyager-thin-italic";
+    vertical-align: -568px;
+    font-size: 44em;  
     height: 0px;
     display: inline-block;
-    opacity: .5;
-    display: none;
+    /*opacity: .5;*/
+    line-height: .9;
+    /*display: none;*/
 }
+
+.setqtd{
+    position: relative;
+    top: 0;
+    left: 64%;
+    font-family: "voyager-thin-italic";
+    vertical-align: -260px;
+    font-size: 28em;  
+    height: 0px;
+    display: inline-block;
+    /*opacity: .5;*/
+    line-height: 0.5;
+    /*display: none;*/
+}
+
+.one{
+  background-color: rgba(255, 235, 59, 1);
+  background-image: -webkit-linear-gradient(42deg, rgba(255, 235, 59, 1) 45%, #FFFCDB 45%);
+  min-height: 334px;
+}
+
+.yellowGrad{
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255, 235, 59, .18) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255, 235, 59, .18) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255, 235, 59, .18) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.magentaGrad{
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255, 23, 68, .18) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255, 23, 68, .18) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255, 23, 68, .18) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.cyanGrad{
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(8, 217, 244, .18) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(8, 217, 244, .18) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(8, 217, 244, .18) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+
+.whiter{
+    color: white;
+}
+
+.setSpecial{
+    text-align: center;
+    color: rgba(96,105,138, 1);
+    /*color: rgba(255, 235, 59, 1);*/
+    line-height: 2em;
+    font-size: 20px;
+    font-family: 'voyager-thin-italic' ,'Lora', serif;
+    /*font-style: italic;*/
+    margin: 0px auto;
+    padding: 80px 0px 80px 0px;
+    white-space:normal;
+    word-wrap: break-word;
+    width: 60%;
+    /*font-variant: small-caps;*/
+}
+
+.setRight{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    float: right;
+    margin-left: 0 auto;
+    padding: 12px 0px 12px 0px;
+}
+
+.setLeft{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    margin-left: 0 auto;
+    padding: 12px 24px 12px 24px;
+}
+
+.wider{
+    width: 60%;
+}
+
+.addMarg{
+    margin: 24px 0px;
+}
+
+.noHeight{
+    height: 35em;
+}
+
 
 .sabiSpecial{
      font-family: 'voyager-light','Lora', serif;
