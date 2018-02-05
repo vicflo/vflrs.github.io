@@ -1195,7 +1195,7 @@ iframe{
 } 
 
 .hci3:before{
-    background: rgba(255, 23, 68, .1);
+    background: rgba(0, 188, 212, .2);
 } 
 
 .hci4:before{
@@ -1313,7 +1313,7 @@ iframe{
 }
 
 #cloud{
-    background-image:url(../projects/cloud_tile_small1.png);
+    background-image:url(../projects/polarr_tile_small.png);
 }
 
 #charlotte{
