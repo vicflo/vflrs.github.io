@@ -3,23 +3,33 @@
 $(document).ready(function(){
 
 
+	// function isMobileDevice() {
+ //    	return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+	// };
 
-	function isMobileDevice() {
-    	return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-	};
+	// var checker = isMobileDevice();
+	// console.log("checker " + checker);
 
-	var checker = isMobileDevice();
-	console.log("checker " + checker);
-
-	if(checker == true){
-		$('first').css("display", "none");
-		$('#nav').css("display", "none");
-		$('#tiny').css("display", 'block');
-	} else{
-		$('#first').css("display", "block");
+	// if(checker == true){
+	// 	$('first').css("display", "none");
+	// 	$('#nav').css("display", "none");
+	// 	$('#tiny').css("display", 'block');
+	// } else{
+	// 	$('#first').css("display", "block");
 		
-		$('#nav').css("display", "block");
-	}
+	// 	$('#nav').css("display", "block");
+	// }
+
+	$('#tiny').click(function(e){
+		$('#tiny').velocity('fadeOut');
+
+			$('#first').velocity("fadeIn", { delay: 605, duration: 1000 });
+			$('#nav').velocity("fadeIn", { delay: 605, duration: 1000 });
+		// $('#first').css("display", "block");
+		
+		// $('#nav').css("display", "block");
+
+	});
 
 	$('#etcetera a').click(function(e){
 		e.preventDefault();

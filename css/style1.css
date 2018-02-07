@@ -43,20 +43,6 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-#tiny{
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: white;
-    z-index: 1000;
-    text-align: center;
-}
-
-#tiny p{
-    width: 95%;
-    margin: 0px auto;
-    line-height: 1.4em;
-}
 
 #chameleon{
     display: block;
@@ -2801,4 +2787,178 @@ a.social{
     width: 56px;
     float: left;
     display: inline-block;
+}
+
+/* Dreams */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+body{
+  font-family: 'voyager-medium', sans-serif;
+    ;
+}
+div.foo{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  z-index: 1001;
+}
+
+#tiny{
+    background-image: url(../test.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#tiny{
+    /*display: none;*/
+    width: 97%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+    text-align: center;
+}
+
+
+
+.snow{
+   background-image:
+           url(https://image.ibb.co/k0aqx6/snow.png), 
+           url(https://image.ibb.co/eCahc6/snow1.png), 
+           url(https://image.ibb.co/bOboH6/snow2.png);
+   width: 100%;
+   height:100%;
+   position: absoulute;
+   top: 0;
+   left: 0;
+   z-index:1002;
+   animation: snow 10s linear infinite;
+}
+@keyframes snow {
+    from {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    to {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 8vw;
+  margin: 40vh .13em 0 .13em;
+
+  color: white;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1003;
+
+    animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+    -webkit-animation: colorchange 50s; /* Chrome and Safari */
+
+}
+
+
+
+@keyframes colorchange
+    {
+      0%   {color: purple;}
+      5%   {color: violet;}
+      10%   {color: teal;}
+      15%   {color: orangered;}
+      20%   {color: crimson;}
+      25%   {color: darkturquoise;}
+      30%  {color: steelblue;}
+      35%  {color: turquoise;}
+      40%  {color: coral;}
+      45%  {color: skyblue;}
+      50%  {color: darkslateblue;}
+      55%  {color: darkviolet;}
+      65%  {color: gold;}
+      60%  {color: yellow;}
+      70%  {color: yellowgreen;}
+      75%  {color: blue;}
+      80%  {color: pink;}
+      100% {color: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {color: red;}
+      25%  {color: yellow;}
+      50%  {color: blue;}
+      75%  {color: green;}
+      100% {color: red;}
+    }
+
+.letter:before, .letter:after{
+
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #60698A;
+
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-10deg)
+    rotateZ(0deg);
+}
+
+.letter:after{
+  color: rgba(0,0,0,.11);
+
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #60698A;
+
+  transform:
+    rotateX(0deg)
+    rotateY(-80deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
+.linear-wipe {
+  /*text-align: center;*/
+  
+   animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+  /*background-size: 200% auto;*/
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+  }
 }
