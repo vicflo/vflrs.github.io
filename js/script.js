@@ -35,6 +35,10 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
+	$('.thrive-sift a').click(function(e){
+		e.preventDefault();
+	});
+
 	$('a.pennyStudio').click(function(){
     	$('body').animate({
     		scrollTop:$('#pennyStudio').offset().top
@@ -127,6 +131,32 @@ $(document).ready(function(){
 		if(newString != checkID){
 			previous.removeClass('wabiVis');
 			$('#'+ newString).addClass('wabiVis');
+			previous.velocity("fadeOut", {duration: 600});
+			$('#'+ newString).velocity("fadeIn", { delay: 800, duration: 1000 });
+		}
+	}
+
+
+	$('.thrive-sift').click(thriveFunc);
+
+	function thriveFunc(){
+		console.log("pppppppppppppo");
+		// Grab the target page section's ID from the link's (contained within "this") href attribute
+		var scrollTargetID = $(this).attr("id");
+		console.log("card sift " + scrollTargetID);
+		var whichCard = $(scrollTargetID).attr('id');
+		console.log("cardsift id " + whichCard);
+		thriveShift(scrollTargetID);
+	}
+
+
+	function thriveShift(fadeToID){
+		var previous = $('.thriveVis');
+		var checkID = previous.attr('id'); //currently visible section
+		var newString = fadeToID + "Card";
+		if(newString != checkID){
+			previous.removeClass('thriveVis');
+			$('#'+ newString).addClass('thriveVis');
 			previous.velocity("fadeOut", {duration: 600});
 			$('#'+ newString).velocity("fadeIn", { delay: 800, duration: 1000 });
 		}

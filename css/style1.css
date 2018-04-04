@@ -882,6 +882,13 @@ section{
     background-color: #08D9F4;
 }
 
+.subDandelion{
+    background-image:url(../projects/dande.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
 
 .topSubPage {
     /*height: 60px;*/
@@ -947,6 +954,12 @@ section{
     border-radius: 2px;
 }
 
+.userWrap{
+    height: 100vh;
+    width: 100%;
+    display: block;
+
+}
 
 .desRight{
     position: relative;
@@ -989,6 +1002,16 @@ section{
     padding: 0px 0px 24px 0px;
 }
 
+.TdesLeft{
+    /*color: rgba(96,105,138, 1);*/
+    width: 100%;
+    float: left;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0px 0px 36px 0px;
+
+}
+
 .paypalLeft{
     position: relative;
     width: 30%;
@@ -1029,8 +1052,33 @@ iframe{
 
 .full-des p{
     /*margin-top: 0px;*/
-    line-height: 18pt;
+    line-height: 20pt;
     /*color: black;*/
+}
+
+.full-trive a{
+   color: #806DFF;
+}
+
+.full-thrive{
+    color: #555;
+    font-family: 'voyager-thin', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 12px auto 36px auto;
+    padding: 0px 12%;
+    font-size: 12pt;
+}
+
+.full-thrive p{
+    /*margin-top: 0px;*/
+    line-height: 20pt;
+    /*color: black;*/
+}
+
+
+.thriveQ{
+    line-height: 14pt;
 }
 
 
@@ -1041,6 +1089,20 @@ iframe{
     display: block;
     margin: 48px auto 48px auto;
     text-align: center;
+}
+
+.tSlide{
+    width: 100%;
+    display: block;
+    margin: 48px auto 48px auto;
+    text-align: center;
+}
+
+.tSlide img{
+    position: relative;
+    text-align: center;
+    float: center;
+    width: 100%;
 }
 
 .slide img{
@@ -1108,6 +1170,26 @@ iframe{
 
 .bold{
     font-family: 'voyager-bold', sans-serif;
+}
+
+.med{
+    font-family: 'voyager-medium', sans-serif;
+}
+
+.lightItal{
+    font-family: 'voyager-light-italic', sans-serif;
+}
+
+.lightV{
+    font-family: 'voyager-light', sans-serif;
+}
+
+.allium{
+    color: #806DFF;
+}
+
+.full-thrive a{
+     color: #806DFF;
 }
 
 .switched{
@@ -2101,6 +2183,13 @@ a.social{
     } 
 }
 
+.thriveStyle{
+    font-size: 44px;
+    font-family: "voyager-regular";
+    /*text-align: center;*/
+    margin: 0px auto 0px auto;
+}
+
 /* Studio Section Specific */
 
 .specialStyle{
@@ -2161,6 +2250,26 @@ a.social{
     word-wrap: break-word;
 }
 
+.thrive-special{
+    color: rgba(128, 109, 255, .6);
+    line-height: 1em;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    margin: 8px auto;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.thriveTitle{
+    margin-top: 8px;
+    font-size: 24px;
+    font-family: 'voyager-light', 'Lora', serif;
+    /*font-style: italic;*/
+    font-weight: 400;
+    padding-top: 24px;
+}
+
 .studioTitle{
     margin-top: 8px;
     font-size: 24px;
@@ -2197,13 +2306,38 @@ a.social{
 
 /********************* GENERAL ETC STYLE **************************/
 
-#rosetteCard, #terrainCard, #walletCard, #metBenchCard, #chairCard, #oxymoronCard{
+#rosetteCard, #terrainCard, #walletCard, #metBenchCard, #chairCard, #oxymoronCard, #bloomCard, #edgesCard, #greenhousesCard, #alliumsCard, #tappCard{
     display: none;
 }
 
 .mikkQ{
     font-size: 5em;
     vertical-align: -40px;
+}
+
+.gardenQ{
+    font-size: 5em;
+    vertical-align: -30px;
+    color: #806DFF;
+    height: 20px;
+}
+
+.point{
+    font-size: 10pt;
+    /*text-align: center;*/
+    margin: 0px 0px;
+    padding-top: 8px;
+}
+
+.subTopic{
+    text-align: center;
+    margin: 48px auto 24px auto;
+    width: 400px;
+    border-color: #806DFF;
+}
+
+.need{
+    margin: 6px 0px;
 }
 
 .sqtd{
@@ -2310,6 +2444,12 @@ a.social{
     height: 35em;
 }
 
+.thriveSpecial{
+    font-family: 'voyager-light','Lora', serif;
+    font-size: 2.2vh;
+    line-height: 1.4em;
+    margin-top: 8px;
+}
 
 .sabiSpecial{
      font-family: 'voyager-light','Lora', serif;
@@ -2338,6 +2478,16 @@ a.social{
 .topper:first-line{
     font-variant: small-caps;
     letter-spacing: 2px;
+}
+
+.tspecs{
+    font-size: 11pt;
+    font-family: 'Lora', serif;
+    /*color: #806DFF;*/
+    /*opacity: .8;*/
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 1pt;
 }
 
 .specs{
@@ -2390,6 +2540,28 @@ a.social{
     } 
 }
 
+.thrive-text {
+    display: inline-block;
+    padding: 20px;
+    color: #555;
+    /*min-height: 490px;*/
+}
+
+@media (min-width: 768px) {
+    .thrive-text {
+      float: right;
+      position: absolute;
+      padding: 60px 80px 20px 60px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden; 
+    } 
+}
+
 
 #pennyStudio{
     margin-top: 122px;
@@ -2407,6 +2579,16 @@ a.social{
         /*width: 100%;*/
         height: 100%;
         position: relative;
+        display: block;
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .thriveWrapper{
+        z-index: 2;
+        /*width: 100%;*/
+        height: 100%;
         display: block;
         margin-top: 0px;
     }
@@ -2734,6 +2916,81 @@ a.social{
     background-color: rgba(96,105,138, .8);
 }
 
+.thrivePics{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#voronoi{
+    background-image: url(../cards/voronoi1.png);
+}
+
+#blossom{
+    background-image: url(../cards/blooms2.png);
+}
+
+#eS{
+    background-image: url(../cards/edgeshadowFinal.png);
+}
+
+#greenery{
+     background-image: url(../cards/greenhouse.png);
+}
+
+#garlic{
+     background-image: url(../cards/alliumFull5.png);
+}
+
+#citizens{
+     background-image: url(../cards/citizens2.jpg);
+}
+
+.fullIdea{
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 16px auto;
+    position: relative;
+}
+
+#allGarden{
+    background-image: url(../cards/fullShotLightBG.png);
+}
+
+#sensory{
+    background-image: url(../cards/senses1.jpg);
+}
+
+#leiden{
+    background-image: url(../cards/leiden.png);
+}
+
+#siteplan{
+    background-image: url(../cards/leidenSitePlanRight.png);
+}
+
+.relative{
+    position: relative;
+    height: 100vh;
+
+}
+
+.shorter{
+    position: relative;
+    height: 50vh;
+    width: 45%;
+}
+
+
+.thriveBG{
+   background-color: rgba(128, 109, 255, .1);
+}
+
+.thriveB{
+   background-color: rgba(128, 109, 255, .05);
+}
+
 
 .oxy{
     background-image: url(../cards/oxyMoron3.png);
@@ -2776,12 +3033,33 @@ a.social{
     }
 }
 
+.clover{
+    width: 44px;
+    float: left;
+    padding-top: 12px;
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.extra{
+    padding-top: 18px;
+}
+
+.padded{
+    padding: 12px 0px 12px 0px;
+}
+
 .hop{
     width: 36px;
     float: left;
     display: inline-block;
 }
 
+.grape{
+    width: 45px;
+    float: left;
+    display: inline-block;
+}
 
 .hat{
     width: 56px;
