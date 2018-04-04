@@ -942,6 +942,13 @@ section{
 
 }
 
+.Tdetails{
+    font-family: "voyager-medium", sans-serif;
+    font-size: 12pt;
+    margin-bottom: 14px;
+
+}
+
 .fullW{
     width: 100%;
     text-align: center;
@@ -1062,7 +1069,7 @@ iframe{
 
 .full-thrive{
     color: #555;
-    font-family: 'voyager-thin', sans-serif;
+    font-family: 'voyager-light', sans-serif;
     height: 100%;
     width: 100%;
     margin: 12px auto 36px auto;
