@@ -946,7 +946,10 @@ section{
     font-family: "voyager-medium", sans-serif;
     font-size: 12pt;
     margin-bottom: 14px;
+}
 
+.ital{
+    font-family: "voyager-medium-italic", sans-serif;
 }
 
 .fullW{
@@ -2197,6 +2200,18 @@ a.social{
     margin: 0px auto 0px auto;
 }
 
+.zuid-special{
+    color: rgba(128, 109, 255, 1);
+    line-height: 2em;
+    font-size: 22px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    margin: 8px auto;
+    white-space: normal;
+    word-wrap: break-word;
+    word-spacing: 24px;
+}
+
 /* Studio Section Specific */
 
 .specialStyle{
@@ -2975,6 +2990,14 @@ a.social{
 
 #siteplan{
     background-image: url(../cards/leidenSitePlanRight.png);
+}
+
+#london{
+    background-image: url(../london.png);
+}
+
+#zuidas{
+    background-image: url(../zuidas.png);
 }
 
 .relative{
