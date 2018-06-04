@@ -3000,6 +3000,14 @@ a.social{
     background-image: url(../zuidas.png);
 }
 
+#whoOne{
+    background-image: url(../ideaviz.png);
+}
+
+#whoTwo{
+    background-image: url(../treeviz.png);
+}
+
 .relative{
     position: relative;
     height: 100vh;
