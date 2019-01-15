@@ -453,9 +453,6 @@ circle:hover{
     background-color: #fff;
 }
 
-#second{
-    background-color: rgba(96,105,138, 0.04);
-}
 
 .detailed{
     width: 100%;
@@ -495,32 +492,20 @@ circle:hover{
     width: 220px;
     font-size: 20pt;
     padding: 0px 0px 12px 0px;
-    margin: 10px 10px 30px 20px;
+    margin: 10px 10px 20px 20px;
     font-family: "voyager-thin";
     border-style: solid;
-    /*border-color: rgba(38, 70, 195, 1);*/
     border-width: 0px 0px 4px 0px;
-    /*color: rgba(38, 70, 195, .6);*/
 }
 
 .fancyUnderline{
     border-width: 0px 0px 4px 0px;
     border-style: solid;
-    -webkit-border-image:-webkit-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    -o-border-image:-o-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    -moz-border-image:-moz-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    border-image: linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    border-image-slice: 50;
-}
-
-.hciSelected{
-            border-width: 0px 0px 0px 4px;
-        border-style: solid;
-        -webkit-border-image:-webkit-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-        -o-border-image:-o-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-        -moz-border-image:-moz-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-        border-image: linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-        border-image-slice: 20;
+    -webkit-border-image:-webkit-linear-gradient(90deg, rgba(0, 188, 212, .7) 0%, rgba(255, 23, 68, .5) 40%, rgba(255, 235, 59, .5) 100%);
+    -o-border-image:-o-linear-gradient(90deg, rgba(0, 188, 212, .7) 0%, rgba(255, 23, 68, .5) 40%, rgba(255, 235, 59, .5) 100%);
+    -moz-border-image:-moz-linear-gradient(90deg, rgba(0, 188, 212, .7) 0%, rgba(255, 23, 68, .5) 40%, rgba(255, 235, 59, .5) 100%);
+    border-image: linear-gradient(90deg, rgba(0, 188, 212, .7) 0%, rgba(255, 23, 68, .5) 40%, rgba(255, 235, 59, .5) 100%);
+    border-image-slice: 15;
 }
 
 
@@ -582,7 +567,8 @@ circle:hover{
     border-style: solid;
     border-color: rgba(38, 70, 195, 1);
     border-width: 0px 0px 4px 0px;
-    color: rgba(38, 70, 195, .6);
+    /*color: rgba(38, 70, 195, .6);*/
+    color: rgba(96,105,138, 1);
     position: relative;
     height: 100%;
     text-align: left;
@@ -592,15 +578,6 @@ circle:hover{
     padding: 0px 20px 10px 0px;
     font-family: "voyager-thin";
     width: 190px;
-    /* some experimenting with gradient image border */
-/*    border-width: 0px 2px 0px 0px;
-    border-style: solid;
-    -webkit-border-image:-webkit-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    -o-border-image:-o-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    -moz-border-image:-moz-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    border-image: linear-gradient(-16deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 68%, rgb(255, 235, 59) 55%);
-    border-image-slice: 27;*/
-    /*border-right: 2px solid rgba(38, 70, 195, .8);*/
 
 }
 
@@ -619,21 +596,12 @@ circle:hover{
         padding: 0px 24px 20px 0px;
         font-family: "voyager-thin";
         min-width: 190px;
-        /* some experimenting with gradient image border */
-   /*     border-width: 0px 2px 0px 0px;
-        border-style: solid;
-        -webkit-border-image:-webkit-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-        -o-border-image:-o-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-        -moz-border-image:-moz-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-        border-image: linear-gradient(-16deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 68%, rgb(255, 235, 59) 55%);
-        border-image-slice: 27;*/
-/*         border-right: 4px solid rgba(38, 70, 195, 1);*/
     }
 
 }
 
 .mainHCI{
-    font-family: "voyager-light", 'Lora', serif;
+    font-family: "voyager-thin", 'Lora', serif;
     color: rgba(96,105,138, 0.8);
     position: relative;
     height: 100%;
@@ -665,7 +633,8 @@ circle:hover{
     font-size: 14px;
 
     border-style: solid;
-    border-color: rgba(38, 70, 195, 1);
+    /*border-color: rgba(38, 70, 195, 1);*/
+    border-color: rgba(255, 235, 59, .5);
     border-width: 0px 0px 0px 0px;
 }
 
@@ -677,16 +646,18 @@ circle:hover{
         display: block;
         width: 100%;
         font-size: 16px;
-
         border-style: solid;
-        border-color: rgba(38, 70, 195, 1);
+        /*border-color: rgba(38, 70, 195, 1);*/
+         border-color: rgba(255, 235, 59, 1);
         border-width: 0px 0px 0px 4px;
     }
 }
 
 .liner{
     font-family: 'Lora', serif;
-    color: rgba(38, 70, 195, .6);
+    /*color: rgba(38, 70, 195, .6);*/
+    color: rgba(96,105,138, 1);
+    font-weight: 400;
     margin: 0px auto;
     font-style: italic;
 }
@@ -695,7 +666,6 @@ circle:hover{
 
 
 .centered {
-    /*position: fixed;*/
     top: 50%;
     left: 50%;            
    -webkit-transform: translate(-50%, -50%);
@@ -704,7 +674,6 @@ circle:hover{
    -o-transform: translate(-50%, -50%); 
    transform: translate(-50%, -50%); 
     position: absolute;
-   /* font-family: 'Lora', serif;*/
     font-family: "voyager-thin";
     color: rgba(96,105,138, 0.8);
     line-height: 1.5em;
@@ -713,7 +682,7 @@ circle:hover{
 }
 
 .hue{
- color: #60698A;
+    color: #60698A;
 }
 
 .centered h5{
@@ -722,26 +691,11 @@ circle:hover{
     padding: 0px 0px 24px 0px;
     font-family: "voyager-thin";
     width: 180px;
-    /* some experimenting with gradient image border */
-    border-width: 0px 0px 4px 0px;
-    border-style: solid;
-    -webkit-border-image:-webkit-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    -o-border-image:-o-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    -moz-border-image:-moz-linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    border-image: linear-gradient(90deg, rgb(0, 188, 212) 0%, rgb(255, 23, 68) 80%, rgb(255, 235, 59) 100%);
-    border-image-slice: 50;
 }
 
-/*show love love*/
-
-
-
-/**/
 
 .centered p{
     margin: 24px 0px;
-/*    font-size: 12pt;
-    font-style: italic;*/
 }
 
 #right h1{
@@ -889,16 +843,21 @@ section{
     background-size: cover;
 }
 
+.subMMEK{
+    background-image:url(../projects/whoViz.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
 
 .topSubPage {
-    /*height: 60px;*/
     position: relative;
     display: block;
     text-decoration: none;
     margin: 0px auto;
     padding: 20px 12%;
     width: 100%;
-    /*color: rgba(96,105,138, 1);*/
     color: white;
 }
 
@@ -1292,6 +1251,14 @@ iframe{
     background: rgba(255, 23, 68, .1);
 } 
 
+.hci8:before{
+    background: rgba(255, 23, 68, .1);
+}
+
+.hci9:before{
+    background: rgba(0, 188, 212, .2);
+}
+
 .hci-project:before {
     content: "";
     display: block;
@@ -1375,11 +1342,19 @@ iframe{
         width: 60%;
         padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
         margin: 2% 2.75%;
-        background-position:center center;
+        background-position: center center;
         background-repeat:no-repeat;
         background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
       
     }
+}
+
+#thrive{
+    background-image:url(../projects/dande.png);
+}
+
+#mmek{
+    background-image:url(../projects/ideaviz.png);
 }
 
 #illusion{
@@ -2993,19 +2968,19 @@ a.social{
 }
 
 #london{
-    background-image: url(../london.png);
+    background-image: url(../projects/london.png);
 }
 
 #zuidas{
-    background-image: url(../zuidas.png);
+    background-image: url(../projects/zuidas.png);
 }
 
 #whoOne{
-    background-image: url(../ideaviz.png);
+    background-image: url(../projects/ideaviz.png);
 }
 
 #whoTwo{
-    background-image: url(../treeviz.png);
+    background-image: url(../projects/treeviz.png);
 }
 
 .relative{
@@ -3124,14 +3099,13 @@ div.foo{
 }
 
 #tiny{
-    background-image: url(../test.png);
+    background-image: url(../symbols.png);
     background-repeat:no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 #tiny{
-    /*display: none;*/
     width: 97%;
     height: 100%;
     margin: 0 auto;
@@ -3139,40 +3113,43 @@ div.foo{
     text-align: center;
 }
 
-
+.snow:hover{
+    cursor: pointer;
+}
 
 .snow{
    background-image:
-           url(https://image.ibb.co/k0aqx6/snow.png), 
-           url(https://image.ibb.co/eCahc6/snow1.png), 
-           url(https://image.ibb.co/bOboH6/snow2.png);
+       url(../snow_circle.png), 
+       url(../snow_square.png), 
+       url(../snow_triangle.png), 
+       url(../snow_plus.png);
+
    width: 100%;
-   height:100%;
+   height: 100%;
    position: absoulute;
    top: 0;
    left: 0;
    z-index:1002;
-   animation: snow 10s linear infinite;
+   animation: snow 15s linear infinite;
 }
+
 @keyframes snow {
-    from {background-position: 0px 0px, 0px 0px, 0px 0px;}
-    to {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+    from {background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;}
+    to {background-position: 500px 1000px, 200px 400px, -100px 300px, -200px 300px;}
 }
+
 
 .letter{
-  display: inline-block;
-  font-weight: 900;
-  font-size: 8vw;
-  margin: 40vh .13em 0 .13em;
-
-  color: white;
-  transform-style: preserve-3d;
-  perspective: 400;
-  z-index: 1003;
-
+    display: inline-block;
+    font-weight: 900;
+    font-size: 8vw;
+    margin: 40vh .13em 0 .13em;
+    color: white;
+    transform-style: preserve-3d;
+    perspective: 400;
+    z-index: 1003;
     animation: colorchange 50s; /* animation-name followed by duration in seconds*/
     -webkit-animation: colorchange 50s; /* Chrome and Safari */
-
 }
 
 
@@ -3220,7 +3197,8 @@ div.foo{
   transition: all 0.3s ease-in-out;
 }
 .letter:before{
-  color: #60698A;
+  /*color: #60698A;*/
+  color: white;
 
   text-shadow: 
     -1px 0px 1px rgba(255,255,255,.8),
