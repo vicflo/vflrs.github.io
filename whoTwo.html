@@ -6,6 +6,24 @@ body{
    cursor: crosshair;
 }
 
+/*.groupZero, .groupOne, .groupTwo, .groupThree, .groupFour, .groupFive, .groupSix, .groupSeven, .groupEight, .groupNine, .groupTen, .groupEleven, .groupTwelve, .groupThirteen{
+  display: none;
+}*/
+
+/*.levelOne, .levelTwo, .levelThree{
+  display: none;
+}
+
+.pNine, .pSix, .pFour{
+  display: none;
+}
+
+
+.hideME{
+  display: none;
+}*/
+
+
 .links line {
   stroke: #999;
   stroke-opacity: 0.6;
@@ -53,7 +71,7 @@ body{
   { id: "R"   , group: 11, label: "Respiratory system"  , level: 1 },
   { id: "S"   , group: 12, label: "Sensory organs"  , level: 1 },
   { id: "V"   , group: 13, label: "Various ATC structures"  , level: 1 },
-  { id: "PHARMA"   , group: 14, label: "PHARMA"  , level: 1 },
+  { id: "PHARMA"   , group: 14, label: "PHARMA"  , level: 5 },
 
 
    /**************** Level 'A' TWO *********************/
@@ -5077,19 +5095,117 @@ var links = [
   //   // .force("collide", d3.forceCollide((10 + 2) / 2))
   //   .force("center", d3.forceCenter(width / 2, height / 2));
 
+  function whichClass(groupie, lev){
+    // var myLev = whichLevel(lev);
+
+
+    // var grow = whichGroup(groupie);
+    var allClasses = "dot" + " " + whichLevel(lev) + " " + whichGroup(groupie);
+    return allClasses;
+  }
+
+  function whichLevel(myLevel){
+    // console.log("level is " + myLevel);
+    if(myLevel ==1){
+      return "levelOne";
+    }
+    if (myLevel ==2){
+      return "levelTwo";
+    }
+    if (myLevel ==3){
+      return "levelThree";
+    }
+     if (myLevel ==4){
+      return "levelFour";
+    }
+      if (myLevel ==5){
+      return "levelFive";
+    }
+  }
+
+  function whichGroup(myGroup){
+    // console.log("Group is " + myGroup);
+
+    if(myGroup ==0){
+      return "groupZero";
+    }
+    if(myGroup ==1){
+      return "groupOne";
+    }
+    if (myGroup ==2){
+      return "groupTwo";
+    }
+    if (myGroup ==3){
+      return "groupThree";
+    }
+     if (myGroup ==4){
+      return "groupFour";
+    }
+      if(myGroup ==5){
+      return "groupFive";
+    }
+    if (myGroup ==6){
+      return "groupSix";
+    }
+    if (myGroup ==7){
+      return "groupSeven";
+    }
+     if (myGroup ==8){
+      return "groupEight";
+    }
+      if(myGroup ==9){
+      return "groupNine";
+    }
+    if (myGroup ==10){
+      return "groupTen";
+    }
+    if (myGroup ==11){
+      return "groupEleven";
+    }
+     if (myGroup ==12){
+      return "groupTwelve";
+    }
+      if(myGroup ==13){
+      return "groupThirteen";
+    }
+    if (myGroup ==14){
+      return "groupFourteen";
+    }
+  }
+
+
+  function whichStrength(stren, targ){
+    // console.log("level is " + myLevel);
+    var charStart = targ.charAt(0);
+    // if(charStart != 'V') return 'hideME';
+    if(stren == .9){
+      return "pNine";
+    }
+    if (stren == .6){
+      return "pSix";
+    }
+    if (stren == .4){
+      return "pFour";
+    }
+     if (stren == .2){
+      return "pTwo";
+    }
+  }
+
    var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }).strength(function(d) { return d.strength; }))
-    .force("charge", d3.forceManyBody().strength(-2.5))
-    .force("collide", d3.forceCollide((10) / 2))
+    .force("charge", d3.forceManyBody().strength(-20))
+    .force("collide", d3.forceCollide((24) / 2))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 
   var link = g.append("g")
-      .attr("class", "links")
+    .attr("class", "links")
     .selectAll("line")
     .data(links)
     .enter().append("line")
-      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+      .attr("stroke-width", function(d) { return Math.sqrt(d.strength * 2); })
+      .attr("class", function(d) { return whichStrength(d.strength, d.target); });
 
 
   var node = g.append("g")
@@ -5097,10 +5213,12 @@ var links = [
     .selectAll("g")
     .data(nodes)
     .enter().append("g")
-        .attr('class', 'dot');
+        .attr("class", function(d) { return whichClass(d.group, d.level); });
+       
+        // .attr('class', 'dot');
     
   var circles = node.append("circle")
-      .attr("r", 5)
+      .attr("r", 9)
       .attr("fill", function(d) { return color(d.group); })
       .call(d3.drag()
           .on("start", dragstarted)
@@ -5165,5 +5283,6 @@ zoom_handler(svg);
     d.fx = null;
     d.fy = null;
   }
+
 
 </script>

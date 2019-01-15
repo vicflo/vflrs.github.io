@@ -16,42 +16,25 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <script type="text/javascript" src="js/multiscroll.responsiveExpand.limited.min.js"></script>
-        <script type="text/javascript" src="js/multiscroll.extensions.min.js"></script>
+  
+
+     
+    <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
 
         <script type="text/javascript">
             $(document).ready(function() {
+    
                 $('#myContainer').multiscroll({
+           
                     anchors: ['SnipArt','About', 'Fresh', 'Recent', 'Past', '\'Yore'],
                     menu: '#menu',
                     navigation: true,
                     navigationTooltips: ['SnipArt','About', 'Fresh', 'Recent', 'Past', '\'Yore'],
-                    css3:true,
-
-                    responsiveWidth: 1000,
-                    responsiveExpand: true,
-                    responsiveExpandKey: 'YWx2YXJvdHJpZ28uY29tX3IxaGNtVnpjRzl1YzJsMlpVVjRjR0Z1WkE9PWo4Mw==',
-
-                    afterResponsive: function(){
-                        console.log("after responsive...");
-                    },
-                    onLeave: function(index, nextIndex, direction){
-                        console.log("onLeave: index:" + index + " nextIndex:" + nextIndex + " direction:"+direction);
-                        if(index ===1){
-                            $('.section1').addClass('hideOverflow');
-                            $('body').removeClass('section1-loaded');
-                        }
-                    },
-                    afterLoad: function(anchorLink, index){
-                        if(index === 1){
-                            $('.section1').removeClass('hideOverflow');
-                            $('body').addClass('section1-loaded');
-                        }
-                    },
-                    afterRender: function(){
-                        $('body').addClass('section1-loaded');
-                    }
+                    css3: true
                 });
+
+    
             });
         </script>
 
@@ -82,9 +65,12 @@
                     <!-- <div class="wrap"> -->
                         <!-- <div class="leftContainer"> -->
 
-                        <div class="aboutLeft d-left">
-                             <p>Born and raised in the thriving suburbia of Purmerend, Robbin obtained his B.Sc. in Biology from the Vrije Universiteit Amsterdam in 2013 and soon tossed out the microscope to pursue his passion for tattoo art. With an eye for detail and love for all-things Halo/hip-hop Robbin currently inks at Antiek Tattoo in Amsterdam.</p>
-                        </div>
+                   <!--  <div class="aboutLeft d-left">
+                         <p>Born and raised in the thriving suburbia of Purmerend, Robbin obtained his B.Sc. in Biology from the Vrije Universiteit Amsterdam in 2013 and soon tossed out the microscope to pursue his passion for tattoo art. With an eye for detail and love for all-things Halo/hip-hop Robbin currently inks at Antiek Tattoo in Amsterdam.</p>
+                    </div> -->
+                    <div class="aboutSectionTopLeft topLeftBugs d-left">
+                        <p class="bioDes linear-wipe">Born and raised in the thriving suburbia of Purmerend, Robbin obtained his B.Sc. in Biology from the VU in 2013 and soon tossed out the microscope to pursue his passion for tattooing. With an eye for detail and love for all-things Halo/hip-hop Robbin currently inks at Antiek Tattoo in Amsterdam.</p>
+                    </div>
                     <div class="detail">
                         <h5 class="linear-wipe d-left decor">ABOUT</h5>
                         <h1><span class="linear-wipe">ROBBIN</span><span id="sKern">S</span>NIP</h1>
@@ -92,11 +78,10 @@
 
                     </div>
                      <div class="leftStyle d-left">
-                        <h6 class="thinContact strike">the Books&#8212;<a class="contact" href="http://antiektattoo.com/">Antiek Tattoo</a></h6>
-                        <!-- <a class="contact" href="http://antiektattoo.com/"><h6>Antiek Tattoo</h6></a> -->
-                        <h6 class="thinContact strike">the Tube&#8212;<a class="contact" href="https://www.youtube.com/watch?v=aCZeedWB2_U&amp;t=1880s">Ink Masters</a></h6>
-                       <!--  <a class="contact" href="https://www.youtube.com/watch?v=aCZeedWB2_U&amp;t=1880s"><h6>SpikeTV's Ink Masters</h6></a> -->
-                        <h6 class="thinContact strike">the Talk&#8212;<a class="contact" href="https://www.facebook.com/pg/sniparttattoos/about/?ref=page_internal">@sniparttattoos</a></h6>
+                        <h6 class="thinContact">the Books&#8212;<a class="contact strike" href="http://antiektattoo.com/">Antiek Tattoo</a></h6>
+                        <h6 class="thinContact">the Tubes&#8212;<a class="contact strike" href="https://www.youtube.com/watch?v=aCZeedWB2_U&amp;t=1880s">Ink Masters</a></h6>
+                        <h6 class="thinContact">the Talks&#8212;<a class="contact strike" href="https://www.facebook.com/pg/sniparttattoos/about/?ref=page_internal">@sniparttattoos</a></h6>
+
                     </div>
                                     
                            
@@ -261,15 +246,17 @@
                 <div class="ms-section section2" id="section2-right">
                     <!-- <div class="wrap"> -->
                         <!-- <div class="rightContainer card"> -->
+
                     <div class="aboutRight d-right">
-                        <h5 class="striker">Blackwork</h5>
-                        <h5 class="striker">Neo Traditional</h5>
-                        <h5 class="striker">Art Nouveau</h5>
+                        <h6 class="thinContact striker"><span class="contact teal">I do&#8212;</span>Blackwork</h6>
+                        <h6 class="thinContact striker"><span class="contact teal">In the genre of&#8212;</span>Neo-Traditional</h6>
+                        <h6 class="thinContact striker"><span class="contact teal">Inspired by&#8212;</span>Art Nouveau</h6>
                     </div>
+                    <div class="aboutSection"></div>
                     <div class="detail">
                         <!-- <h7>ROBBIN</h7> -->
                         <h5 class="linear-wipe d-right decor">STYLE</h5>
-                        <h1><span class="linear-wipe">TATTOO</span><span class="bArt">ART</span></h1>
+                        <h1 class="aboutMargin"><span class="linear-wipe">TATTOO</span><span class="bArt">ART</span></h1>
                         <h5 class="linear-wipe d-right decor lower">PROCESS</h5>
                     </div>
                         <!-- </div> -->

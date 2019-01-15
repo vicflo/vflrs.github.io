@@ -43,7 +43,7 @@
     type: 'GET',
     data: {access_token: token, count: num_photos},
     success: function(data){
-      console.log(data);
+      // console.log(data);
       var x = 0;
       $(".content").each(function() {
 
@@ -95,7 +95,8 @@
 
     },
     error: function(data){
-      console.log(data);
+      // console.log(data);
+      console.log("problem");
     }
   });    
 
