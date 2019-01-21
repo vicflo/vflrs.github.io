@@ -1635,11 +1635,11 @@ h6{
 }
 
 .landing-label{
-    max-height: 300px;
+    max-height: 280px;
     height: 240px;
-    font-size: 2.2vh;
+    font-size: 1.8vh;
     line-height: 1.5rem;
-    padding-bottom: 2rem;
+    /*padding-bottom: 1.5rem;*/
     font-family: 'voyager-thin', 'voyager-light';
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -1647,8 +1647,8 @@ h6{
 
 @media (min-width: 860px) {
     .landing-label {
-        height: 160px;
-        font-size: 1rem;
+        height: 128px;
+        font-size: 1vw;
         line-height: 1.5rem;
         margin-bottom: 2rem;
         font-family: 'voyager-thin', 'voyager-light';
@@ -1677,6 +1677,8 @@ h6{
     text-align: center;
     color: rgba(96,105,138, 0.8);
     margin: 1.5rem auto;
+    display: flex;
+    /*padding: 8px;*/
 }
 
 .underline h5{
@@ -1688,7 +1690,7 @@ h6{
 }
 
 .seek{
-    font-size: 1.45rem;
+    font-size: 1.2rem;
     margin: 1.5rem 0;
     padding: 0 0 0 0;
     font-family: "voyager-thin";
@@ -1696,6 +1698,17 @@ h6{
     color: rgba(96,105,138, 0.8);
 }
 
+
+@media (min-width: 860px) {
+    .seek{
+        font-size: 1.45rem;
+        margin: 1.5rem 0;
+        padding: 0 0 0 0;
+        font-family: "voyager-thin";
+        text-align: center;
+        color: rgba(96,105,138, 0.8);
+    }
+}
 
 
 a.link--prominent {
@@ -3089,6 +3102,7 @@ body{
   font-family: 'voyager-medium', sans-serif;
     ;
 }
+
 div.foo{
   width: 90%;
   margin: 0 auto;
@@ -3142,7 +3156,7 @@ div.foo{
     display: inline-block;
     font-weight: 900;
     font-size: 8vw;
-    margin: 40vh .13em 0 .13em;
+    margin: 43vh .125em 0 .125em;
     color: white;
     transform-style: preserve-3d;
     perspective: 400;
