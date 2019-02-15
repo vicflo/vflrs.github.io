@@ -2315,7 +2315,7 @@ a.social{
 
 /********************* GENERAL ETC STYLE **************************/
 
-#rosetteCard, #terrainCard, #walletCard, #metBenchCard, #chairCard, #oxymoronCard, #bloomCard, #edgesCard, #greenhousesCard, #alliumsCard, #tappCard{
+#rosetteCard, #terrainCard, #walletCard, #metBenchCard, #chairCard, #logoCard, #oxymoronCard, #bloomCard, #edgesCard, #greenhousesCard, #alliumsCard, #tappCard{
     display: none;
 }
 
@@ -2484,6 +2484,30 @@ a.social{
     }
 }
 
+.beerSpecial{
+     font-family: 'voyager-light','Lora', serif;
+    /*font-style: italic;*/
+    color: rgba(96,105,138, .8);
+    /*font-weight: 400;*/
+    /*font-size: 16px;*/
+    font-size: 1.8vh;
+    line-height: 1.4em;
+    margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+    .beerSpecial{
+        font-family: 'voyager-light','Lora', serif;
+        /*font-style: italic;*/
+        color: rgba(96,105,138, .8);
+        /*font-weight: 400;*/
+        /*font-size: 16px;*/
+        font-size: 1vw;
+        line-height: 1.4em;
+        margin-top: 8px;
+    }
+}
+
 .topper:first-line{
     font-variant: small-caps;
     letter-spacing: 2px;
@@ -2507,6 +2531,75 @@ a.social{
     font-style: italic;
     margin-bottom: 1pt;
     /*line-height: 7pt;*/
+}
+
+.etcetera-brew {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 490px;
+  /*background-color: #1560FB; */
+}
+
+@media (min-width: 768px) {
+    .etcetera-brew {
+      float: left;
+      position: absolute;
+      margin-left: 0;
+      margin-top: 0;
+      height: 100%;
+      width: 68%; 
+    } 
+}
+
+.etcetera-text-brew a{
+    margin-top: 16px;
+    height: 36px;
+    display: inline-block;
+    font-family: 'voyager-light','Lora', serif;
+    color: white;
+    font-size: 1.2vw;
+    line-height: 1.4em;
+    margin-right:32px;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.etcetera-text-brew a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 3px solid white;
+  transition: 0.4s;
+}
+
+.etcetera-text-brew a:hover:after {
+  width: 100%;
+}
+
+.etcetera-text-brew {
+    display: inline-block;
+    padding: 32px 32px;
+    /*min-height: 490px;*/
+}
+
+@media (min-width: 768px) {
+    .etcetera-text-brew {
+      float: right;
+      position: absolute;
+      padding: 84px 64px 20px 32px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 32%;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden; 
+    } 
 }
 
 .etcetera {
@@ -2616,7 +2709,7 @@ a.social{
         position: relative;
         display: block;
         margin-top: 0px;
-        min-height: 720px;
+        min-height: 820px;
     }
 }
 
@@ -3030,6 +3123,35 @@ a.social{
     background-repeat:no-repeat;
     background-size: contain;
     background-color: white;
+}
+
+#serendipityLabel{
+    background-image: url(../cards/serendipityLabel.jpg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+    /*background-color: white;*/
+}
+
+.beerLabelImage{
+    display: inline-block;
+    width: 94%;
+    height: 60%;
+    min-height: 400px;
+    margin: 32px 32px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 2px;
+
+}
+
+.beerLabelAbout{
+    display: inline-block;
+    width: 100%;
+    height: 30%;
+    min-height: 300px;
+    overflow: hidden;
+    padding: 32px 32px;
+
 }
 
 .addBG{

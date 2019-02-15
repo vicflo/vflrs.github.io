@@ -39,36 +39,24 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
-	$('a.pennyStudio').click(function(){
-    	$('body').animate({
-    		scrollTop:$('#pennyStudio').offset().top
-    	}, 800, function() {
-		});
-    	return false;
+	$('a.pennyStudio').click(function(e){
+    	$('html, body').animate({scrollTop:$('#pennyStudio').position().top}, 'slow');
+	    return false;
     });
 
     $('a.wS').click(function(){
-    	$('body').animate({
-    		scrollTop:$('#wS').offset().top
-    	}, 800, function() {
-		});
-    	return false;
+		$('html, body').animate({scrollTop:$('#wS').position().top}, 'slow');
+	    return false;
     });
 
     $('a.bier').click(function(){
-    	$('body').animate({
-    		scrollTop:$('#bier').offset().top
-    	}, 800, function() {
-		});
-    	return false;
+    	$('html, body').animate({scrollTop:$('#bier').position().top}, 'slow');
+	    return false;
     });
 
     $('a.greetingCards').click(function(){
-    	$('body').animate({
-    		scrollTop:$('#greetingCards').offset().top
-    	}, 800, function() {
-		});
-    	return false;
+    	$('html, body').animate({scrollTop:$('#greetingCards').position().top}, 'slow');
+	    return false;
     });
 
     // Card Sifters
