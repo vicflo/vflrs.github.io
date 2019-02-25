@@ -2315,7 +2315,7 @@ a.social{
 
 /********************* GENERAL ETC STYLE **************************/
 
-#rosetteCard, #terrainCard, #walletCard, #metBenchCard, #chairCard, #logoCard, #oxymoronCard, #bloomCard, #edgesCard, #greenhousesCard, #alliumsCard, #tappCard{
+#rosetteCard, #terrainCard, #walletCard, #metBenchCard, #chairCard, #serendipityCard, #logoCard, #oxymoronCard, #bloomCard, #edgesCard, #greenhousesCard, #alliumsCard, #tappCard{
     display: none;
 }
 
@@ -3135,10 +3135,18 @@ a.social{
     /*background-color: white;*/
 }
 
+#LLLLabel{
+    background-image: url(../cards/LiveLaveLove.png);
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-size: contain;
+    /*background-color: white;*/
+}
+
 .beerLabelImage{
     display: inline-block;
     width: 100%;
-    height: 70%;
+    height: 65%;
     min-height: 400px;
 
 }

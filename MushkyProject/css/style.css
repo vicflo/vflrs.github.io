@@ -564,7 +564,7 @@ h2 {
   height: 234px;
   overflow: hidden;
   color: #fff;
-  -webkit-mask-image: url('http://i40.tinypic.com/kajqg.jpg');
+  -webkit-mask-image: url('../images/hexagon.png');
   text-align: center;
       
 }
