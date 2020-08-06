@@ -1,0 +1,464 @@
+
+
+
+#main {
+    height: 100%;
+    margin: 0px auto;
+}	
+
+
+.topSubPage {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 4rem 12%;
+    width: 100%;
+    color: white;
+}
+
+.details {
+    font-family: "voyager-medium", sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+}
+
+.subpage {
+    font-family: 'voyager-bold', sans-serif;
+    font-size: 48pt;
+    margin: 16px auto 8px auto;
+    text-align: left;
+}
+
+.soft {
+    font-size: 20pt;
+    margin: 10px auto;
+    font-family: 'voyager-regular', sans-serif;
+}
+
+.tags {
+    font-family: "voyager-light", sans-serif;
+    font-size: 1em;
+    margin-top: 25px;
+}
+
+/* Background Toppers */
+
+.subDandelion {
+    background-image: url(../design/thrive_assets/dande.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Overview Content */
+
+.allDetails {
+    width: 100%;
+    padding: 0px 12%;
+    display: inline-block;
+    color: #555;
+    font-family: 'voyager-regular', sans-serif;
+    line-height: 18pt;
+}
+
+@media(min-width: 768px){
+    .deats{
+        letter-spacing: 1px;
+        font-family: "voyager-regular";
+        color: #555;
+        font-size: 1.2rem;
+        margin: 30px 0px 30px 0px;
+        width: 224px;
+        padding-top: 2rem;
+        line-height: 1.5rem;
+    }
+}
+
+
+/* Ornaments */
+
+.cDeats{
+    border-color: #08D9F4;
+}
+
+.mDeats{
+    border-color: #B53471;
+}
+
+.yDeats{
+    border-color: #FFC312;
+}
+
+.cQuick {
+    color: #08D9F4;
+    font-weight: 400;
+    font-family: 'voyager-medium';
+}
+
+.ital{
+    font-family: "voyager-medium-italic", sans-serif;
+}
+
+.lightItal{
+    font-family: 'voyager-light-italic', sans-serif;
+}
+
+
+.lightV{
+    font-family: 'voyager-medium', sans-serif;
+}
+
+/* Underline */
+
+.selected{
+    padding: 0px 0px 12px 0px;
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+}
+
+@media(min-width: 768px){
+    .selected{
+    font-size: 30pt;
+    margin: 20px 0% 0px 2.5%;
+    width: 300px;
+    padding-top: 20px;
+    }
+}
+
+/* Side by Side Sections */
+
+.desRightLeft{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    float left;
+    margin-left: 0 auto;
+    padding: 12px 16px 24px 0px;
+    
+}
+
+.desRight{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    float: right;
+    margin-left: 0 auto;
+    padding: 12px 0px 24px 16px;
+}
+
+.full-thrive {
+    color: #555;
+    font-family: 'voyager-light', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 12px auto 36px auto;
+    padding: 0px 12%;
+    font-size: 1rem;
+}
+
+.TdesLeft {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0px 0px 36px 0px;
+}
+
+.Tdetails {
+    font-family: "voyager-medium", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+/* List iteam decor */
+
+.grape {
+    width: 45px;
+    float: left;
+    display: inline-block;
+}
+
+.point {
+    font-size: 10pt;
+    margin: 0px 0px;
+    padding-top: 8px;
+}
+
+.gardenQ {
+    font-size: 5em;
+    vertical-align: -30px;
+    color: #806DFF;
+    height: 20px;
+}
+
+.med {
+    font-family: 'voyager-medium', sans-serif;
+}
+
+.slide{
+    /*padding-top: 12px;*/
+    width: 80%;
+    display: block;
+    margin: 48px auto 48px auto;
+    text-align: center;
+}
+
+.tSlide{
+    width: 100%;
+    display: block;
+    margin: 48px auto 48px auto;
+    text-align: center;
+}
+
+.tSlide img{
+    position: relative;
+    text-align: center;
+    float: center;
+    width: 100%;
+}
+
+.slide img{
+    position: relative;
+    text-align: center;
+    float: center;
+    width: 88%;
+}
+
+#allGarden{
+    background-image: url(../design/thrive_assets/fullShotLightBG.png);
+}
+
+#sensory{
+    background-image: url(../design/thrive_assets/senses1.jpg);
+}
+
+#leiden{
+    background-image: url(../design/thrive_assets/leiden.png);
+}
+
+#siteplan{
+    background-image: url(../design/thrive_assets/leidenSitePlanRight.png);
+}
+
+.greetWrap{
+    height: auto;
+    position: relative;
+    min-height: 1240px;
+}
+
+@media (min-width: 768px) {
+    .greetWrap{
+        height: 100%;
+        z-index: 2;
+        position: relative;
+        display: block;
+        margin-top: 0px;
+        min-height: 820px;
+    }
+}
+
+.fullIdea{
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 16px auto;
+    position: relative;
+}
+
+
+@media (min-width: 768px) {
+    .thriveWrapper{
+        z-index: 2;
+        /*width: 100%;*/
+        height: 100%;
+        display: block;
+        margin-top: 0px;
+    }
+}
+
+a{
+     color: #806DFF;
+}
+
+.thrive-special{
+    color: rgba(128, 109, 255, .6);
+    line-height: 1em;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    margin: 8px auto;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.thriveTitle{
+    margin-top: 8px;
+    font-size: 24px;
+    font-family: 'voyager-light', 'Lora', serif;
+    /*font-style: italic;*/
+    font-weight: 400;
+    padding-top: 24px;
+}
+
+
+.thrive-text {
+    display: inline-block;
+    padding: 20px;
+    color: #555;
+    /*min-height: 490px;*/
+}
+
+@media (min-width: 768px) {
+    .thrive-text {
+      float: right;
+      position: absolute;
+      padding: 60px 80px 20px 60px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden; 
+    } 
+}
+
+.thriveBG{
+   background-color: rgba(128, 109, 255, .1);
+}
+
+.thriveB{
+   background-color: rgba(128, 109, 255, .05);
+}
+
+.topper:first-line{
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.tspecs{
+    font-size: 11pt;
+    font-family: 'Lora', serif;
+    /*color: #806DFF;*/
+    /*opacity: .8;*/
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 1pt;
+}
+
+.etcetera {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 490px;
+  /*background-color: #1560FB; */
+}
+
+@media (min-width: 768px) {
+    .etcetera {
+      float: left;
+      position: absolute;
+      margin-left: 0;
+      margin-top: 0;
+      height: 100%;
+      width: 50%; 
+    } 
+}
+
+@media (min-width: 768px) {
+    .thriveWrapper{
+        z-index: 2;
+        /*width: 100%;*/
+        height: 100%;
+        display: block;
+        margin-top: 0px;
+    }
+}
+
+.thriveQ {
+    line-height: 14pt;
+}
+
+.hop {
+    width: 36px;
+    float: left;
+    display: inline-block;
+}
+
+.need {
+    margin: 6px 0px;
+}
+
+.shorter{
+    position: relative;
+    height: 50vh;
+    width: 45%;
+}
+
+.thrivePics{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+#voronoi{
+    background-image: url(../design/thrive_assets/voronoi1.png);
+}
+
+#blossom{
+    background-image: url(../design/thrive_assets/blooms2.png);
+}
+
+#eS{
+    background-image: url(../design/thrive_assets/edgeshadowFinal.png);
+}
+
+#greenery{
+     background-image: url(../design/thrive_assets/greenhouse.png);
+}
+
+#garlic{
+     background-image: url(../design/thrive_assets/alliumFull5.png);
+}
+
+#citizens{
+     background-image: url(../design/thrive_assets/citizens2.jpg);
+}
+
+.snap{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 2px;
+}
+
+.subTopic{
+    text-align: center;
+    margin: 48px auto 24px auto;
+    width: 400px;
+    border-color: #806DFF;
+}
+
+.insert{
+    font-size: 18pt;
+    text-align: center;
+    margin: 24px auto;
+
+}
+
+.extra{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.clover{
+    width: 44px;
+    float: left;
+    padding-top: 12px;
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.padded{
+    padding: 12px 0px 12px 0px;
+}

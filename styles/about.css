@@ -1,0 +1,129 @@
+h5{
+	font-family: "voyager-light";
+}
+
+
+/* New About*/
+
+.landing-name-about {
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  margin-top: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.landing-image-half-about {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.landing-image-half-about.is-shown {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 40em) {
+  .landing-image-half-about {
+    display: none;
+  }
+}
+
+.landing-image--portrait {
+  background: url("../images/bg_fullColor.jpg") no-repeat center center;
+  background-size: cover;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: .3s;
+}
+
+
+.landing-text-half-about {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: 40em) {
+  .landing-text-half-about {
+    width: 100%;
+    position: static;
+  }
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .landing-text-half-about {
+    transform-style: preserve-3d;
+    height: 100%;
+  }
+}
+
+.landing-text-about {
+  text-align: center;
+  padding: 0 2.5rem;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 40em) {
+  .landing-text-about {
+    animation: fadeInUp .3s ease-in-out forwards;
+    animation-delay: .5s;
+    padding: 4.5rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .landing-text-about {
+    animation: fadeInUpVerticalCenter .3s ease-in-out forwards;
+    animation-delay: 1s;
+    position: relative;
+    top: 50%;
+  }
+}
+
+.label-me {
+    display: none;
+}
+
+.landing-label{
+	margin: 0px auto;
+}
+
+/* About section */
+
+.underline {
+    text-align: center;
+    /*color: rgba(96,105,138, 0.8);*/
+    margin: 1.5rem auto;
+    display: flex;
+    /* padding: 8px; */
+}
+
+.social--links a{
+	font-size: 1.5rem;
+	margin: auto 8px;
+}
+
+.underline h1 {
+    margin: 1.5rem auto;
+}
+
+
+.email {
+    font-family: "voyager-thin";
+    letter-spacing: .14rem;
+}
+
+.site-about {
+    margin: 4rem auto 0 auto;
+    font-family: 'BauerBodoniStd-BoldItalic';
+    font-weight: 400;
+    font-style: italic;
+}

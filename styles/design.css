@@ -1,0 +1,358 @@
+.row {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu .row{
+    max-width: 60rem;
+}
+
+.project-wider {
+  display: inline-block;
+  width: 57.75rem;
+  float: left;
+  margin-bottom: 3rem;
+}
+
+.project-wider:nth-of-type(2n + 1) {
+  margin-right: 3rem;
+}
+
+@media only screen and (max-width: 60rem) {
+  .project-wider {
+    width: 100%;
+  }
+}
+
+.project-wider-thumbnail {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.project-wider-name {
+  margin-bottom: 0;
+}
+
+.project-wider-name a {
+  color: #222;
+}
+
+
+.subtext{
+	padding: 0px 16px;
+}
+
+
+h1{
+	padding: 0px 1rem 0px 14rem;
+	text-align: right;
+	font-family: "voyager-bold";
+	font-size: 3.5rem;
+    letter-spacing: 0.012em;
+}
+
+@media only screen and (max-width: 90rem) {
+  h1 {
+    padding: 0px 0px 16px 1rem;
+    text-align: left;
+  }
+}
+
+
+.mediterraneanBorder{
+	border-left: 6px solid #1289A7;
+    padding-left: 1rem;
+/*	border-width: 0px 0px 0px 6px;
+    border-style: solid;
+    -webkit-border-image: -webkit-linear-gradient(180deg, rgba(18,137,167,.8) 0%, rgba(87,88,187,.8) 33%, rgba(255,195,18,.8) 66%, rgba(181,52,113,.8) 100%);
+    -o-border-image: -o-linear-gradient(180deg, rgba(18,137,167,.8) 0%, rgba(87,88,187,.8) 33%, rgba(255,195,18,.8) 66%, rgba(181,52,113,.8) 100%);
+    -moz-border-image: -moz-linear-gradient(180deg, rgba(18,137,167,.8) 0%, rgba(87,88,187,.8) 33%, rgba(255,195,18,.8) 66%, rgba(181,52,113,.8) 100%);
+    border-image: linear-gradient(180deg, rgba(18,137,167,.8) 0%, rgba(87,88,187,.8) 33%, rgba(255,195,18,.8) 66%, rgba(181,52,113,.8) 100%);
+    border-image-slice: 15;*/
+}
+
+@media only screen and (max-width: 90rem) {
+ .mediterraneanBorder{
+    border-left: 0px;
+  }
+}
+
+h2 {
+	padding: 1.2rem 0px;
+	margin: 4rem auto 0rem auto;
+	float: left;
+	font-family: "voyager-regular";
+    border-width: 0px 0px 6px 0px;
+    border-style: solid;
+    -webkit-border-image: -webkit-linear-gradient(90deg, rgba(18, 203, 196, .8) 0%, rgba(196, 229, 56, .8) 33%, rgba(255,195,18,.8) 66%, rgba(247, 159, 31,.8) 100%);
+    -o-border-image: -o-linear-gradient(90deg, rgba(18, 203, 196, .8) 0%, rgba(196, 229, 56, .8) 33%, rgba(255,195,18,.8) 66%, rgba(247, 159, 31, .8) 100%);
+    -moz-border-image: -moz-linear-gradient(90deg, rgba(18, 203, 196, .8) 0%, rgba(196, 229, 56, .8) 33%, rgba(255,195,18,.8) 66%, rgba(247, 159, 31, .8) 100%);
+    border-image: linear-gradient(90deg, rgba(18, 203, 196, .8) 0%, rgba(196, 229, 56, .8) 33%, rgba(255,195,18,.8) 66%, rgba(247, 159, 31, .8) 100%);
+    border-image-slice: 15;
+    border-bottom: 6px solid rgba(18, 203, 196,1.0);
+}
+
+
+
+/* Old site styles */
+
+
+
+.hci-project:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    /*  transition: all 0.2s cubic-bezier(.25,.8,.25,1);*/
+  }
+  
+.hci-project:hover:before {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 1px 3px rgba(96,105,138, 0.12), 0 1px 2px rgba(96,105,138, 0.24);
+  
+}
+
+.hci-project{
+    border-radius: 2px;
+}
+
+.addBorder{
+     box-shadow: 0 1px 3px rgba(96,105,138, 0.12), 0 1px 2px rgba(96,105,138, 0.24);
+}
+
+.hci-project:hover{
+    cursor: pointer;
+}
+
+
+.overview-project{
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    padding-bottom : 90%; /* = width for a 1:1 aspect ratio */
+    margin: 2% 20px;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+@media (min-width: 768px) {
+    .overview-project {
+        display: inline-block;
+        position: relative;
+        width: 30%;
+        padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+        margin: 2% 0px;
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
+        min-width: 279px;
+        min-height: 279px;
+    }
+}
+
+.overview-project-rect{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom : 50%; /* = width for a 1:1 aspect ratio */
+    margin: 3rem 0px;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
+  
+}
+
+@media (min-width: 768px) {
+    .overview-project-rect {
+        display: inline-block;
+        position: relative;
+        width: 57.75rem;
+        padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+        margin: 3rem 0px;
+        background-position: center center;
+        background-repeat:no-repeat;
+        background-size: cover; /* you change this to "contain" if you don't want the images to be cropped */
+      
+    }
+}
+
+#thrive{
+    background-image:url(../images/design/tiles/thrive.png);
+}
+
+#mmek{
+    background-image:url(../images/design/tiles/mmek.png);
+}
+
+#illusion{
+    background-image:url(../images/design/tiles/illusion.png);
+}
+
+#polarr_tile{
+    background-image:url(../images/design/tiles/polar.png);
+}
+
+#common{
+    background-image:url(../images/design/tiles/commonGround.png);
+}
+
+#prince{
+    background-image:url(../images/design/tiles/prince.png);
+}
+
+#cloud{
+    background-image:url(../images/design/tiles/polarr.png);
+}
+
+#charlotte{
+    background-image:url(../images/design/tiles/charlotte.png);
+}
+
+#payKLM{
+    background-image:url(../images/design/tiles/redesign.jpg);
+}
+
+#startHome{
+    background-image:url(../images/design/tiles/solar.png);
+}
+
+#derive{
+    background-image:url(../images/design/tiles/derive.png);
+}
+
+
+#none{
+    display: hidden;
+}
+
+
+.caption{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    padding: 0.75em 1em;
+    font-weight: 700;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(255,255,255 , 0.8);
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.overview-project:hover .caption, .overview-project-rect:hover .caption {
+    opacity: 1;
+}
+
+.overview-project a{
+    display: block; 
+    width: 100%; 
+    height: 100%;
+}
+
+.special-border{
+    -webkit-box-shadow: inset 0px 0px 1px 1px #60698A;
+    -moz-box-shadow: inset 0px 0px 1px 1px #60698A;
+    box-shadow: inset 0px 0px 1px 1px #60698A;
+}
+
+.left-golden{
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin: 2rem 0px;
+}
+
+
+.right-golden{
+    display: inline-block;
+    float: right;
+    position: relative;
+    margin: 2rem 0px;
+}
+
+.upper-golden{
+    display: inline-block;
+}
+
+.lower-golden{
+    display: inline-block;
+}
+
+
+.hover{
+    position: absolute;
+    display: none;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 3;
+    line-height: 1.4;
+}
+
+.hover h3{
+    color: rgba(0,0,0, 1);
+    font-family: "voyager-regular", sans-serif;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    margin: 20px auto;
+}
+
+@media (min-width: 768px) {
+    .hover h3{
+        color: rgba(0,0,0, 1);
+        font-family: "voyager-regular", sans-serif;
+        font-size: 2.75em;
+        line-height: 1.1em;
+        margin: 0px auto;
+    }
+}
+
+.hover p{
+    font-size: 1.4em;
+    font-family: 'BauerBodoniStd-Roman', 'Lora', serif;
+    padding: 1rem 0px;
+    color: rgba(0,0,0, 1);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.tags{
+    font-family: "voyager-light", sans-serif;
+    font-size: 1em;
+    margin-top: 25px;
+}
+
+.tags span{
+    color: rgba(0,0,0, 1);
+    border: 2px solid rgba(0,0,0, 1);
+    padding: 4px 8px;
+    margin: 0px 4px;
+}
+
+.liner{
+    font-family: 'BauerBodoniStd-BlackItalic', 'Lora', serif;
+    font-weight: 400;
+    margin: .5rem 16px 1rem 16px;
+    font-style: italic;
+}
+
+
+

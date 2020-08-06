@@ -1,0 +1,141 @@
+/* NEW CODE UNDERLINE HOVER COLORS */
+
+
+a.dutchBlue:before{
+	background-color: #1289A7;
+	background-color: rgba(18, 137, 167, .6);
+}
+
+a.dutchMagenta:before{
+	background-color: #B53471;
+	background-color: rgba(181, 52, 113, .6);
+}
+
+a.dutchYellow:before{
+	background-color: #F79F1F;
+	background-color: rgba(247, 159, 31, .6);
+}
+
+a.dutchPurple:before{
+	background-color: #5758BB;
+	background-color: rgba(87, 88, 187, .6);
+}
+
+a.allDutchColors:before{
+  background: rgb(18,137,167);
+  background: linear-gradient(90deg, rgba(18,137,167,.8) 0%, rgba(87,88,187,.8) 33%, rgba(255,195,18,.8) 66%, rgba(181,52,113,.8) 100%);
+}
+
+
+.menu-overlay li a.dutchBlue::after{
+    background-color: rgba(18, 137, 167, .8);
+}
+
+.menu-overlay li a.dutchMagenta::after{
+    background-color: rgba(181, 52, 113, .8);
+}
+
+.menu-overlay li a.dutchYellow::after{
+    background-color: rgba(255, 195, 18, .8);
+}
+
+.menu-overlay li a.dutchPurple::after{
+   background-color: rgba(87, 88, 187, .8);
+}
+
+.menu-overlay li a.allDutchColors::after{
+	background: rgb(18,137,167);
+	background: linear-gradient(90deg, rgba(18,137,167,.8) 0%, rgba(87,88,187,.8) 33%, rgba(255,195,18,.8) 66%, rgba(181,52,113,.8) 100%);
+}
+
+.mediterraneanRGBA{
+	color: rgba(18, 137, 167,1.0);
+}
+
+.mediterraneanHex{
+	color: #1289A7;
+}
+
+.circumorbitalRGBA{
+	color: rgba(87, 88, 187,1.0);
+}
+
+.circumorbitalHex{
+	color: #5758BB;
+}
+
+.sunflowerRGBA{
+ 	color: rgba(255, 195, 18,1.0);
+}
+
+.sunflowerHex{
+	color: #FFC312;
+}
+
+.veryBerryRGBA{
+	color: rgba(181, 52, 113,1.0);
+}
+
+.veryBerryHex{
+	color: #B53471;
+}
+
+.hciSunflower:before{
+	background: rgba(255, 195, 18, .2);
+}
+
+.hciMediterranean:before{
+	background: rgba(18, 137, 167, .2);
+}
+
+.hciCircumorbital:before{
+	background: rgba(87, 88, 187, .2);
+}
+
+.hciVeryBerry:before{
+	background: rgba(181, 52, 113, .1);
+}
+
+.hciPuffinsBill:before{
+	background: rgba(238, 90, 36, .1);
+}
+
+.hciMartina:before{
+	background: rgba(18, 203, 196, .2);
+}
+
+.bara{
+	color: #ED4C67;
+}
+
+.lavender{
+	color: #FDA7DF;
+}
+
+.hciEnergos:before{
+	background: rgba(196, 229, 56, .2);
+}
+
+.hciSunflower:before{
+	background: rgba(255, 195, 18, .2);
+}
+
+.hciRadiant:before{
+	background: rgba(247, 159, 31, .2);
+}
+
+.magentaB{
+    border-right: 12px solid rgba(255, 23, 68, 1);
+}
+
+.makeWhite{
+	color: white;
+}
+
+.makeWhite .tags span{
+	color: white;
+}
+
+.forgottonP{
+	color: rgba(153, 128, 250,1.0);
+}

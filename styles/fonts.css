@@ -1,0 +1,159 @@
+/*  --------- Voyager -----------  */
+
+
+@font-face {
+  font-family: 'voyager-thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-thin'), url('VOYAGER-FAMILY/VOYAGER_THIN.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'voyager-thin-italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('VOYAGER-FAMILY/VOYAGER_THIN_ITALIC.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'voyager-light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-light'), url('VOYAGER-FAMILY/VOYAGER_LIGHT.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'voyager-light-italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('VOYAGER-FAMILY/VOYAGER_LIGHT_ITALIC.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'voyager-regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-reg'), url('VOYAGER-FAMILY/VOYAGER_REGULAR.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'voyager-regular-italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('VOYAGER-FAMILY/VOYAGER_REGULAR_ITALIC.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'voyager-medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-med'), url('VOYAGER-FAMILY/VOYAGER_MEDIUM.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'voyager-medium-italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('VOYAGER-FAMILY/VOYAGER_MEDIUM_ITALIC.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'voyager-bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-bold'), url('VOYAGER-FAMILY/VOYAGER_BOLD.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'voyager-bold-italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-bold'), url('VOYAGER-FAMILY/VOYAGER_BOLD_ITALIC.otf') format('opentype');
+}
+
+/*  --------- Bauer Bodoni -----------  */
+
+@font-face {
+  font-family: 'BauerBodoniStd-Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-thin'), url('bodoni/BauerBodoniStd-Roman.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BauerBodoniStd-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BauerBodoniStd-Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BauerBodoniStd-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BauerBodoniStd-BoldItalic.otf') format('opentype');
+}
+
+
+@font-face {
+  font-family: 'BauerBodoniStd-BoldCond';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BauerBodoniStd-BoldCond.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BauerBodoniStd-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BauerBodoniStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BauerBodoniStd-BlackItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BauerBodoniStd-BlackItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BauerBodoniStd-BlackCond';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BauerBodoniStd-BlackCond.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BauerBodoniStd-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BauerBodoniStd-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BodoniStd-Poster';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BodoniStd-Poster.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BodoniStd-PosterItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BodoniStd-PosterItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BodoniStd-BookItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BodoniStd-BookItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BodoniStd-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('v-tital'), url('bodoni/BodoniStd-BoldItalic.otf') format('opentype');
+}
