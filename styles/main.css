@@ -2972,9 +2972,9 @@ h3 {
 }
 
 label {
-  font-family: "BauerBodoniStd-Roman";
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-family: "BauerBodoniStd-Italic";
+  font-size: 1.75rem;
+  line-height: 4rem;
   font-weight: 700;
 }
 
@@ -3256,7 +3256,7 @@ body.has-menu-open {
 }
 
 .menu-overlay.open label{
-  font-family: 'BauerBodoniStd-BoldItalic';
+  font-family: 'BauerBodoniStd-Italic';
   /*font-weight: 400;*/
   margin: .5rem auto;
   /*font-style: italic;*/
