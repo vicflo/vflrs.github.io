@@ -85,6 +85,21 @@ h3{
   	}
 }
 
+.nda-line{
+    font-family: 'voyager-light-italic', sans-serif;
+    font-size: .8rem;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    width: 32vw;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+   .nda-line { 
+        width:100%;  
+    }
+}
+
 
 .tags{
     font-family: "voyager-light", sans-serif;
@@ -174,6 +189,14 @@ h2{
     color: rgba(255, 195, 18,1.0);
 }
 
+.specs-bara{
+    color: rgba(237, 76, 103,1.0);
+}
+
+.specs-medit{
+    color: rgba(18, 137, 167,1.0);
+}
+
 .red-border{
     border-bottom: 6px solid rgba(111, 30, 81,1.0);
 }
@@ -184,6 +207,10 @@ h2{
 
 .merchant-border{
     border-bottom: 6px solid rgba(6, 82, 221,1.0);
+}
+
+.medit-border{
+    border-bottom: 6px solid rgba(18, 137, 167,1.0);
 }
 
 .r-theme{
@@ -199,9 +226,18 @@ h2{
 }
 
 
+.text-right{
+    text-align: right;
+}
+
 .right{
 	float: right;
 }
+
+.left{
+    float: left;
+}
+
 
 
 .specs-label{
@@ -242,6 +278,7 @@ h2{
 	width: 38%;
 	float: right;
 }
+
 
 
 .concept-text{
@@ -337,6 +374,49 @@ h2{
     height: 100vh;
 }
 
+.quarter{
+    display: inline-block;
+    padding: 0 0;
+    margin: 0 0;
+    width: 25%;
+    height: 100vh;
+}
+
+.three-quarter{
+    display: inline-block;
+    padding: 0 0;
+    margin: 0 0;
+    width: 75%;
+    height: 100vh;
+}
+
+.onefifth{
+    display: inline-block;
+    padding: 0 0;
+    margin: 0 0;
+    width: 20%;
+    height: 100vh;
+}
+
+
+.twofifth{
+    display: inline-block;
+    padding: 0 0;
+    margin: 0 0;
+    width: 40%;
+    height: 100vh;
+}
+
+
+.fourfifth{
+    display: inline-block;
+    padding: 0 0;
+    margin: 0 0;
+    width: 80%;
+    height: 100vh;
+}
+
+
 
 .half-label{
     font-family: 'voyager-medium', sans-serif;
@@ -347,6 +427,11 @@ h2{
 .slide-white{
     background-color: white;
 }
+
+.slide-black{
+    background-color: black;
+}
+
 
 .slight-white{
     background-color: rgba(255,255,255,.6);
@@ -375,6 +460,10 @@ h2{
 
 .text-slide{
     padding: 5rem 4rem;
+}
+
+.polarr-slide{
+    padding: 1rem 3rem;
 }
 
 .slide-des{
@@ -529,6 +618,16 @@ a{
     word-spacing: 24px;
 }
 
+.look-feel{
+    line-height: 2rem;
+    font-size: 1.15rem;
+    font-family: 'BauerBodoniStd-BlackItalic', serif;
+    margin: 8px auto;
+    white-space: normal;
+    word-wrap: break-word;
+    word-spacing: 4px;
+}
+
 .thirds{
     width: 33.3%;
     display: inline-block;
@@ -555,6 +654,14 @@ a{
     line-height: 3.5rem;
 }
 
+.illustrative-center{
+    margin: 4rem auto 0rem auto;
+    font-family: 'BodoniStd-PosterItalic', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: white;
+}
 
 .veryberry{
     color: #B53471;
@@ -904,6 +1011,42 @@ a{
     background-size: cover;
 }
 
+#logotype1{
+    background-image: url(../design/polarr_assets/logotype-01.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#logotype2{
+    background-image: url(../design/polarr_assets/logotype-02.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+#swatches{
+    background-image: url(../design/polarr_assets/colormark-14.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#typog{
+    background-image: url(../design/polarr_assets/typography.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#generator{
+    width: 80%;
+}
+
+.aligncenter {  
+  text-align: center;
+}
 
 .redArrow .fp-controlArrow{
     border-color: transparent transparent transparent #6F1E51;
@@ -1125,4 +1268,186 @@ a{
     font-size: 1.6rem;
     margin: 2rem auto;
 }
+
+
+/* polarr backdroung stuff */
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(../design/polarr_assets/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(../design/polarr_assets/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 400s linear infinite;
+  -ms-animation:move-twink-back 400s linear infinite;
+  -o-animation:move-twink-back 400s linear infinite;
+  -webkit-animation:move-twink-back 400s linear infinite;
+  animation:move-twink-back 400s linear infinite;
+}
+
+/* Polarr Color Palette Specialty */
+
+
+#neon-signs {
+  width: 100%;
+  margin: auto;
+  padding: 4rem 2rem;
+/*  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(0, 12ch));
+  align-items: center;
+  align-content: center;
+  justify-content: center;*/
+
+}
+
+/*Neon*/
+#neon-signs p {
+  /*text-align: center;*/
+  font-size: calc(.1em + 2.1vmax);
+  margin: 2rem 2rem;
+  line-height: 1em;
+}
+
+#neon-signs .neon {
+  font-family: "voyager-light";
+  text-decoration: none;
+/*  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;*/
+}
+
+#neon-signs p:nth-child(1) .neon {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1adae4, 0 0 70px #1adae4, 0 0 80px #1adae4, 0 0 100px #1adae4, 0 0 150px #1adae4;
+}
+
+/*#neon-signs p:nth-child(1) .neon:hover {
+  color: #1adae4;
+
+}*/
+
+#neon-signs p:nth-child(2) .neon {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f7860d, 0 0 70px #f7860d, 0 0 80px #f7860d, 0 0 100px #f7860d, 0 0 150px #f7860d;
+}
+
+/*#neon-signs p:nth-child(2) .neon:hover {
+  color: #f7860d;
+  text-shadow: none;
+}*/
+
+#neon-signs p:nth-child(3) .neon {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #02e47d, 0 0 70px #02e47d, 0 0 80px #02e47d, 0 0 100px #02e47d, 0 0 150px #02e47d;
+}
+/*
+#neon-signs p:nth-child(3) .neon:hover {
+  color: #02e47d;
+  text-shadow: none;
+}*/
+
+#neon-signs p:nth-child(4) .neon {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a538ff, 0 0 70px #a538ff, 0 0 80px #a538ff, 0 0 100px #a538ff, 0 0 150px #a538ff;
+}
+
+/*#neon-signs p:nth-child(4) .neon:hover {
+  color: #a538ff;
+  text-shadow: none;
+
+}*/
+
+#neon-signs p:nth-child(5) .neon {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #d9e400, 0 0 70px #d9e400, 0 0 80px #d9e400, 0 0 100px #d9e400, 0 0 150px #d9e400;
+}
+
+/*#neon-signs p:nth-child(5) .neon:hover {
+  color: #d9e400;
+  text-shadow: none;
+
+}*/
+
+#neon-signs p:nth-child(6) .neon {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e40a01, 0 0 70px #e40a01, 0 0 80px #e40a01, 0 0 100px #e40a01, 0 0 150px #e40a01;
+}
+
+/*#neon-signs p:nth-child(6) .neon:hover {
+  color: #e40a01;
+
+}*/
+
+#neon-signs p:nth-child(7) .neon {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e40167, 0 0 70px #e40167, 0 0 80px #e40167, 0 0 100px #e40167, 0 0 150px #e40167;
+}
+
+/*#neon-signs p:nth-child(7) .neon:hover {
+  color: #e40167;
+
+}
+*/
+
+#neon-signs p:nth-child(8) .neon {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0273ff, 0 0 70px #0273ff, 0 0 80px #0273ff, 0 0 100px #0273ff, 0 0 150px #0273ff;
+}
+
+
+#neon-signs p .neon:hover {
+  /*transition: color 20ms ease;*/
+}
+
+#neon-signs p:nth-child(9) .neon {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e400d9, 0 0 70px #e400d9, 0 0 80px #e400d9, 0 0 100px #e400d9, 0 0 150px #e400d9;
+}
+
+
+/*REEEEEEEEEEESPONSIVE*/
+
+@media (max-width: 1200px) {
+  #neon-signs {
+    width: 100%;
+  }
+  #neon-signs p {
+    font-size: 3.5rem;
+    margin: 2rem 2rem;
+  }
+}
+
 

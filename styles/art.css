@@ -10,6 +10,16 @@ h1{
   padding-right: 1rem;
 }
 
+.fullScreen{
+    height: 100vh;
+    width: 100vw;
+    animation: fadeIn 1s ease;
+    background-image:url(../ART/artBG_new.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
 
 @media only screen and (max-width: 90rem) {
   h1 {

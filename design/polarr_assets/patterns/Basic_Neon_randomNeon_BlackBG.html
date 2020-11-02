@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Repeating Triangle Pattern</title>
+    <style type="text/css">
+
+	* { margin: 0; padding: 0;}
+
+	body, html { height:100%; }
+
+	canvas {
+	    position:absolute;
+	    width:100%;
+	    height:100%;
+	}
+	</style>
+
+<body data-rsssl=1>
+	
+<canvas></canvas>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+
+<script type="text/javascript">
+var canvas = document.createElement('canvas');
+var canvasWidth = canvas.width = window.innerWidth;
+var canvasHeight = canvas.height = window.innerHeight;
+var ctx = canvas.getContext('2d');
+var heightScale = 0.866;
+
+var canvasFill = "#0b0b0d"; // Changes the background color of the canvas
+
+var filler = 'rgb(22,212,224)'; // this is the fill teal color; just for testing.
+
+
+function rnd(min, max) {
+    return Math.floor((Math.random() * (max - min + 1)) + min);
+};
+
+
+//  Black and Whites use clr to determine fill or not if using this function to color.
+
+function hueFill(binary){
+	if(binary){
+		filler = 'rgba(0,0,0, 1)'; // this is the triangle fill color
+		return filler;
+	}
+	filler = 'rgba(0,0,0, 0)'; // this is the alternate trianle fill color, make the 1 a zero for no-fill opacity.
+	return filler;
+}
+
+function neons(options){
+	if(options == 0){
+		console.log( 'teal');
+		return '#16d4e0';
+	
+	} else if(options == 1){
+		console.log("purple");
+		return '#CE00E0';
+		
+	} else if(options == 2){
+		console.log('yellow');
+		return '#E0DC00';
+		
+	}else if(options == 3){
+		console.log('pink');
+		return '#E00087';
+	} else if(options == 4){
+		console.log('green');
+		return '#00E067';
+	}
+	console.log("orange");
+	return '#E0A100';
+}
+
+
+function render() {
+    ctx.fillStyle = canvasFill;
+    ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+    ctx.lineWidth = 1;
+
+    /** THIS IS WHERE YOU SET THE SCALE / ZOOM FACTOR
+    	INPUT: INTEGERS [1,8]
+    	EXAMPLE: ctx.scale(3,3); for triple size
+    	Note: comment out the ctx.scale(2,2); fucntion to get the smallest ratio of grid.
+    	**/
+
+    ctx.scale(2,2); //Doubled size, change both numbers to 1 for smallest grid, up to 8 for largest.
+
+    var hueStart = rnd(0, 360);
+    var triSide = 40;
+    var halfSide = triSide;
+    var adjust = halfSide - 6;
+    var rowHeight = Math.floor(triSide * heightScale);
+    var columns = Math.ceil(canvasWidth / triSide) + 12;
+    var rows = Math.ceil(canvasHeight / rowHeight);
+
+    var col, row;
+    for (row = 0; row < rows; row++) {
+
+        for (col = 0; col < columns; col++) {
+
+            var x = col * 33.8;
+            var y = row * rowHeight;
+            var clr;
+
+            // randomizers
+            var rotation = rnd(0,3);
+            var hue = rnd(0, 1);
+            var whichNeon = rnd(0,5);
+            
+            switch(rotation) {
+				case 0:
+
+		            // Left Bottom Triangle
+
+
+		   			var startAngle = 1 * Math.PI/2;
+		    		var endAngle = startAngle + Math.PI/2;
+
+		    		clr = neons(whichNeon);
+		            ctx.fillStyle = clr;
+		            ctx.strokeStyle = neons(whichNeon);
+		            ctx.beginPath();
+					ctx.moveTo(x, y + adjust);
+					ctx.arc(x + adjust, y, 33.8, startAngle, endAngle);
+					ctx.closePath();
+					ctx.fill();
+					// ctx.stroke();
+
+			    	break;
+				case 1:
+			   		// Right Bottom Triangle
+		            
+
+		      		var startAngle = 0 * Math.PI/2;
+		    		var endAngle = startAngle + Math.PI/2;
+
+		    		clr = neons(whichNeon);
+		            ctx.fillStyle = clr;
+		            ctx.strokeStyle = neons(whichNeon);
+		            ctx.beginPath();
+					ctx.moveTo(x + adjust, y + adjust);
+					ctx.arc(x, y, 33.8, startAngle, endAngle);
+					ctx.closePath();
+					ctx.fill();
+					// ctx.stroke();
+					break;
+				case 2:
+		    		 // Right Top Triangle
+
+		   			var startAngle = 3 * Math.PI/2;
+		    		var endAngle = startAngle + Math.PI/2;
+
+		    		clr = neons(whichNeon);
+		            ctx.fillStyle = clr;
+		            ctx.strokeStyle = neons(whichNeon);
+		            ctx.beginPath();
+					ctx.moveTo(x + adjust, y);
+					ctx.arc(x, y + adjust, 33.8, startAngle, endAngle);
+					ctx.closePath();
+					ctx.fill();
+					// ctx.stroke();
+					break;
+				case 3:
+					// Left Top Triangle
+
+		             // Arc Mask
+		            var startAngle = 2 * Math.PI/2;
+		    		var endAngle = startAngle + Math.PI/2;
+
+		    		clr = neons(whichNeon);
+		            ctx.fillStyle = clr;
+		            ctx.strokeStyle = neons(whichNeon);
+		            ctx.beginPath();
+					ctx.moveTo(x, y);
+					ctx.arc(x + adjust, y + adjust, 33.8, startAngle, endAngle);
+					ctx.closePath();
+					ctx.fill();
+					// ctx.stroke();
+				break;
+			default:
+			    
+			}
+				
+             
+
+        };
+    };
+};
+
+document.body.appendChild(canvas);
+
+render();
+
+document.body.addEventListener('dblclick', render);
+
+
+
+  </script>
+	
+</body>      
