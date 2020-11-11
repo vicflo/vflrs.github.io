@@ -8,7 +8,7 @@
     height: 100vh;
     width: 100vw;
     animation: fadeIn 1s ease;
-    background-image:url(../design/designBG.png);
+    background-image:url(../design/designbg.svg);
     background-position:center center;
     background-repeat:no-repeat;
     background-size: cover;
