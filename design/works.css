@@ -132,6 +132,18 @@ h3{
     padding: 0rem 1rem;
 }
 
+.module-slide{
+    max-width: 52%;
+    margin: 0rem 2rem;
+    padding: 0rem 1rem;
+}
+
+.decor-intro{
+    max-width: 85rem;
+    margin: 0rem 7rem;
+    padding: 5rem 0rem 0rem 0rem;
+}
+
 .illustrative-slide-text{
     font-family: 'BodoniStd-PosterItalic', sans-serif;
     font-size: 2.5rem;
@@ -608,6 +620,17 @@ a{
     padding-bottom: 16px;
 }
 
+.caption-polarr{
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'voyager-bold', sans-serif;
+    border-bottom: 1px solid  rgba(18, 137, 167,1.0);
+    width: 8rem;
+    line-height: 1rem;
+    padding-bottom: 16px;
+}
+
 .item-list{
     line-height: 2rem;
     font-size: 1.15rem;
@@ -635,6 +658,23 @@ a{
     position: relative;
 }
 
+.onethird{
+    width: 33.3%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.twothird{
+    width: 66.6%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+
 .quarters{
     width: 25%;
     display: inline-block;
@@ -655,7 +695,7 @@ a{
 }
 
 .illustrative-center{
-    margin: 4rem auto 0rem auto;
+    margin: 2rem auto 0rem auto;
     font-family: 'BodoniStd-PosterItalic', sans-serif;
     font-size: 1.2rem;
     line-height: 2.5rem;
@@ -1026,6 +1066,20 @@ a{
 }
 
 
+#aura1{
+    background-image: url(../design/polarr_assets/identity_aura.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#aura2{
+    background-image: url(../design/polarr_assets/identity_aura_2.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
 #swatches{
     background-image: url(../design/polarr_assets/colormark-14.svg);
     background-position:center center;
@@ -1033,15 +1087,26 @@ a{
     background-size: cover;
 }
 
-#typog{
-    background-image: url(../design/polarr_assets/typography.png);
+#typog1{
+    background-image: url(../design/polarr_assets/typography_labels.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#typog2{
+    background-image: url(../design/polarr_assets/typography_labels2.svg);
     background-position:center center;
     background-repeat:no-repeat;
     background-size: cover;
 }
 
 #generator{
-    width: 80%;
+    width: 88%;
+}
+
+.prototype{
+    width: 76%;
 }
 
 .aligncenter {  
@@ -1071,6 +1136,15 @@ a{
 .blueArrow .fp-prev{
     border-color: transparent #0652DD transparent transparent;
 }
+
+.tealArrow .fp-controlArrow{
+    border-color: transparent transparent transparent #1289A7;
+}
+
+.tealArrow .fp-prev{
+    border-color: transparent #1289A7 transparent transparent;
+}
+
 
 
 /* MMEK Pictures */
@@ -1450,4 +1524,99 @@ a{
   }
 }
 
+.whiteText{
+    color: white;
+}
 
+.polarrdash{
+    font-family: "voyager-bold";
+    font-size: 2rem;
+}
+
+/* Polarr Colors */
+
+.polarrneon{
+    background: rgb(2,228,125);
+    background: linear-gradient(90deg, rgba(2,228,125,1) 0%, rgba(217,228,0,1) 25%, rgba(247,134,13,1) 40%, rgba(228,0,217,1) 70%, rgba(165,56,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.polarrteal{
+ color: #1adae4;
+}
+
+.polarrviolet{
+ color: #e40167;
+}
+
+.prototypeBlack{
+ background-color: #000000;
+}
+
+.prototypeDark{
+ background-color: #4c4c4c;
+}
+
+.prototypeMedium{
+    background-color: #999999;
+}
+
+.black-border{
+    border-bottom: 6px solid rgba(0,0,0,1);
+}
+
+.specs-polarr-pink{
+    color: rgba(228,1,103,1);
+}
+
+
+.polarr-border-pink{
+    border-bottom: 6px solid rgba(69,0,31,1);
+}
+
+.specs-polarr-teal{
+    color: rgba(0,158,169,1);
+}
+
+
+.polarr-border-teal{
+    border-bottom: 6px solid rgba(0,158,169,1);
+}
+
+
+#logoVisual{
+    background-image: url(../design/polarr_assets/logoVisualResearch.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+#logoDesign{
+    background-image: url(../design/polarr_assets/logoDesignResearch.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+#earlyStudies{
+    background-image: url(../design/polarr_assets/logoStudies.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+
+#fullPolarrLogo{
+    background-image: url(../design/polarr_assets/fullLogo.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+#colorStudy{
+    background-image: url(../design/polarr_assets/colorStudies.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
