@@ -942,20 +942,20 @@ a{
 }
 
 #klmlaunch{
-    background-image: url(../design/yore_assets/payKLM/KLM_home_ba.png);
+    background-image: url(../design/yore_assets/payKLM/klm_home_ba.png);
     background-position:center center;
     background-repeat:no-repeat;
     background-size: cover;
 }
 
 #klmlogin{
-    background-image: url(../design/yore_assets/payKLM/KLM_login_ba.png);
+    background-image: url(../design/yore_assets/payKLM/klm_login_ba.png);
     background-position:center center;
     background-repeat:no-repeat;
     background-size: cover;
 }
 #klmbooking{
-    background-image: url(../design/yore_assets/payKLM/KLM_booking_ba.png);
+    background-image: url(../design/yore_assets/payKLM/klm_booking_ba.png);
     background-position:center center;
     background-repeat:no-repeat;
     background-size: cover;
