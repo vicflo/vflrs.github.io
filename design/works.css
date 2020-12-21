@@ -1620,3 +1620,25 @@ a{
     background-repeat:no-repeat;
     background-size: contain;
 }
+
+video {
+    width: 90% !important;
+    height: auto !important;
+    margin-top: 3rem;
+    max-width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.video-container:focus{
+  outline :none;
+}
+
+.neonGradient{
+background: rgb(26,218,228);
+background: -moz-linear-gradient(45deg, rgba(26,218,228,0.2) 36%, rgba(228,1,103,0.2) 100%);
+background: -webkit-linear-gradient(45deg, rgba(26,218,228,0.2) 36%, rgba(228,1,103,0.2) 100%);
+background: linear-gradient(45deg, rgba(26,218,228,0.2) 36%, rgba(228,1,103,0.2) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1adae4",endColorstr="#e40167",GradientType=1);
+}
