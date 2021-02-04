@@ -3541,16 +3541,6 @@ footer {
   transition: opacity .3s ease;
 }
 
-.landing-image-half- {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity .3s ease;
-}
 
 .landing-image-half.is-shown,
 .landing-image-half-1.is-shown {
@@ -3567,6 +3557,7 @@ footer {
 .landing-image--shape-design {
   background: url("../images/square-cyan.svg") no-repeat center center;
   background-size: cover;
+  background-repeat: no-repeat;
   animation: fadeIn 1s ease forwards;
   animation-delay: .3s;
 }
@@ -3574,6 +3565,7 @@ footer {
 .landing-image--shape-art {
   background: url("../images/purple-circle.svg") no-repeat center center;
   background-size: cover;
+    background-repeat: no-repeat;
   animation: fadeIn 1s ease forwards;
   animation-delay: .3s;
 }
@@ -3581,6 +3573,7 @@ footer {
 .landing-image--shape-theater {
   background: url("../images/yellow-triangle.svg") no-repeat center center;
   background-size: cover;
+    background-repeat: no-repeat;
   animation: fadeIn 1s ease forwards;
   animation-delay: .3s;
 }
@@ -3588,6 +3581,7 @@ footer {
 .landing-image--shape-creative {
   background: url("../images/creative-magenta.svg") no-repeat center center;
   background-size: cover;
+    background-repeat: no-repeat;
   animation: fadeIn 1s ease forwards;
   animation-delay: .3s;
 }
@@ -3595,30 +3589,35 @@ footer {
 .landing-image--design {
   background: url("../images/square-design.svg") no-repeat center center;
   background-size: cover;
+    background-repeat: no-repeat;
   z-index: 10;
 }
 
 .landing-image--art {
   background: url("../images/purplecity.svg") no-repeat center center;
   background-size: cover;
+    background-repeat: no-repeat;
   z-index: 10;
 }
 
 .landing-image--theater {
   background: url("../images/yellow-set.svg") no-repeat center center;
   background-size: cover;
+    background-repeat: no-repeat;
   z-index: 10;
 }
 
 .landing-image--creative {
   background: url("../images/creative-studio.svg") no-repeat center center;
   background-size: cover;
+    background-repeat: no-repeat;
   z-index: 10;
 }
 
 .landing-image--me {
   background: url("../images/landing_bg-2.jpg") no-repeat center center;
   background-size: cover;
+    background-repeat: no-repeat;
   z-index: 10;
 }
 
@@ -3647,12 +3646,13 @@ footer {
      display: flex;
      align-items: center;
      justify-content: center;
-     height: calc(100vh - 48px);
+     height: calc(100vh - 4rem);
+
 
 }
 
 .landing-shape-container{
-    text-align:center;
+    text-align: center;
 
 }
 
@@ -3660,9 +3660,10 @@ footer {
 .whole-shape-container{
 	display:inline-block;
 	position: relative;
-	width:20%;
+	width: 20%;
 	height: auto;
 	min-width: 300px;
+  /*width: calc(100% *.04);*/
 	margin: 0px 16px;
   z-index: 0;
 }
@@ -3854,5 +3855,30 @@ footer {
 }
 
 /* NEW CODE UNDERLINE HOVER COLORS */
+
+.half-splash{
+  display:inline-block;
+}
+
+@media (max-width: 768px) {
+    .half-splash{
+      min-width: 100%;
+    }
+}
+
+
+@media (min-width: 676px) {
+
+    .whole-shape-container{
+      display:inline-block;
+      position: relative;
+      width: 20%;
+      height: auto;
+      /*min-width: 160px;*/
+      width: calc(1vw *.25);
+      margin: 0px 16px;
+      z-index: 0;
+    }
+}
 
 

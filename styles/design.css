@@ -11,7 +11,7 @@
     background-image:url(../design/designbg.svg);
     background-position:center center;
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 /*.menu .row{
@@ -67,6 +67,7 @@ h1{
     padding: 0px 0px 16px 1rem;
     text-align: left;
   }
+
 }
 
 
@@ -90,7 +91,7 @@ h1{
 
 h2 {
 	padding: 1.2rem 0px;
-	margin: 4rem auto 0rem auto;
+	margin: 4rem auto;
 	float: left;
 	font-family: "voyager-regular";
     border-width: 0px 0px 6px 0px;
@@ -362,5 +363,40 @@ h2 {
     font-weight: 400;
     margin: .5rem 16px 1rem 16px;
     font-style: italic;
+}
+
+.design-header{
+    margin: 12rem auto;
+    text-align:center;
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+
+.design-category{
+    font-size: 1rem;
+    font-family: "voyager-thin";
+    color: rgba(1,1,1,.5);
+    line-height: 2rem;
+    letter-spacing: 1px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+h6 {
+    width: 50%;
+    font-size: 3rem;
+    padding: 4rem 0rem 2rem 0rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: "voyager-bold";
+/*    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    -webkit-border-image: -webkit-linear-gradient(90deg, rgba(18, 203, 196, .8) 0%, rgba(196, 229, 56, .8) 33%, rgba(255,195,18,.8) 66%, rgba(247, 159, 31,.8) 100%);
+    -o-border-image: -o-linear-gradient(90deg, rgba(18, 203, 196, .8) 0%, rgba(196, 229, 56, .8) 33%, rgba(255,195,18,.8) 66%, rgba(247, 159, 31, .8) 100%);
+    -moz-border-image: -moz-linear-gradient(90deg, rgba(18, 203, 196, .8) 0%, rgba(196, 229, 56, .8) 33%, rgba(255,195,18,.8) 66%, rgba(247, 159, 31, .8) 100%);
+    border-image: linear-gradient(90deg, rgba(18, 203, 196, .8) 0%, rgba(196, 229, 56, .8) 33%, rgba(255,195,18,.8) 66%, rgba(247, 159, 31, .8) 100%);
+    border-image-slice: 15;
+    border-bottom: 4px solid rgba(18, 203, 196,1.0);*/
 }
 
