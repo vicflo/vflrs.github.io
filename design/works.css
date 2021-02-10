@@ -470,6 +470,10 @@ h2{
 }
 
 
+.polarr-text-slide{
+    padding: 2rem 4rem;
+}
+
 .text-slide{
     padding: 5rem 4rem;
 }
@@ -480,9 +484,25 @@ h2{
 
 .slide-des{
     font-family: 'voyager-regular','Lora', serif;
-    font-size: 1.1rem;
-    line-height: 1.8rem;
+    font-size: 1rem;
+    line-height: 2rem;
     margin-top: 8px;
+}
+
+@media screen and (min-width: 250px) {
+
+    .slide-des{
+        font-family: 'voyager-regular','Lora', serif;
+        font-size: 1rem;
+        line-height: 1.9rem;
+        margin-top: 8px;
+    }
+
+    .overview-detail{
+        font-family: 'voyager-light', sans-serif;
+        font-size: .95rem;
+        line-height: 1.8rem;
+    }
 }
 
 .topper:first-line{
@@ -781,6 +801,8 @@ a{
         font-size: 1.5rem;
     }
 }
+
+
 
 /* Thrive images */
 
@@ -1091,14 +1113,14 @@ a{
     background-image: url(../design/polarr_assets/typography_labels.svg);
     background-position:center center;
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #typog2{
     background-image: url(../design/polarr_assets/typography_labels2.svg);
     background-position:center center;
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #generator{
@@ -1609,6 +1631,13 @@ a{
 
 #fullPolarrLogo{
     background-image: url(../design/polarr_assets/fullLogo.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+#betaPolarr{
+    background-image: url(../design/polarr_assets/beta_splash.png);
     background-position:center center;
     background-repeat:no-repeat;
     background-size: contain;
