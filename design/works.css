@@ -1123,16 +1123,23 @@ a{
     background-size: contain;
 }
 
-#generator{
-    width: 88%;
+.generator{
+    /*width: 88%;*/
+     max-width: 80%;
 }
 
 .prototype{
-    width: 76%;
+    max-width: 60%;
 }
 
 .aligncenter {  
-  text-align: center;
+ text-align: center;
+ display: flex;
+ align-items: center;
+}
+
+.aligncenter img{
+    margin: 0 auto;
 }
 
 .redArrow .fp-controlArrow{
@@ -1651,13 +1658,16 @@ a{
 }
 
 video {
-    width: 90% !important;
+/*    width: 90% !important;
     height: auto !important;
     margin-top: 3rem;
     max-width: 700px;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%);*/
+
+    max-width: 70%;
+    height: auto !important;
 }
 
 .video-container:focus{
