@@ -3772,7 +3772,7 @@ footer {
 .landing-mobile-section:before {
   content: " ";
   display: block;
-  padding-bottom: 75%;
+  padding-bottom: 98%;
 }
 
 .landing-mobile-section h3 {
