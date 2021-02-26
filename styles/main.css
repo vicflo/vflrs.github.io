@@ -3787,9 +3787,10 @@ footer {
 
 .landing-mobile-section h3 {
   position: absolute;
-  bottom: 0.75rem;
+  bottom: 1rem;
   left: 1.5rem;
   color: #222;
+  font-family: "voyager-medium";
 }
 
 @media only screen and (min-width: 40.0625em) {
