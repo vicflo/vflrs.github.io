@@ -3670,9 +3670,19 @@ footer {
 
 .shape-container{
 	position: relative;
-	width:100%;
+	width: 100%;
 	padding-bottom: 100%;
-	margin-bottom: 80px;
+	margin: 0px auto 80px auto;
+}
+
+@media screen and (max-width: 1340px) {
+
+    .shape-container{
+      position: relative;
+      width: 80%;
+      padding-bottom: 80%;
+      margin: 0px auto 80px auto;
+    }
 }
 
 .shape-label{
@@ -3879,6 +3889,7 @@ footer {
       margin: 0px 16px;
       z-index: 0;
     }
+
 }
 
 
