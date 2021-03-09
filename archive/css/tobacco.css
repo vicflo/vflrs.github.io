@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	text-align:center;
+	margin:0px;
+	padding:0px;
+}
+
+
+#container{
+	position:relative;
+	padding:0px;
+	width:1024px;
+	height:768px;
+	background-image:url(background-img_cigarette.png);
+	background-position:top;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.menu{
+	font-family:Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+	position:absolute;
+	font-size:28px;
+	font-style:italic;
+	font-weight:-2;
+	text-decoration:none;
+	color:#232f45;
+}
+p{
+	font-family:Lucida "Lucida Sans Unicode", "Lucida Grande", sans-serif"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+	position:absolute;
+	font-size:28px;
+	font-style:italic;
+	font-weight:-2;
+	text-decoration:none;
+	color:#232f45;
+	width: 788px;
+}
+
+#research{
+	position:absolute;
+	top:105px;
+	left:170px;
+}
+
+#smoke{
+	position:absolute;
+	top:100px;
+	left:780px;
+}
+
+#free{
+	position:absolute;
+	top:132px;
+	left:570px;
+}
+
+.pbtn{
+	display:block;
+	position:absolute;
+	text-align:right;
+	width:589px;
+	height:29px;
+	color:#65547f;
+}
+
+.btn{
+	display:block;
+	position:absolute;
+	text-align:right;
+	width:589px;
+	height:29px;
+	color:#65547f;
+}
+
+.fbtn{
+	display:block;
+	position:absolute;
+	width:66px;
+	height:45px;
+}
+
+a{
+	text-decoration:none;
+	color:#900;
+	font-size:18px;
+}
+
+#abstract{
+	font-family:"Courier New", Courier, monospace;
+	font-size:16px;
+}
+
+.spot{
+	display:block;
+	position:absolute;
+	width:107px;
+	height:45px;
+}
+
+.blue{
+    color: #29B4F0;
+}
