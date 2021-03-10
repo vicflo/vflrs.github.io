@@ -2229,6 +2229,10 @@ a.social{
    
 }
 
+.abc .special{
+    padding: 80px;
+}
+
 .specialY:after{
     border-top: 1px solid #FFEB3B;
 }
