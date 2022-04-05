@@ -197,6 +197,18 @@ h2 {
     }
 }
 
+/* = css override on size for now */
+.full{
+    width: 100%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+}
+
+
+#molekule_tile{
+    background-image:url(../images/design/tiles/molekule.png);
+}
+
+
 #thrive{
     background-image:url(../images/design/tiles/thrive.png);
 }
@@ -265,7 +277,7 @@ h2 {
     transition: opacity .3s ease-in-out;
 }
 
-.overview-project:hover .caption, .overview-project-rect:hover .caption {
+.overview-project:hover .caption, .overview-project-rect:hover .caption, .overview-project-full:hover .caption {
     opacity: 1;
 }
 
