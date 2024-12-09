@@ -11,7 +11,7 @@
     background-image:url(../design/designbgtest-01.svg);
     background-position:center center;
     background-repeat:no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 /*.menu .row{
@@ -203,6 +203,10 @@ h2 {
     padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
 }
 
+#span_tile{
+    background-image:url(../images/design/tiles/span.png);
+}
+
 
 #molekule_tile{
     background-image:url(../images/design/tiles/molekule.png);
@@ -372,7 +376,6 @@ h2 {
 
 .liner{
     font-family: 'BauerBodoniStd-BlackItalic', 'Lora', serif;
-    font-weight: 400;
     margin: .5rem 16px 1rem 16px;
     font-style: italic;
 }
