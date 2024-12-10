@@ -1544,6 +1544,22 @@ a{
     background-size: contain;
 }
 
+#molekule-more{
+    background-image: url(../design/molekule_assets/moretab.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#molekule-flows{
+    background-image: url(../design/molekule_assets/purchaseflow.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: contain;
+
+}
+
+
 .purchasing{
     background-image: url(../design/molekule_assets/editing.png);
     background-position:center center;
@@ -1947,3 +1963,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1adae4",endCo
 .molekuleGreenGradient{
     background: radial-gradient(91.56% 90.24% at 50.13% -4.74%, rgba(244, 242, 242, 0.12) 0%, rgba(244, 242, 242, 0.06) 100%), radial-gradient(42.75% 65.04% at 39.2% -3.63%, rgba(225, 244, 233, 0.63) 0%, rgba(225, 244, 233, 0.04) 100%), radial-gradient(110.35% 89.3% at 42.27% 84.67%, #CFE9DB 0%, rgba(207, 233, 219, 0.81) 100%);
 }
+
+
+.molekuleGray{
+    background: radial-gradient(236.64% 115.03% at 72.67% 93.84%, #D7D5D4 0%, rgba(215, 213, 212, 0.00) 94.09%), radial-gradient(70.92% 93.13% at -14.67% 22.29%, #F4F2F2 27.69%, rgba(244, 242, 242, 0.13) 67.37%), radial-gradient(66.23% 83.91% at 21.33% 30.73%, rgba(255, 255, 255, 0.35) 0%, #FFF 100%, #FFF 100%);
+}
+
+

@@ -209,9 +209,9 @@
       </div>
     </div> <!-- end section -->
 
-    <div class="section" id="section9">
+    <div class="section " id="section9">
         <div class="slide" data-anchor="slide3">
-          <div class="twothird right aligncenter molekule-gray" id="km-filter-status">
+          <div class="twothird right aligncenter molekuleGray" id="km-filter-status">
           <!-- <img src="molekule_assets/filterstatus-splash.png" alt="dot status final design" /> -->
           </div>
           <div class="onethird polarr-slide slide-white">
@@ -276,7 +276,7 @@
           <p class="tiny-spec">About</p>
           <p class="slide-des topper">Throughout wireframing, we found the filter block entry to be a key piece in defining the cart. We explored opportunities such as converting to subscriptions or making it 'smart' and aware of other purifier filters.</p>
           <p class="tiny-spec">Outcome</p>
-          <p class="slide-des">UUltimately, we aligned on moving the subscription option to the filter block (before cart entry). In this way, we ensured matching our existing SKUs while easing the process of getting a single filter without friction (even if it costs more), we wanted to support user intention once they've decided to purchase à la carte and not distract from completing the purchase to maintain their air.</p>
+          <p class="slide-des">Ultimately, we aligned on moving the subscription option to the filter block (before cart entry). In this way, we ensured matching our existing SKUs while easing the process of getting a single filter without friction (even if it costs more), we wanted to support user intention once they've decided to purchase à la carte and not distract from completing the purchase to maintain their air.</p>
         </div>
       </div>
       <div class="twothird right aligncenter" id="km-cart">
@@ -292,13 +292,43 @@
       </div>
     </div> <!-- end section -->
 
-    <div class="section molekuleGreenGradient" id="section13">
+    <div class="section" id="section13">
+      <div class="twothird right aligncenter slight-gray" id="molekule-flows"></div>
+      <div class="onethird polarr-slide slide-white">
+        <div class="intro">
+          <p class="whatitis specs-molekule">purchasing - flows</p>
+          <p class="half-label-long">How many c(licks) does it take?</p>
+          <p class="tiny-spec">About</p>
+          <p class="slide-des topper">After identifying our primary path, I iterated on the end-to-end purchase journey for the 'reactive' state-minded non-subscriber (when a filter imminently needs replacement). In addition to introducing applePay we created four paths based on account detail.</p>
+          <p class="tiny-spec">Key consideration(s)</p>
+          <p class="slide-des">Optimizing for the least amount of taps in completing an à la carte filter purchase guided our focus. We prioritized building ease, convenience, and trust (a key concern for unsubscribers) to shorten the purchasing path and ask for permission in saving credentials.</p>
+          <p class="tiny-spec">Specs</p>
+          <p class="specs-detail"><span class="bolder">9</span> Rounds of iteration and review</p>
+        </div>
+      </div>
+    </div> <!-- end section -->
+
+    <div class="section molekuleGreenGradient" id="section14">
       <div class="splashcenter">
         <img src="molekule_assets/editing.png" class="" alt="purchase editing" />
         <p class="splashcaption">Users can easily edit any part of their account or presets during purchase.</p>
       </div>
     </div> <!-- end section --> 
 
+    <div class="section" id="section15">
+      <div class="onethird polarr-slide slide-white">
+        <div class="intro">
+          <p class="whatitis specs-molekule">More - account management</p>
+          <p class="half-label-long">Ramping up control & transparency</p>
+          <p class="tiny-spec">About</p>
+          <p class="slide-des topper">Though initial scope prioritized non-subscribers, research showed our web-portal account management to be a major detractor in converting to subscriptions. To support optimized purchase flows, we re-architected our 'More' tab information hierarchy to incorporate subscription and account detailing. We additionally introduced the notion of 'pausing' a subscription, rescheduling fulfillment, and a secondary path to single filter purchase with a general shop.</p>
+          <p class="tiny-spec">Key consideration(s)</p>
+          <p class="slide-des">Parity and semantics guided much of the renewed design for the 'More' tab. Ensuring clarity and parity with existing design patterns formed the final design.</p>
+        </div>
+      </div>
+      <div class="twothird right aligncenter" id="molekule-more"></div>
+      
+    </div> <!-- end section -->
 
     </div> <!-- end fullpage -->
 
@@ -354,8 +384,8 @@
   <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         licenseKey: 'AB36CDA3-442C4292-B9087D2E-8B0A2D05',
-        anchors: ['intro', 'specs', 'filter-glance', 'overview', 'splash', 'approach', 'entrypoint', 'entrydetail', 'filterstatus', 'filterstatusdetail', 'cart', 'cartiteration', 'happypath', 'editing'],
-        sectionsColor: ['rgba(255, 255, 255,1.0)', 'rgba(255, 255, 255, 1.0)', 'rgba(244, 242, 242, 1.0)', 'rgba(255, 255, 255, 1.0)', 'rgba(255, 255, 255, 1.0)', 'rgba(197, 197, 242, .2)', 'rgba(255, 255, 255, 1.0)', 'rgba(255, 255, 255, 1.0)','rgba(197, 197, 242, .2)', 'rgba(244, 244, 242, 1.0)', 'rgba(255, 255, 255,1.0)', 'rgba(244, 242, 241, 1.0)', 'rgba(255, 255, 255, 1.0)', 'rgba(255,255,255, 1.0)'],
+        anchors: ['intro', 'context', 'glance', 'overview', 'splash', 'approach', 'entrypoint', 'entrydetail', 'filterstatus', 'filterstatusdetail', 'cart', 'cartiteration', 'happypath', 'editing', 'flows', 'account'],
+        sectionsColor: ['rgba(255, 255, 255,1.0)', 'rgba(255, 255, 255, 1.0)', 'rgba(244, 242, 242, 1.0)', 'rgba(255, 255, 255, 1.0)', 'rgba(255, 255, 255, 1.0)', 'rgba(197, 197, 242, .2)', 'rgba(255, 255, 255, 1.0)', 'rgba(255, 255, 255, 1.0)','rgba(197, 197, 242, .2)', 'rgba(244, 244, 242, 1.0)', 'rgba(255, 255, 255,1.0)', 'rgba(244, 242, 241, 1.0)', 'rgba(255, 255, 255, 1.0)', 'rgba(255,255,255, 1.0)','rgba(255,255,255, 1.0)', 'rgba(255,255,255, 1.0)'],
         slidesNavigation: true,
         autoScrolling: false
         // continuousVertical: true
