@@ -1969,4 +1969,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1adae4",endCo
     background: radial-gradient(236.64% 115.03% at 72.67% 93.84%, #D7D5D4 0%, rgba(215, 213, 212, 0.00) 94.09%), radial-gradient(70.92% 93.13% at -14.67% 22.29%, #F4F2F2 27.69%, rgba(244, 242, 242, 0.13) 67.37%), radial-gradient(66.23% 83.91% at 21.33% 30.73%, rgba(255, 255, 255, 0.35) 0%, #FFF 100%, #FFF 100%);
 }
 
+.molekuleLime{
+    background: radial-gradient(158.89% 56.88% at 42.67% 96.12%, #9EE6BE 0%, rgba(158, 230, 190, 0.22) 100%), radial-gradient(80.57% 57.84% at 21.87% 52.59%, #C5FFDA 0%, rgba(197, 255, 218, 0.38) 100%), radial-gradient(158.52% 55% at 19.33% 76.6%, #98EABB 0%, rgba(152, 234, 187, 0.19) 100%);
+}
+
 
